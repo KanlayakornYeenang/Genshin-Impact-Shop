@@ -3,7 +3,7 @@ import { useState } from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
-import { accessories, apparel, collectibles } from "../data/menuItems"
+import { accessories, apparel, collectibles } from "../data/menuItems";
 
 const Tabs = (props) => {
   const [isHovering, setIsHovering] = useState(false);
@@ -39,9 +39,10 @@ const TabsExpends = (props) => {
           })}
         </div>
         <div className="expends_item">
-          <img src={props.menu.pic}/>
+          {props.menu[props.menu.length - 1].pic.map((pic) => (
+            <img src={pic} />
+          ))}
         </div>
-          
       </div>
     );
   };

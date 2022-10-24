@@ -15,6 +15,18 @@ const images = [
     original:
       "https://pbs.twimg.com/media/FcyM4rSaAAEMTJc?format=jpg&name=4096x4096",
   },
+  {
+    original:"/images/Travelers.jpg"
+  },
+  {
+    original:"/images/Archons.jpg"
+  },
+  {
+    original:"/images/loadingscreen.png"
+  },
+  {
+    original:"/images/Main.jpg"
+  },
 ];
 
 class MyGallery extends React.Component {

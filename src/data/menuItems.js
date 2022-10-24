@@ -27,24 +27,46 @@ export const menuItems = [
 export const apparel = [
   {
     title: "Tops",
-    url: "/tops"
-  }
-]
+    url: "/apparel/tops",
+  },
+  {
+    title: "Bottoms",
+    url: "/apparel/bottoms",
+  },
+  {
+    pic: [
+      "/images/products/apparel/tops/1.jpg",
+      "/images/products/apparel/tops/2.jpg",
+    ],
+  },
+];
 
 export const collectibles = [
   {
     title: "Badges",
-    url: "/apparel/badges"
+    url: "/collectibles/badges",
   },
-]
+  {
+    pic: [
+      "/images/products/apparel/tops/1.jpg",
+      "/images/products/apparel/tops/2.jpg",
+    ],
+  },
+];
 
 export const accessories = [
   {
     title: "Mugs",
-    url: "/apparel/mugs"
+    url: "/accessories/mugs",
   },
   {
     title: "Mouse pads",
-    url: "/apparel/mousepad"
+    url: "/accessories/mousepad",
   },
-]
+  {
+    pic: [
+      "/images/products/apparel/tops/1.jpg",
+      "/images/products/apparel/tops/2.jpg",
+    ],
+  },
+];
