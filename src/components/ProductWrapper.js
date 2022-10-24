@@ -4,7 +4,7 @@ import { tops, bottoms, sales } from "../data/ProductList";
 import "./ProductWrapper.css";
 
 const ProductWrapper = () => {
-  const productElementsTops = tops.slice(0, 2).map((list, index) => {
+  const productElementsTops = tops.map((list, index) => {
     return <Product key={index} list={list} />;
   });
   const productElementsBottoms = bottoms.map((list, index) => {
