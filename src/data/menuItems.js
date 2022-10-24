@@ -51,13 +51,33 @@ export const collectibles = [
     url: "/collectibles/badges",
   },
   {
+    title: "Standees",
+    url: "/collectibles/standees",
+  },
+  {
+    title: "Pins",
+    url: "/collectibles/pins",
+  },
+  {
+    title: "Plush",
+    url: "/collectibles/plush",
+  },
+  {
+    title: "Figures",
+    url: "/collectibles/figures",
+  },
+  {
+    title: "Keychains",
+    url: "/collectibles/keychains",
+  },
+  {
     pictitle: [
-      "Xiao Series Long Sleeve Shirt",
-      "Genshin Impact Baal Themed T-shirt",
+      "Genshin Impact Taste of Summer Badges",
+      "Taroumaru Plushie",
     ],
     pic: [
-      "/images/products/apparel/tops/1.jpg",
-      "/images/products/apparel/tops/2.jpg",
+      "/images/products/collectibles/badges/Badge1_1.png",
+      "/images/products/collectibles/plush/plush3_1.png",
     ],
   },
 ];
@@ -73,12 +93,12 @@ export const accessories = [
   },
   {
     pictitle: [
-      "Xiao Series Long Sleeve Shirt",
-      "Genshin Impact Baal Themed T-shirt",
+      "Gorou's Shiba Inu Mug",
+      "Genshin Impact Themed Mouse Mat",
     ],
     pic: [
-      "/images/products/apparel/tops/1.jpg",
-      "/images/products/apparel/tops/2.jpg",
+      "/images/products/accessories/mugs/Mug1_1.png",
+      "/images/products/accessories/mousepads/MousePad2_1.png",
     ],
   },
 ];

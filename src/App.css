@@ -58,6 +58,10 @@ nav {
   height: 10vh;
 }
 
+.menu-items:hover {
+  transform: translateY(5%);
+}
+
 .tabs {
   display: flex;
   align-items: center;
