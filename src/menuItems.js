@@ -32,7 +32,7 @@ export const apparel = [
   {
     title: "Bottoms",
     url: "/apparel/bottoms"
-  }
+  },
   {
     pic: "/images/1.jpg"
   }
