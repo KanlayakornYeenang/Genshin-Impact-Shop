@@ -5,7 +5,7 @@ import logo from "./images/ghenshin-impact-store-logo.png";
 const Header = () => {
   return (
     <div className="nav-area">
-      <img id="logo" src="/images/1.jpg" />
+      <img id="logo" src={logo} />
       {/* Header.js => Navbar.js */}
       <Navbar />
     </div>

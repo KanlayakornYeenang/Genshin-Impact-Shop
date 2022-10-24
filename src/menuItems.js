@@ -27,12 +27,13 @@ export const menuItems = [
 export const apparel = [
   {
     title: "Tops",
-    url: "/apparel/tops",
-    pic: "/images/1.jpg"
+    url: "/apparel/tops"
   },
   {
     title: "Bottoms",
-    url: "/apparel/bottoms",
+    url: "/apparel/bottoms"
+  }
+  {
     pic: "/images/1.jpg"
   }
 ]

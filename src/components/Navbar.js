@@ -40,7 +40,7 @@ const TabsExpends = (props) => {
           })}
         </div>
         <div className="expends_item">
-          {props.menu.pic}
+          <img src={props.menu.pic}/>
         </div>
           
       </div>
