@@ -3,18 +3,6 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 const images = [
-  // {
-  //   original:
-  //     "https://pbs.twimg.com/media/FcyM4rWakAIN0KR?format=jpg&name=4096x4096",
-  // },
-  // {
-  //   original:
-  //     "https://pbs.twimg.com/media/FcyM4rSacAMnJbS?format=jpg&name=4096x4096",
-  // },
-  // {
-  //   original:
-  //     "https://pbs.twimg.com/media/FcyM4rSaAAEMTJc?format=jpg&name=4096x4096",
-  // },
   {
     original:"/images/Slideshow/1.jpg"
   },
@@ -37,6 +25,7 @@ class MyGallery extends React.Component {
           autoPlay={true}
           showFullscreenButton={false}
           showBullets={true}
+          slideDuration={1000}
         />
       </div>
     );

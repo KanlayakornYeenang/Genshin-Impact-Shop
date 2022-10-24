@@ -78,12 +78,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className="tab-wrapper">
-        <TabsExpends
-          url="/apparel"
-          title="APPAREL"
-          menu={apparel}
-          pic={apparel[apparel.length - 1]}
-        />
+        <TabsExpends url="/apparel" title="APPAREL" menu={apparel} />
         <TabsExpends
           url="/collectibles"
           title="COLLECTIBLES"
