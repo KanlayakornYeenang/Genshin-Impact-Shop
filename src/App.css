@@ -69,7 +69,7 @@ nav {
 }
 
 .dropdown {
-  width: 90vw;
+  width: 100vw;
   height: fit-content;
   padding: 2.5vw 0vw;
   background-color: #292929;
@@ -139,7 +139,7 @@ nav {
   margin-top: 10vh;
   object-fit: cover !important;
   max-width: 100% !important;
-  max-height: 90vh !important;
+  max-height: 100vh !important;
   object-position: top;
 }
 
