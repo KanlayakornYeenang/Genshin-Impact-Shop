@@ -39,7 +39,10 @@ const TabsExpends = (props) => {
             return <a href={menu.url}>{menu.title}</a>;
           })}
         </div>
-        <div className="expends_item"></div>
+        <div className="expends_item">
+          <img src={props.menu.pic}/>
+        </div>
+          
       </div>
     );
   };

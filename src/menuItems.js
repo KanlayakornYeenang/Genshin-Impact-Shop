@@ -27,11 +27,22 @@ export const menuItems = [
 export const apparel = [
   {
     title: "Tops",
+<<<<<<< HEAD
     url: "/apparel/tops",
   },
   {
     title: "Bottoms",
     url: "/apparel/bottoms",
+=======
+    url: "/apparel/tops"
+  },
+  {
+    title: "Bottoms",
+    url: "/apparel/bottoms"
+  },
+  {
+    pic: "/images/1.jpg"
+>>>>>>> f246b861d7e18ca528fa80e1bedfed984b286d5d
   }
 ]
 
