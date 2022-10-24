@@ -1,10 +1,11 @@
 import React from "react";
 import Navbar from "./Navbar";
+import Logo from "./Logo";
 
 const Header = () => {
   return (
     <div className="nav-area">
-      <a href="/"><img id="logo" src="/images/genshin-impact-store-logo.png" /></a>
+      <Logo />
       <Navbar />
     </div>
   );

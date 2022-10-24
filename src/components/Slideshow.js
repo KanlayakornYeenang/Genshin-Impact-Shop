@@ -31,7 +31,7 @@ class MyGallery extends React.Component {
           autoPlay={true}
           showFullscreenButton={false}
           showBullets={true}
-          slideDuration={1000}
+          slideDuration={3000}
         />
       </div>
     );
