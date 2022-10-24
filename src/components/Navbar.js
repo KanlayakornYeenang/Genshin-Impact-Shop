@@ -3,8 +3,7 @@ import { useState } from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
-import { accessories, apparel, collectibles } from "../menuItems";
-import img from "./images/Products/Apparel/Tops/1.jpg";
+import { accessories, apparel, collectibles } from "../data/menuItems"
 
 const Tabs = (props) => {
   const [isHovering, setIsHovering] = useState(false);
