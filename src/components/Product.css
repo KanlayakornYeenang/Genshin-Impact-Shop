@@ -1,0 +1,60 @@
+.frame-wrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    width: fit-content;
+    gap: 2vw;
+    margin-left: auto;
+    margin-right: auto;
+    word-wrap: break-word;
+    padding: 5vw 0vw;
+}
+
+.frame {
+    width: 17vw;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: auto;
+    row-gap: 0.75vw;
+    font-size: 1vw;
+}
+
+.imgProduct {
+    width: 17vw;
+    height: 17vw;
+    overflow: hidden;
+}
+
+.frame img {
+    width: 100%;
+    transition: 0.1s linear;
+}
+
+.frame img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.product_name {
+    width: 17vw;
+    height: 3.7vw;
+    color: rgb(52, 52, 52);
+}
+
+.product_price {
+    color: rgb(101, 100, 98);
+    opacity: 0.75;
+}
+
+.product_before{
+    color: rgb(101, 100, 98);
+    opacity: 0.75;
+    text-decoration: line-through;
+    margin-left:0.8vw;
+}
+
+.sale{
+    color: red;
+}
+.inline{
+    display:flex;
+}

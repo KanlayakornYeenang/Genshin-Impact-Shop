@@ -1,7 +1,7 @@
 export const tops = [
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Concert T-Shirt",
-    price: 30.99,
+    name: "Genshin Impact Concert T-Shirt",
+    price: "30.99",
     images: [
       "/images/Products/Apparel/Tops/Top1_1.png",
       "/images/Products/Apparel/Tops/Top1_2.png",
@@ -37,8 +37,8 @@ export const tops = [
         No returns or exchanges are allowed for this product.",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Diluc T-Shirt",
-    price: 30.99,
+    name: "Genshin Impact Diluc T-Shirt",
+    price: "30.99",
     images: [
       "/images/Products/Apparel/Tops/Top2_1.png",
       "/images/Products/Apparel/Tops/Top2_2.png",
@@ -73,8 +73,8 @@ export const tops = [
         No returns or exchanges are allowed for this product.",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Frolicking Flame Yoimiya T-shirt",
-    price: 41.99,
+    name: "Genshin Impact Frolicking Flame Yoimiya T-shirt",
+    price: "41.99",
     images: [
       "/images/Products/Apparel/Tops/Top3_1.png",
       "/images/Products/Apparel/Tops/Top3_2.png",
@@ -115,8 +115,8 @@ export const tops = [
         No returns or exchanges are allowed for this product.",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Klee T-Shirt",
-    price: 30.99,
+    name: "Genshin Impact Klee T-Shirt",
+    price: "30.99",
     images: [
       "/images/Products/Apparel/Tops/Top4_1.png",
       "/images/Products/Apparel/Tops/Top4_2.png",
@@ -151,8 +151,8 @@ export const tops = [
         No returns or exchanges are allowed for this product.",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Baal Themed T-shirt",
-    price: 41.99,
+    name: "Genshin Impact Baal Themed T-shirt",
+    price: "41.99",
     images: [
       "/images/Products/Apparel/Tops/Top5_1.png",
       "/images/Products/Apparel/Tops/Top5_2.png",
@@ -196,8 +196,8 @@ export const tops = [
         No returns or exchanges are allowed for this product.",
   },
   {
-    name: "[OFFICIAL PRE-ORDER] Xiao Series Long Sleeve Shirt [Early January 2023]",
-    price: 82.99,
+    name: "Xiao Series Long Sleeve Shirt",
+    price: "82.99",
     images: [
       "/images/Products/Apparel/Tops/Top6_1.png",
       "/images/Products/Apparel/Tops/Top6_2.png",
@@ -247,16 +247,16 @@ export const tops = [
   },
 ];
 
-export const bottom = [
+export const bottoms = [
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Yoimiya Themed Cargo Shorts",
-    price: 60.99,
+    name: "Genshin Impact Yoimiya Themed Cargo Shorts",
+    price: "60.99",
     images: [
-      "/images/Products/Apparel/Tops/Bottom1_1.png",
-      "/images/Products/Apparel/Tops/Bottom1_2.png",
-      "/images/Products/Apparel/Tops/Bottom1_3.png",
-      "/images/Products/Apparel/Tops/Bottom1_4.png",
-      "/images/Products/Apparel/Tops/Bottom1_5.png"
+      "/images/Products/Apparel/Bottoms/Bottom1_1.png",
+      "/images/Products/Apparel/Bottoms/Bottom1_2.png",
+      "/images/Products/Apparel/Bottoms/Bottom1_3.png",
+      "/images/Products/Apparel/Bottoms/Bottom1_4.png",
+      "/images/Products/Apparel/Bottoms/Bottom1_5.png"
     ],
     description:
       "Shorts Material: 100% Cotton<br>\
@@ -295,14 +295,14 @@ export const bottom = [
         Yoimiya badge gift is subject to availability",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Baal Themed Cargo Shorts",
-    price: 60.99,
+    name: "Genshin Impact Baal Themed Cargo Shorts",
+    price: "60.99",
     images: [
-      "/images/Products/Apparel/Tops/Bottom2_1.png",
-      "/images/Products/Apparel/Tops/Bottom2_2.png",
-      "/images/Products/Apparel/Tops/Bottom2_3.png",
-      "/images/Products/Apparel/Tops/Bottom2_4.png",
-      "/images/Products/Apparel/Tops/Bottom2_5.png"
+      "/images/Products/Apparel/Bottoms/Bottom2_1.png",
+      "/images/Products/Apparel/Bottoms/Bottom2_2.png",
+      "/images/Products/Apparel/Bottoms/Bottom2_3.png",
+      "/images/Products/Apparel/Bottoms/Bottom2_4.png",
+      "/images/Products/Apparel/Bottoms/Bottom2_5.png"
     ],
     description:
       "Shorts Material: 32% Cotton 68% polyester<br>\
@@ -346,8 +346,8 @@ export const bottom = [
 
 export const badges = [
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Taste of Summer Badges",
-    price: 6.99,
+    name: "Genshin Impact Taste of Summer Badges",
+    price: "6.99",
     images: [
       "/images/Products/Collectible/Badges/Badge1_1.png",
       "/images/Products/Collectible/Badges/Badge1_2.png",
@@ -363,8 +363,8 @@ export const badges = [
         Size: 5.8 cm in diameter",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Chibi Badges",
-    price: 6.99,
+    name: "Genshin Impact Chibi Badges",
+    price: "6.99",
     images: [
       "/images/Products/Collectible/Badges/Badge2_1.png",
       "/images/Products/Collectible/Badges/Badge2_2.png",
@@ -382,8 +382,8 @@ export const badges = [
         Diluc and Childe badges are expected to be ready by End October 2022.",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Halloween Badge",
-    price: 6.99,
+    name: "Genshin Impact Halloween Badge",
+    price: "6.99",
     images: [
       "/images/Products/Collectible/Badges/Badge3_1.png",
       "/images/Products/Collectible/Badges/Badge3_2.png",
@@ -403,8 +403,8 @@ export const badges = [
 
 export const standees = [
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Halloween Standee",
-    price: 16.99,
+    name: "Genshin Impact Halloween Standee",
+    price: "16.99",
     images: [
       "/images/Products/Collectible/Standees/Standee1_1.png",
       "/images/Products/Collectible/Standees/Standee1_2.png",
@@ -425,8 +425,8 @@ export const standees = [
         'Earlybird' code is not applicable for this item.",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Chibi Standees",
-    price: 16.99,
+    name: "Genshin Impact Chibi Standees",
+    price: "16.99",
     images: [
       "/images/Products/Collectible/Standees/Standee2_1.png",
       "/images/Products/Collectible/Standees/Standee2_2.png",
@@ -446,8 +446,8 @@ export const standees = [
         Gan Yu and Childe standees are estimated to be ready by End October 2022.",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Special Character Phone Stands",
-    price: 19.99,
+    name: "Special Character Phone Stands",
+    price: "19.99",
     images: [
       "/images/Products/Collectible/Standees/Standee3_1.png",
       "/images/Products/Collectible/Standees/Standee3_2.png",
@@ -470,8 +470,8 @@ export const standees = [
 
 export const pins = [
   {
-    name: "[OFFICIAL MERCHANDISE] Noblesse Oblige Artifact Pin",
-    price: 18.99,
+    name: "Noblesse Oblige Artifact Pin",
+    price: "18.99",
     images: [
       "/images/Products/Collectible/Pins/Pin1_1.png",
       "/images/Products/Collectible/Pins/Pin1_2.png",
@@ -500,8 +500,8 @@ export const pins = [
         Flower of Life Pin will only be available around Mid June 2022.",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Shanghai Symphony Orchestra Collaboration Collection",
-    price: 16.99,
+    name: "Shanghai Symphony Orchestra Collaboration Collection",
+    price: "16.99",
     images: [
       "/images/Products/Collectible/Pins/Pin2_1.png",
       "/images/Products/Collectible/Pins/Pin2_2.png"
@@ -524,9 +524,14 @@ export const pins = [
         12 X 35 MM (Logo)",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Wanderer's Troupe Jewellery",
-    price: 44.99,
-    images: [],
+    name: "Wanderer's Troupe Jewellery",
+    price: "44.99",
+    images: [
+      "/images/Products/Collectible/Pins/Pin3_1.png",
+      "/images/Products/Collectible/Pins/Pin3_2.png",
+      "/images/Products/Collectible/Pins/Pin3_3.png",
+      "/images/Products/Collectible/Pins/Pin3_4.png"
+    ],
     description:
       "Wanderer's String-Kettle Necklace<br>\
         Material: Plated Copper, Inlaid Zircon<br>\
@@ -569,8 +574,8 @@ export const pins = [
 ];
 export const plush = [
   {
-    name: "[OFFICIAL MERCHANDISE] Cryo Abyss Mage Plush Keychain",
-    price: 28.99,
+    name: "Cryo Abyss Mage Plush Keychain",
+    price: "28.99",
     images: [
       "/images/Products/Collectible/Plush/Plush1_1.png",
       "/images/Products/Collectible/Plush/Plush1_2.png",
@@ -581,8 +586,8 @@ export const plush = [
         Size: 12 x 14cm",
   },
   {
-    name: "[OFFICIAL PRE-ORDER] Zhong Li Rex Lapis XL-Size Plushie [End Oct]",
-    price: 119.99,
+    name: "Zhong Li Rex Lapis XL-Size Plushie [End Oct]",
+    price: "119.99",
     images: [
       "/images/Products/Collectible/Plush/Plush2_1.png",
       "/images/Products/Collectible/Plush/Plush2_2.png",
@@ -599,8 +604,8 @@ export const plush = [
         'Earlybird' code is not applicable for this item.",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Taroumaru Plushie",
-    price: 69.99,
+    name: "Taroumaru Plushie",
+    price: "69.99",
     images: [
       "/images/Products/Collectible/Plush/Plush3_1.png",
       "/images/Products/Collectible/Plush/Plush3_2.png",
@@ -618,8 +623,8 @@ export const plush = [
 
 export const figures = [
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Paimon 1:7 Figurine",
-    price: 78.99,
+    name: "Genshin Impact Paimon 1:7 Figurine",
+    price: "78.99",
     images: [
       "/images/Products/Collectible/Figures/Figure1_1.png",
       "/images/Products/Collectible/Figures/Figure1_2.png",
@@ -636,8 +641,8 @@ export const figures = [
         The figurine base is blue, not white.",
   },
   {
-    name: "[OFFICIAL PRE-ORDER] Klee Jumpy Dumpty Rider 1:7 Figurine [Mid April]",
-    price: 260.0,
+    name: "Klee Jumpy Dumpty Rider 1:7 Figurine [Mid April]",
+    price: "260.0",
     images: [
       "/images/Products/Collectible/Figures/Figure2_1.png",
       "/images/Products/Collectible/Figures/Figure2_2.png",
@@ -664,8 +669,8 @@ export const figures = [
         To be ready to ship out around Mid April 2022.",
   },
   {
-    name: "[OFFICIAL PRE-ORDER] Aether Nendoroid [Late Oct]",
-    price: 95.99,
+    name: "Aether Nendoroid [Late Oct]",
+    price: "95.99",
     images: [
       "/images/Products/Collectible/Figures/Figure3_1.png",
       "/images/Products/Collectible/Figures/Figure3_2.png",
@@ -689,8 +694,8 @@ export const figures = [
 
 export const keychains = [
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Weapon Keychain",
-    price:14.99,
+    name: "Genshin Impact Weapon Keychain",
+    price: "14.99",
     images: [
       "/images/Products/Collectible/Keychains/Keychain1_1.png",
       "/images/Products/Collectible/Keychains/Keychain1_2.png",
@@ -713,8 +718,8 @@ export const keychains = [
     Staff Of Homa and Cinnabar Spindle are estimated to be ready around Mid may 2022",
   },
   {
-    name: "[OFFICIAL PRE-ORDER] Metallic Character Keychain 2.0 [End Oct]",
-    price:14.99,
+    name: "Metallic Character Keychain 2.0 [End Oct]",
+    price: "14.99",
     images: [
       "/images/Products/Collectible/Keychains/Keychain2_1.png",
       "/images/Products/Collectible/Keychains/Keychain2_2.png",
@@ -734,8 +739,8 @@ export const keychains = [
     Keychains are expected to ship out by End October 2022.",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Azhdaha Keychains",
-    price:19.99,
+    name: "Azhdaha Keychains",
+    price: "19.99",
     images: [
       "/images/Products/Collectible/Keychains/Keychain3_1.png",
       "/images/Products/Collectible/Keychains/Keychain3_2.png",
@@ -755,8 +760,8 @@ export const keychains = [
 
 export const mugs = [
   {
-    name: "[OFFICIAL PRE-ORDER] Gorou's Shiba Inu Mug [End Sept]",
-    price:63.99,
+    name: "Gorou's Shiba Inu Mug [End Sept]",
+    price: "63.99",
     images: [
       "/images/Products/Accessories/Mugs/Mug1_1.png",
       "/images/Products/Accessories/Mugs/Mug1_2.png",
@@ -773,8 +778,8 @@ export const mugs = [
     Place your order now to secure your favorite Genshin Impact merchandise!",
   },
   {
-    name: "[OFFICIAL PRE-ORDER] Klee Jumpy Dumpty Mug [End July]",
-    price:49.99,
+    name: "Klee Jumpy Dumpty Mug [End July]",
+    price: "49.99",
     images: [
       "/images/Products/Accessories/Mugs/Mug2_1.png",
       "/images/Products/Accessories/Mugs/Mug2_2.png",
@@ -789,8 +794,8 @@ export const mugs = [
     Place your order now to secure your favorite Genshin Impact merchandise!",
   },
   {
-    name: "[OFFICIAL MERCHANDISE] Klee Acrylic Coaster",
-    price:15.99,
+    name: "Klee Acrylic Coaster",
+    price: "15.99",
     images: ["/images/Products/Accessories/Mugs/Mug3_1.png"],
     description: "Material: Acrylic, oil filling, glitter<br>\
     Size: 10cm diameter<br>\
@@ -803,8 +808,8 @@ export const mugs = [
 
 export const mousepads = [
   {
-    name: "[OFFICIAL MERCHANDISE] Genshin Impact Themed Mouse Mat",
-    price:38.99,
+    name: "Genshin Impact Themed Mouse Mat",
+    price: "38.99",
     images: [
       "/images/Products/Accessories/MousePad1/MousePad1_1.png",
       "/images/Products/Accessories/MousePad1/MousePad1_2.png",
@@ -818,8 +823,8 @@ export const mousepads = [
     Material: Premium Natural Rubber",
   },
   {
-    name: "[OFFICIAL PRE-ORDER] Firefly ACG Convention Series Baal Merchandise [End Dec]",
-    price: 38.99,
+    name: "Firefly ACG Convention Series Baal Merchandise [End Dec]",
+    price: "38.99",
     images: ["/images/Products/Accessories/MousePad1/MousePad2_1.png"],
     description: "Raiden Shogun Mousemat<br>\
     Material: Natural Rubber<br>\
@@ -829,18 +834,19 @@ export const mousepads = [
   }
 ];
 
-export const sale = [
+export const sales = [
     {
-      name: "[OFFICIAL PRE-ORDER] Genshin Impact Taste Of Summer Mirror [Early Dec]",
-      price:24.99,
+      name: "Genshin Impact Taste Of Summer Mirror",
+      before: "30.99",
+      price: "24.99",
       images: [
-        "/images/Sales/Sale1_1.png",
-        "/images/Sales/Sale1_2.png",
-        "/images/Sales/Sale1_3.png",
-        "/images/Sales/Sale1_4.png",
-        "/images/Sales/Sale1_5.png",
-        "/images/Sales/Sale1_6.png",
-        "/images/Sales/Sale1_7.png"
+        "/images/Products/Sales/Sale1_1.png",
+        "/images/Products/Sales/Sale1_2.png",
+        "/images/Products/Sales/Sale1_3.png",
+        "/images/Products/Sales/Sale1_4.png",
+        "/images/Products/Sales/Sale1_5.png",
+        "/images/Products/Sales/Sale1_6.png",
+        "/images/Products/Sales/Sale1_7.png"
       ],
       description: "Material: Acrylic, Glass <br>\
       <br>\
@@ -850,13 +856,14 @@ export const sale = [
        ShareShare on Facebook  TweetTweet on Twitter  Pin itPin on Pinterest",
     },
     {
-      name: "[OFFICIAL MERCHANDISE] Genshin Impact Traveler Character Badge",
-      price:6.99,
+      name: "Genshin Impact Traveler Character Badge",
+      before: "10.00",
+      price: "6.99",
       images: [
-        "/images/Sales/Sale2_1.png",
-        "/images/Sales/Sale2_2.png",
-        "/images/Sales/Sale2_3.png",
-        "/images/Sales/Sale2_4.png"
+        "/images/Products/Sales/Sale2_1.png",
+        "/images/Products/Sales/Sale2_2.png",
+        "/images/Products/Sales/Sale2_3.png",
+        "/images/Products/Sales/Sale2_4.png"
     ],
       description: "This is the badge listing for Paimon and [Traveler] characters. Check out our other listings for more characters!<br>\
       Diameter: 7.5CM<br>\
@@ -867,15 +874,16 @@ export const sale = [
       Paimon, Lumine, and Aether badges are estimated to be ready around End July 2022.",
     },
     {
-        name: "[OFFICIAL MERCHANDISE] Genshin impact Concert CD 2021 Set (Melodies of an Endless Journey)",
-        price: 179.99,
+        name: "Genshin impact Concert CD 2021 Set (Melodies of an Endless Journey)",
+        before: "200.00",
+        price: "179.99",
         images: [
-          "/images/Sales/Sale3_1.png",
-          "/images/Sales/Sale3_2.png",
-          "/images/Sales/Sale3_3.png",
-          "/images/Sales/Sale3_4.png",
-          "/images/Sales/Sale3_5.png",
-          "/images/Sales/Sale3_6.png"
+          "/images/Products/Sales/Sale3_1.png",
+          "/images/Products/Sales/Sale3_2.png",
+          "/images/Products/Sales/Sale3_3.png",
+          "/images/Products/Sales/Sale3_4.png",
+          "/images/Products/Sales/Sale3_5.png",
+          "/images/Products/Sales/Sale3_6.png"
       ],
         description: "The long awaited Concert CD set is finally here! <br>\
         <br>\
@@ -893,10 +901,11 @@ export const sale = [
         Price has been revised due to high international shipment cost (Bulky and heavy item)",
       },
       {
-        name: "[OFFICAL MERCHANDISE] Genshin FES 2021 Tote Bag",
-        price:28.99,
+        name: "Genshin FES 2021 Tote Bag",
+        before: "35.99",
+        price: "28.99",
         images: [
-          "/images/Sales/Sale4_1.png"
+          "/images/Products/Sales/Sale4_1.png"
       ],
         description: "Genshin Impact Tote Bag<br>\
         Material: Cotton and Polyester<br>\
@@ -904,14 +913,15 @@ export const sale = [
         Length (including handle): 90cm",
       },
       {
-        name: "[OFFICIAL MERCHANDISE] Genshin Impact Airpods Pro Case",
-        price: 22.99,
+        name: "Genshin Impact Airpods Pro Case",
+        before:"24.99",
+        price: "22.99",
         images: [
-          "/images/Sales/Sale5_1.png",
-          "/images/Sales/Sale5_2.png",
-          "/images/Sales/Sale5_3.png",
-          "/images/Sales/Sale5_4.png",
-          "/images/Sales/Sale5_5.png"
+          "/images/Products/Sales/Sale5_1.png",
+          "/images/Products/Sales/Sale5_2.png",
+          "/images/Products/Sales/Sale5_3.png",
+          "/images/Products/Sales/Sale5_4.png",
+          "/images/Products/Sales/Sale5_5.png"
       ],
         description: "Genshin Impact Airpods Pro Protective Casing<br>\
         Material: PVC<br>\
