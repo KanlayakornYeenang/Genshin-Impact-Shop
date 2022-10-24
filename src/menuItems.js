@@ -28,12 +28,12 @@ export const apparel = [
   {
     title: "Tops",
     url: "/apparel/tops",
-    pic: "1.jpg"
+    pic: "images/1.jpg"
   },
   {
     title: "Bottoms",
     url: "/apparel/bottoms",
-    pic: "./images/Products/Apparel/Tops/1.jpg"
+    pic: "/images/1.jpg"
   }
 ]
 
