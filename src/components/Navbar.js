@@ -38,9 +38,12 @@ const TabsExpends = (props) => {
             return <a href={menu.url}>{menu.title}</a>;
           })}
         </div>
-        <div className="expends_item">
+        <div className="expends_item_img">
           {props.menu[props.menu.length - 1].pic.map((pic) => (
             <img src={pic} />
+          ))}
+          {props.menu[props.menu.length - 1].pictitle.map((pictitle) => (
+            <p>{pictitle}</p>
           ))}
         </div>
       </div>
@@ -64,7 +67,7 @@ const TabsExpends = (props) => {
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
         >
-          <Expends menu={props.menu} pic={props.pic} />
+          <Expends menu={props.menu} />
         </div>
       ) : null}
     </div>

@@ -34,6 +34,10 @@ export const apparel = [
     url: "/apparel/bottoms",
   },
   {
+    pictitle: [
+      "Xiao Series Long Sleeve Shirt",
+      "Genshin Impact Baal Themed T-shirt",
+    ],
     pic: [
       "/images/products/apparel/tops/1.jpg",
       "/images/products/apparel/tops/2.jpg",
@@ -47,6 +51,10 @@ export const collectibles = [
     url: "/collectibles/badges",
   },
   {
+    pictitle: [
+      "Xiao Series Long Sleeve Shirt",
+      "Genshin Impact Baal Themed T-shirt",
+    ],
     pic: [
       "/images/products/apparel/tops/1.jpg",
       "/images/products/apparel/tops/2.jpg",
@@ -64,6 +72,10 @@ export const accessories = [
     url: "/accessories/mousepad",
   },
   {
+    pictitle: [
+      "Xiao Series Long Sleeve Shirt",
+      "Genshin Impact Baal Themed T-shirt",
+    ],
     pic: [
       "/images/products/apparel/tops/1.jpg",
       "/images/products/apparel/tops/2.jpg",

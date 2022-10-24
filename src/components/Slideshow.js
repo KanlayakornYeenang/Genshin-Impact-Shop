@@ -3,29 +3,26 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 const images = [
+  // {
+  //   original:
+  //     "https://pbs.twimg.com/media/FcyM4rWakAIN0KR?format=jpg&name=4096x4096",
+  // },
+  // {
+  //   original:
+  //     "https://pbs.twimg.com/media/FcyM4rSacAMnJbS?format=jpg&name=4096x4096",
+  // },
+  // {
+  //   original:
+  //     "https://pbs.twimg.com/media/FcyM4rSaAAEMTJc?format=jpg&name=4096x4096",
+  // },
   {
-    original:
-      "https://pbs.twimg.com/media/FcyM4rWakAIN0KR?format=jpg&name=4096x4096",
+    original:"/images/Slideshow/1.jpg"
   },
   {
-    original:
-      "https://pbs.twimg.com/media/FcyM4rSacAMnJbS?format=jpg&name=4096x4096",
+    original:"/images/Slideshow/2.jpg"
   },
   {
-    original:
-      "https://pbs.twimg.com/media/FcyM4rSaAAEMTJc?format=jpg&name=4096x4096",
-  },
-  {
-    original:"/images/Travelers.jpg"
-  },
-  {
-    original:"/images/Archons.jpg"
-  },
-  {
-    original:"/images/loadingscreen.png"
-  },
-  {
-    original:"/images/Main.jpg"
+    original:"/images/Slideshow/3.jpg"
   },
 ];
 
