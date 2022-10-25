@@ -1,17 +1,19 @@
-.header-photo img{
-    width: 100%;
+.header-photo{
+    background-image: url("/public/images/HeaderPhoto.jpg");
+    background-position: 0vw -12vw;
+    background-size: cover;
+    width: 100vw;
     height: 20vw;
-    object-fit: cover;
-    object-position: 0% -12vw;
     margin-top: 10vh;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .header-photo h1{
-    position: absolute;
-    top: 11vw;
-    left: 10vw;
     color: #fff;
     font-size: 5vw;
+    padding-left: 7vw;
 }
 
 .header-photo h1:hover{

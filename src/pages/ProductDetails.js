@@ -3,14 +3,14 @@ import Header from "../components/Header";
 import ShowPath from "../components/ShowPath";
 import { MyGalleryProducts } from "../components/Slideshow";
 import Footer from "../components/Footer";
+import "../components/ProductDetails.css";
 
-// const Details = (props) => {
-//   return (
-//     <div>
-//       <img src={props.products.images[0]} />
-//     </div>
-//   );
-// };
+const Details = (props) => {
+  return (
+    <svg height="210" width="500">
+    </svg>
+  );
+};
 
 const ProductDetails = (props) => {
   let images = [];
@@ -21,11 +21,13 @@ const ProductDetails = (props) => {
     <div>
       <Header />
       <ShowPath />
-      {/* <Details products={props.products} /> */}
       <div className="product-details">
         <MyGalleryProducts images={images} />
+        <Details products={props.products} />
       </div>
-      <Footer/>
+      <div className="footer-wrapper">
+        <Footer />
+      </div>
     </div>
   );
 };

@@ -3,20 +3,18 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import HeaderPhoto from "../components/HeaderPhoto";
 import { ProductElements } from "../components/ProductWrapper";
-import {badges} from "../data/ProductList";
 
-const Badges = () => {
+const CollectiblesProduct = (props) => {
     return (
         <div>
             <Header />
-            <HeaderPhoto text="Badges" />
+            <HeaderPhoto text={props.text} />
             <div className="frame-wrapper">
-                <ProductElements  product={badges} length={badges.length}/>
+                <ProductElements  product={props.product} length={props.product.length}/>
             </div>
             <Footer />
         </div>
-
     );
 }
 
-export default Badges;
+export default CollectiblesProduct;

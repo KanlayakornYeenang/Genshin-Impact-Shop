@@ -5,6 +5,9 @@ import { FaSearch } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
 import { accessories, apparel, collectibles } from "../data/menuItems";
 
+
+// แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
+
 const Tabs = (props) => {
   const [isHovering, setIsHovering] = useState(false);
   const handleMouseOut = () => {
@@ -97,9 +100,9 @@ const Navbar = () => {
           <input id="search" type="text" placeholder="SEARCH" />
           <FaSearch style={{ color: "#ffffff", fontSize: "0.85vw" }} />
         </div>
-        <div id="cart-wrapper">
+        <a id="cart-wrapper" href="/cart">
           <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
-        </div>
+        </a>
         <Tabs url="/signin" title="SIGN IN" />
       </div>
     </nav>

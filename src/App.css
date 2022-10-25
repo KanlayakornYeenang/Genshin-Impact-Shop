@@ -25,6 +25,7 @@ a {
 }
 
 .nav-area {
+  top: 0;
   width: 100vw;
   height: 10vh;
   background-color: #111111;
@@ -152,12 +153,13 @@ nav {
   object-position: top;
 }
 
-.home .image-gallery-left-nav, .home .image-gallery-right-nav {
+.home .image-gallery-left-nav,
+.home .image-gallery-right-nav {
   margin-top: 10vh;
 }
 
 .path-wrapper {
-  position: absolute;
+  position: relative;
   width: 100vw;
   height: 7vh;
   background-color: #292929;
@@ -172,29 +174,14 @@ nav {
   padding: 0vw 0.5vw;
 }
 
+.path-wrapper a {
+  transition: 0.1s linear;
+}
+
 .path-section {
   padding: 0vw 0.25vw;
 }
 
-.product-details .image-gallery-wrapper {
-  width: 40vw;
-}
-
-.product-details .left {
-}
-
-.product-details .image-gallery-thumbnails-container {
-  grid-template-columns: auto;
-  gap: 0;
-}
-
-.product-details {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  margin-top: 17vh;
-  width: 100vw;
-  height: 83vh;
-  background-color: #e7e6e3;
+.path-wrapper a:hover {
+  transform: translateY(15%);
 }

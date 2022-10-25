@@ -3,6 +3,7 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import { bottoms } from "../data/ProductList";
 
+//รูปภาพหน้า Home ที่ Slide ไปเรื่อยๆ
 class MyGallery extends React.Component {
   render() {
     return (
@@ -30,7 +31,6 @@ export class MyGalleryProducts extends React.Component {
           showThumbnails={true}
           thumbnailPosition={"left"}
           showPlayButton={false}
-          showBullets={true}
         />
       </div>
     );

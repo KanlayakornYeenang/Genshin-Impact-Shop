@@ -1,15 +1,9 @@
 import Product from "./Product";
 import ProductSale from "./ProductSale";
-import {
-  tops,
-  bottoms,
-  sales,
-  badges,
-  pins,
-  standees,
-  plush,
-} from "../data/ProductList";
+import {tops, bottoms, sales, badges, pins, standees, plush} from "../data/ProductList";
 import "./ProductWrapper.css";
+
+//รายการสินค้าทั้งหมดโดยนำข้อมูลใน JSON มา Map แล้วนำข้อมูลออกมาแสดง
 
 export const ProductElements = (props) => {
   return props.product.slice(0, props.length).map((list) => {
@@ -17,7 +11,7 @@ export const ProductElements = (props) => {
   });
 };
 
-const ProductElementsSales = (props) => {
+export const ProductElementsSales = (props) => {
   return props.product.slice(0, props.length).map((list) => {
     return <ProductSale list={list} />;
   });

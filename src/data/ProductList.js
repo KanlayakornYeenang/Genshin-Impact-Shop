@@ -11,30 +11,30 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top1_5.png"
     ],
     description:
-      "Theme Print Material: 65% Cotton, 35% Polyester<br>\
-        Shirt Material: 100% Cotton<br>\
-        <br>\
-        Size Estimate: Refer to the chart <br>\
-        <br>\
-        <br>\
-        - - - - - - - -<br>\
-        Product Care:<br>\
-        <br>\
-        1. Washing machine, hand wash safe. DO NOT dry wash<br>\
-        <br>\
-        2. Wash at 30 degrees celcius, use PH neutral detergents<br>\
-        <br>\
-        3. No bleaching, dry in a cool and shady place<br>\
-        <br>\
-        4. Iron not hotter than 110 degrees celcius, cloth ironing is recommended, do not iron directly on top of the prints.<br>\
-        <br>\
-        5. Do not wash with other clothing in case of discoloration<br>\
-        <br>\
-        6. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints<br>\
-        <br>\
-        <<Product care translated from the flagship store's infographics>><br>\
-        <br>\
-        - - - - - - - -<br>\
+      "Theme Print Material: 65% Cotton, 35% Polyester\n\
+        Shirt Material: 100% Cotton\n\
+        \n\
+        Size Estimate: Refer to the chart \n\
+        \n\
+        \n\
+        - - - - - - - -\n\
+        Product Care:\n\
+        \n\
+        1. Washing machine, hand wash safe. DO NOT dry wash\n\
+        \n\
+        2. Wash at 30 degrees celcius, use PH neutral detergents\n\
+        \n\
+        3. No bleaching, dry in a cool and shady place\n\
+        \n\
+        4. Iron not hotter than 110 degrees celcius, cloth ironing is recommended, do not iron directly on top of the prints.\n\
+        \n\
+        5. Do not wash with other clothing in case of discoloration\n\
+        \n\
+        6. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints\n\
+        \n\
+        <<Product care translated from the flagship store's infographics>>\n\
+        \n\
+        - - - - - - - -\n\
         No returns or exchanges are allowed for this product.",
         id: "genshin-impact-concert-t-shirt"
   },
@@ -50,29 +50,29 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top2_5.png"
     ],
     description:
-      "Theme Print Material: 59% Cotton, 41% Polyester<br>\
-        Blank Material: 66% Cotton, 34% Polyester <br>\
-        <br>\
-        Size Estimate: Refer to the chart <br>\
-        <br>\
-        - - - - - - - -<br>\
-        Product Care:<br>\
-        <br>\
-        1. Washing machine, hand wash safe. DO NOT dry wash<br>\
-        <br>\
-        2. Wash at 30 degrees celcius, use PH neutral detergents<br>\
-        <br>\
-        3. No bleaching, dry in a cool and shady place<br>\
-        <br>\
-        4. Iron not hotter than 110 degrees celcius, cloth ironing is recommended, do not iron directly on top of the prints.<br>\
-        <br>\
-        5. Do not wash with other clothing in case of discoloration<br>\
-        <br>\
-        6. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints<br>\
-        <br>\
-        <<Product care translated from the flagship store's infographics>><br>\
-        <br>\
-        - - - - - - - -<br>\
+      "Theme Print Material: 59% Cotton, 41% Polyester\n\
+        Blank Material: 66% Cotton, 34% Polyester \n\
+        \n\
+        Size Estimate: Refer to the chart \n\
+        \n\
+        - - - - - - - -\n\
+        Product Care:\n\
+        \n\
+        1. Washing machine, hand wash safe. DO NOT dry wash\n\
+        \n\
+        2. Wash at 30 degrees celcius, use PH neutral detergents\n\
+        \n\
+        3. No bleaching, dry in a cool and shady place\n\
+        \n\
+        4. Iron not hotter than 110 degrees celcius, cloth ironing is recommended, do not iron directly on top of the prints.\n\
+        \n\
+        5. Do not wash with other clothing in case of discoloration\n\
+        \n\
+        6. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints\n\
+        \n\
+        <<Product care translated from the flagship store's infographics>>\n\
+        \n\
+        - - - - - - - -\n\
         No returns or exchanges are allowed for this product.",
   },
   {
@@ -87,35 +87,35 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top3_5.png"
     ],
     description:
-      "Shirt Material: 100% Cotton<br>\
-        <br>\
-        Size Estimate: Refer to the chart <br>\
-        <br>\
-        Sizes are taken from Flagship Store<br>\
-        <br>\
-        Do allow for discrepancies in measurement (up to 3cm difference).<br>\
-        <br>\
-        - - - - - - - -<br>\
-        Product Care:<br>\
-        <br>\
-        1. Please refer to the washing label before proceeding<br>\
-        <br>\
-        2. For washing both sides, please separate when washing the darker side<br>\
-        <br>\
-        3. No soaking of product<br>\
-        <br>\
-        4. Recommended to be washed before wearing<br>\
-        <br>\
-        5. As it contains prints, it's recommended to wash it inverted (With the prints inside) <br>\
-        <br>\
-        6. Do not apply high heat over printed areas <br>\
-        <br>\
-        7. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints<br>\
-        <br>\
-        8. The product may be a little furry after washing<br>\
-        <br>\
-        <<Product care translated from the flagship store's infographics>><br>\
-        - - - - - - - -<br>\
+      "Shirt Material: 100% Cotton\n\
+        \n\
+        Size Estimate: Refer to the chart \n\
+        \n\
+        Sizes are taken from Flagship Store\n\
+        \n\
+        Do allow for discrepancies in measurement (up to 3cm difference).\n\
+        \n\
+        - - - - - - - -\n\
+        Product Care:\n\
+        \n\
+        1. Please refer to the washing label before proceeding\n\
+        \n\
+        2. For washing both sides, please separate when washing the darker side\n\
+        \n\
+        3. No soaking of product\n\
+        \n\
+        4. Recommended to be washed before wearing\n\
+        \n\
+        5. As it contains prints, it's recommended to wash it inverted (With the prints inside) \n\
+        \n\
+        6. Do not apply high heat over printed areas \n\
+        \n\
+        7. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints\n\
+        \n\
+        8. The product may be a little furry after washing\n\
+        \n\
+        <<Product care translated from the flagship store's infographics>>\n\
+        - - - - - - - -\n\
         No returns or exchanges are allowed for this product.",
   },
   {
@@ -130,29 +130,29 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top4_5.png"
     ],
     description:
-      "Theme Print Material: 100% Cotton<br>\
-        Blank Material: 66% Cotton, 34% Polyester <br>\
-        <br>\
-        Size Estimate: Refer to the chart <br>\
-        <br>\
-        - - - - - - - -<br>\
-        Product Care:<br>\
-        <br>\
-        1. Washing machine, hand wash safe. DO NOT dry wash<br>\
-        <br>\
-        2. Wash at 30 degrees celcius, use PH neutral detergents<br>\
-        <br>\
-        3. No bleaching, Dry in a cool and shady place<br>\
-        <br>\
-        4. Iron not hotter than 110 degrees celcius, cloth ironing is recommended, do not iron directly on top of the prints.<br>\
-        <br>\
-        5. Do not wash with other clothing in case of discoloration<br>\
-        <br>\
-        6. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints<br>\
-        <br>\
-        <<Product care translated from the flagship store's infographics>><br>\
-        <br>\
-        - - - - - - - -<br>\
+      "Theme Print Material: 100% Cotton\n\
+        Blank Material: 66% Cotton, 34% Polyester \n\
+        \n\
+        Size Estimate: Refer to the chart \n\
+        \n\
+        - - - - - - - -\n\
+        Product Care:\n\
+        \n\
+        1. Washing machine, hand wash safe. DO NOT dry wash\n\
+        \n\
+        2. Wash at 30 degrees celcius, use PH neutral detergents\n\
+        \n\
+        3. No bleaching, Dry in a cool and shady place\n\
+        \n\
+        4. Iron not hotter than 110 degrees celcius, cloth ironing is recommended, do not iron directly on top of the prints.\n\
+        \n\
+        5. Do not wash with other clothing in case of discoloration\n\
+        \n\
+        6. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints\n\
+        \n\
+        <<Product care translated from the flagship store's infographics>>\n\
+        \n\
+        - - - - - - - -\n\
         No returns or exchanges are allowed for this product.",
   },
   {
@@ -167,38 +167,38 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top5_5.png"
     ],
     description:
-      "Shirt Material: 100% Cotton<br>\
-        <br>\
-        Size Estimate: Refer to the chart <br>\
-        <br>\
-        Sizes are taken from Flagship Store<br>\
-        <br>\
-        Do allow for discrepancies in measurement (up to 3cm difference).<br>\
-        <br>\
-        For the animated print design, the print will look different from different angles<br>\
-        - - - - - - - -<br>\
-        Product Care:<br>\
-        <br>\
-        1. Please refer to the washing label before proceeding<br>\
-        <br>\
-        2. For washing both sides, please separate when washing the darker side<br>\
-        <br>\
-        3. No soaking of product<br>\
-        <br>\
-        4. Recommended to be washed before wearing<br>\
-        <br>\
-        5. As it contains prints, it's recommended to wash it inverted (With the prints inside) <br>\
-        <br>\
-        6. Do not apply high heat over printed areas <br>\
-        <br>\
-        7. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints<br>\
-        <br>\
-        8. The product may be a little furry after washing<br>\
-        <br>\
-        9. For the animated print, wash as per normal but do not rub it with force<br>\
-        <br>\
-        <<Product care translated from the flagship store's infographics>><br>\
-        - - - - - - - -<br>\
+      "Shirt Material: 100% Cotton\n\
+        \n\
+        Size Estimate: Refer to the chart \n\
+        \n\
+        Sizes are taken from Flagship Store\n\
+        \n\
+        Do allow for discrepancies in measurement (up to 3cm difference).\n\
+        \n\
+        For the animated print design, the print will look different from different angles\n\
+        - - - - - - - -\n\
+        Product Care:\n\
+        \n\
+        1. Please refer to the washing label before proceeding\n\
+        \n\
+        2. For washing both sides, please separate when washing the darker side\n\
+        \n\
+        3. No soaking of product\n\
+        \n\
+        4. Recommended to be washed before wearing\n\
+        \n\
+        5. As it contains prints, it's recommended to wash it inverted (With the prints inside) \n\
+        \n\
+        6. Do not apply high heat over printed areas \n\
+        \n\
+        7. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints\n\
+        \n\
+        8. The product may be a little furry after washing\n\
+        \n\
+        9. For the animated print, wash as per normal but do not rub it with force\n\
+        \n\
+        <<Product care translated from the flagship store's infographics>>\n\
+        - - - - - - - -\n\
         No returns or exchanges are allowed for this product.",
   },
   {
@@ -213,49 +213,50 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top6_5.png"
     ],
     description:
-      "Material: Cotton<br>\
-        <br>\
-        Size Estimate: Refer to the chart <br>\
-        <br>\
-        Sizes are taken from The Flagship Store<br>\
-        Do allow for discrepancies in measurement (up to 3cm difference).<br>\
-        <br>\
-        - - - - - - - -<br>\
-        <br>\
-        Product Care:<br>\
-        <br>\
-        1. Please refer to the washing label before proceeding<br>\
-        <br>\
-        2. For washing both sides, please separate when washing the darker side<br>\
-        <br>\
-        3. No soaking of product<br>\
-        <br>\
-        4. Recommended to be washed before wearing<br>\
-        <br>\
-        5. As it contains prints, it's recommended to wash it inverted (With the prints inside) <br>\
-        <br>\
-        6. Do not apply high heat over printed areas <br>\
-        <br>\
-        7. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints<br>\
-        <br>\
-        8. The product may be a little furry after washing<br>\
-        <br>\
-        <<Product care translated from the flagship store's infographics>><br>\
-        <br>\
-        - - - - - - - -<br>\
-        <br>\
-        No returns or exchanges are allowed for this product.<br>\
-        <br>\
-        This product is expected to be ready around Early January 2023.<br>\
-        <br>\
-        'Earlybird' code is not available for this product.<br>\
-        <br>\
+      "Material: Cotton\n\
+        \n\
+        Size Estimate: Refer to the chart \n\
+        \n\
+        Sizes are taken from The Flagship Store\n\
+        Do allow for discrepancies in measurement (up to 3cm difference).\n\
+        \n\
+        - - - - - - - -\n\
+        \n\
+        Product Care:\n\
+        \n\
+        1. Please refer to the washing label before proceeding\n\
+        \n\
+        2. For washing both sides, please separate when washing the darker side\n\
+        \n\
+        3. No soaking of product\n\
+        \n\
+        4. Recommended to be washed before wearing\n\
+        \n\
+        5. As it contains prints, it's recommended to wash it inverted (With the prints inside) \n\
+        \n\
+        6. Do not apply high heat over printed areas \n\
+        \n\
+        7. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints\n\
+        \n\
+        8. The product may be a little furry after washing\n\
+        \n\
+        <<Product care translated from the flagship store's infographics>>\n\
+        \n\
+        - - - - - - - -\n\
+        \n\
+        No returns or exchanges are allowed for this product.\n\
+        \n\
+        This product is expected to be ready around Early January 2023.\n\
+        \n\
+        'Earlybird' code is not available for this product.\n\
+        \n\
         Xiao Keychain gift is subjected to availability",
   },
 ];
 
 export const bottoms = [
   {
+    url: "/apparel/bottoms/genshin_impact_yoimiya_themed_cargo_shorts",
     name: "Genshin Impact Yoimiya Themed Cargo Shorts",
     price: "60.99",
     images: [
@@ -266,42 +267,43 @@ export const bottoms = [
       "/images/Products/Apparel/Bottoms/Bottom1_5.png"
     ],
     description:
-      "Shorts Material: 100% Cotton<br>\
-        <br>\
-        Size Estimate: Refer to the chart <br>\
-        <br>\
-        Sizes are taken from Flagship Store<br>\
-        <br>\
-        Do allow for discrepancies in measurement (up to 3cm difference).<br>\
-        <br>\
-        - - - - - - - -<br>\
-        Product Care:<br>\
-        <br>\
-        1. Please refer to the washing label before proceeding<br>\
-        <br>\
-        2. For washing both sides, please separate when washing the darker side<br>\
-        <br>\
-        3. No soaking of product<br>\
-        <br>\
-        4. Recommended to be washed before wearing<br>\
-        <br>\
-        5. As it contains prints, it's recommended to wash it inverted (With the prints inside) <br>\
-        <br>\
-        6. Do not apply high heat over printed areas <br>\
-        <br>\
-        7. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints<br>\
-        <br>\
-        8. Please remove the braided accessories attached to the pants before washing.<br>\
-        <br>\
-        9. Avoid putting sharp or pointed object in the TPU pocket as it may damage it<br>\
-        <br>\
-        <<Product care translated from the flagship store's infographics>><br>\
-        - - - - - - - -<br>\
-        No returns or exchanges are allowed for this product.<br>\
-        <br>\
+      "Shorts Material: 100% Cotton\n\
+        \n\
+        Size Estimate: Refer to the chart \n\
+        \n\
+        Sizes are taken from Flagship Store\n\
+        \n\
+        Do allow for discrepancies in measurement (up to 3cm difference).\n\
+        \n\
+        - - - - - - - -\n\
+        Product Care:\n\
+        \n\
+        1. Please refer to the washing label before proceeding\n\
+        \n\
+        2. For washing both sides, please separate when washing the darker side\n\
+        \n\
+        3. No soaking of product\n\
+        \n\
+        4. Recommended to be washed before wearing\n\
+        \n\
+        5. As it contains prints, it's recommended to wash it inverted (With the prints inside) \n\
+        \n\
+        6. Do not apply high heat over printed areas \n\
+        \n\
+        7. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints\n\
+        \n\
+        8. Please remove the braided accessories attached to the pants before washing.\n\
+        \n\
+        9. Avoid putting sharp or pointed object in the TPU pocket as it may damage it\n\
+        \n\
+        <<Product care translated from the flagship store's infographics>>\n\
+        - - - - - - - -\n\
+        No returns or exchanges are allowed for this product.\n\
+        \n\
         Yoimiya badge gift is subject to availability",
   },
   {
+    url: "/apparel/bottoms/genshin_impact_baal_themed_cargo_shorts",
     name: "Genshin Impact Baal Themed Cargo Shorts",
     price: "60.99",
     images: [
@@ -312,47 +314,48 @@ export const bottoms = [
       "/images/Products/Apparel/Bottoms/Bottom2_5.png"
     ],
     description:
-      "Shorts Material: 32% Cotton 68% polyester<br>\
-        <br>\
-        Size Estimate: Refer to the chart <br>\
-        <br>\
-        Sizes are taken from Flagship Store<br>\
-        <br>\
-        Do allow for discrepancies in measurement (up to 3cm difference).<br>\
-        <br>\
-        - - - - - - - -<br>\
-        Product Care:<br>\
-        <br>\
-        1. Please refer to the washing label before proceeding<br>\
-        <br>\
-        2. For washing both sides, please separate when washing the darker side<br>\
-        <br>\
-        3. No soaking of product<br>\
-        <br>\
-        4. Recommended to be washed before wearing<br>\
-        <br>\
-        5. As it contains prints, it's recommended to wash it inverted (With the prints inside) <br>\
-        <br>\
-        6. Do not apply high heat over printed areas and the TPU pocket<br>\
-        <br>\
-        7. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints<br>\
-        <br>\
-        8. Please remove the metal accessories attached to the pants before washing.<br>\
-        <br>\
-        9. Avoid putting sharp or pointed object in the TPU pocket as it may damage it<br>\
-        <br>\
-        10. The TPU pocket may be slightly out of shape after washing, you may use a steam iron to flatten it.<br>\
-        <br>\
-        <<Product care translated from the flagship store's infographics>><br>\
-        - - - - - - - -<br>\
-        No returns or exchanges are allowed for this product.<br>\
-        <br>\
+      "Shorts Material: 32% Cotton 68% polyester\n\
+        \n\
+        Size Estimate: Refer to the chart \n\
+        \n\
+        Sizes are taken from Flagship Store\n\
+        \n\
+        Do allow for discrepancies in measurement (up to 3cm difference).\n\
+        \n\
+        - - - - - - - -\n\
+        Product Care:\n\
+        \n\
+        1. Please refer to the washing label before proceeding\n\
+        \n\
+        2. For washing both sides, please separate when washing the darker side\n\
+        \n\
+        3. No soaking of product\n\
+        \n\
+        4. Recommended to be washed before wearing\n\
+        \n\
+        5. As it contains prints, it's recommended to wash it inverted (With the prints inside) \n\
+        \n\
+        6. Do not apply high heat over printed areas and the TPU pocket\n\
+        \n\
+        7. Prints may wear off after several washes. Please be gentle when scrubbing/washing the prints\n\
+        \n\
+        8. Please remove the metal accessories attached to the pants before washing.\n\
+        \n\
+        9. Avoid putting sharp or pointed object in the TPU pocket as it may damage it\n\
+        \n\
+        10. The TPU pocket may be slightly out of shape after washing, you may use a steam iron to flatten it.\n\
+        \n\
+        <<Product care translated from the flagship store's infographics>>\n\
+        - - - - - - - -\n\
+        No returns or exchanges are allowed for this product.\n\
+        \n\
         Yoimiya Badge gift is subjected to availability",
   }
 ];
 
 export const badges = [
   {
+    url: "/collectibles/badges/genshin_impact_taste_of_summer_badges",
     name: "Genshin Impact Taste of Summer Badges",
     price: "6.99",
     images: [
@@ -365,11 +368,12 @@ export const badges = [
       "/images/Products/Collectibles/Badges/Badge1_7.png"
     ],
     description:
-      "Badge<br>\
-        Material: Tin Plate<br>\
+      "Badge\n\
+        Material: Tin Plate\n\
         Size: 5.8 cm in diameter",
   },
   {
+    url: "/collectibles/badges/genshin_impact_chibi_badges",
     name: "Genshin Impact Chibi Badges",
     price: "6.99",
     images: [
@@ -382,13 +386,14 @@ export const badges = [
       "/images/Products/Collectibles/Badges/Badge2_7.png"
     ],
     description:
-      "Genshin Impact Chibi Badges<br>\
-        Material: Alloy<br>\
-        Diameter: 5.8cm<br>\
-        <br>\
+      "Genshin Impact Chibi Badges\n\
+        Material: Alloy\n\
+        Diameter: 5.8cm\n\
+        \n\
         Diluc and Childe badges are expected to be ready by End October 2022.",
   },
   {
+    url: "/collectibles/badges/genshin_impact_halloween_badge",
     name: "Genshin Impact Halloween Badge",
     price: "6.99",
     images: [
@@ -401,15 +406,16 @@ export const badges = [
       "/images/Products/Collectibles/Badges/Badge3_7.png"
     ],
     description:
-      "Genshin Impact Halloween Badges<br>\
-        Material: Alloy<br>\
-        Diameter: 5.8cm<br>\
+      "Genshin Impact Halloween Badges\n\
+        Material: Alloy\n\
+        Diameter: 5.8cm\n\
         'Earlybird' code is not applicable for this item.",
   }
 ];
 
 export const standees = [
   {
+    url: "/collectibles/standees/genshin_impact_halloween_standee",
     name: "Genshin Impact Halloween Standee",
     price: "16.99",
     images: [
@@ -422,16 +428,17 @@ export const standees = [
       "/images/Products/Collectibles/Standees/Standee1_7.png"
     ],
     description:
-      "Genshin Impact Halloween Standees<br>\
-        Material: Acrylic<br>\
-        Height: 81.4mm<br>\
-        Base: 80 x 40mm<br>\
-        <br>\
-        Xiao, Diluc, Hu Tao, and Tartaglia standees are expected to be ready by End August 2022.<br>\
-        <br>\
+      "Genshin Impact Halloween Standees\n\
+        Material: Acrylic\n\
+        Height: 81.4mm\n\
+        Base: 80 x 40mm\n\
+        \n\
+        Xiao, Diluc, Hu Tao, and Tartaglia standees are expected to be ready by End August 2022.\n\
+        \n\
         'Earlybird' code is not applicable for this item.",
   },
   {
+    url: "/collectibles/standees/genshin_impact_chibi_standees",
     name: "Genshin Impact Chibi Standees",
     price: "16.99",
     images: [
@@ -444,15 +451,16 @@ export const standees = [
       "/images/Products/Collectibles/Standees/Standee2_7.png"
     ],
     description:
-      "Genshin Impact Chibi Standees<br>\
-        Material: Acrylic<br>\
-        Size<br>\
-        Character: 6.5 x 5cm<br>\
-        Base: 5.7 x 8.2cm<br>\
-        <br>\
+      "Genshin Impact Chibi Standees\n\
+        Material: Acrylic\n\
+        Size\n\
+        Character: 6.5 x 5cm\n\
+        Base: 5.7 x 8.2cm\n\
+        \n\
         Gan Yu and Childe standees are estimated to be ready by End October 2022.",
   },
   {
+    url: "/collectibles/standees/special_character_phone_stands",
     name: "Special Character Phone Stands",
     price: "19.99",
     images: [
@@ -467,16 +475,17 @@ export const standees = [
       "/images/Products/Collectibles/Standees/Standee3_9.png"
     ],
     description:
-      "Material: High Quality Acrylic<br>\
-        Size: 110mm x 165mm<br>\
-        The Zhong Li phone stand is expected to ship out around End November 2022.<br>\
-        <br>\
+      "Material: High Quality Acrylic\n\
+        Size: 110mm x 165mm\n\
+        The Zhong Li phone stand is expected to ship out around End November 2022.\n\
+        \n\
         Place your order now to secure your favorite Genshin Impact merchandise!",
   }
 ];
 
 export const pins = [
   {
+    url: "/collectibles/pins/noblesse_oblige_artifact_pin",
     name: "Noblesse Oblige Artifact Pin",
     price: "18.99",
     images: [
@@ -486,27 +495,28 @@ export const pins = [
       "/images/Products/Collectibles/Pins/Pin1_4.png"
     ],
     description:
-      "Genshin Impact Artifact Metal Pin/Brooch<br>\
-        Material: Alloy<br>\
-        Flower of Life Pin<br>\
-        Feather: 30x33mm<br>\
-        Oval: 12x15mm<br>\
-        Length of whole pin: 250mm<br>\
-        Thickness: 1.2mm<br>\
-        Plume of Death Pin<br>\
-        Feather: 25x35mm<br>\
-        Oval: 12x15mm<br>\
-        Length of whole pin: 250mm<br>\
-        Thickness: 1.2mm<br>\
-        Circlet of Logos Pin <br>\
-        Feather: 24x32mm<br>\
-        Oval: 12x15mm<br>\
-        Length of whole pin: 250mm<br>\
-        Thickness: 1.2mm<br>\
-        <br>\
+      "Genshin Impact Artifact Metal Pin/Brooch\n\
+        Material: Alloy\n\
+        Flower of Life Pin\n\
+        Feather: 30x33mm\n\
+        Oval: 12x15mm\n\
+        Length of whole pin: 250mm\n\
+        Thickness: 1.2mm\n\
+        Plume of Death Pin\n\
+        Feather: 25x35mm\n\
+        Oval: 12x15mm\n\
+        Length of whole pin: 250mm\n\
+        Thickness: 1.2mm\n\
+        Circlet of Logos Pin \n\
+        Feather: 24x32mm\n\
+        Oval: 12x15mm\n\
+        Length of whole pin: 250mm\n\
+        Thickness: 1.2mm\n\
+        \n\
         Flower of Life Pin will only be available around Mid June 2022.",
   },
   {
+    url: "/collectibles/pins/shanghai_symphony_orchestra_collaboration_collection",
     name: "Shanghai Symphony Orchestra Collaboration Collection",
     price: "16.99",
     images: [
@@ -514,23 +524,24 @@ export const pins = [
       "/images/Products/Collectibles/Pins/Pin2_2.png"
     ],
     description:
-      "Shanghai Symphony Orchestra Collaboration Collection<br>\
-        <br>\
-        This collection is a collaboration with the Shanghai Symphony Orchestra. Thus, it's a fusion of both Genshin Impact's and Shanghai Symphony Orchestra's branding on the merchandise. All rights belong to Mihoyo and Shanghai Symphony Orchestra.<br>\
-        <br>\
-        <br>\
-        Details<br>\
-        <br>\
-        Tote bag:<br>\
-        Material: 100% Cotton (For exterior)<br>\
-        Size: 33 X 36 CM<br>\
-        <br>\
-        Venti Alloy Badge:<br>\
-        Material: Alloy Metal<br>\
-        Size: 45 X 50 MM (Character) <br>\
+      "Shanghai Symphony Orchestra Collaboration Collection\n\
+        \n\
+        This collection is a collaboration with the Shanghai Symphony Orchestra. Thus, it's a fusion of both Genshin Impact's and Shanghai Symphony Orchestra's branding on the merchandise. All rights belong to Mihoyo and Shanghai Symphony Orchestra.\n\
+        \n\
+        \n\
+        Details\n\
+        \n\
+        Tote bag:\n\
+        Material: 100% Cotton (For exterior)\n\
+        Size: 33 X 36 CM\n\
+        \n\
+        Venti Alloy Badge:\n\
+        Material: Alloy Metal\n\
+        Size: 45 X 50 MM (Character) \n\
         12 X 35 MM (Logo)",
   },
   {
+    url: "/collectibles/pins/wanderer's_troupe_jewellery",
     name: "Wanderer's Troupe Jewellery",
     price: "44.99",
     images: [
@@ -540,47 +551,48 @@ export const pins = [
       "/images/Products/Collectibles/Pins/Pin3_4.png"
     ],
     description:
-      "Wanderer's String-Kettle Necklace<br>\
-        Material: Plated Copper, Inlaid Zircon<br>\
-        Weight: Approx. 4.2g <br>\
-        Length of the Necklace: 420 mm<br>\
-        Length of the charm: 17.5 X 10 mm<br>\
-        Bard's Arrow Feather Enamel pin<br>\
-        Material:  Plated Copper, Inlaid Zircon<br>\
-        Weight: Approx. 4.1g <br>\
-        Length of item: 31.5 X 16 mm<br>\
-        Concert's Final Hour Adjustable Ring<br>\
-        Material:  Plated Copper, Inlaid Zircon<br>\
-        Weight: Approx. 4.1g <br>\
-        Inner Diameter: 15.9 ~ 18.2 MM<br>\
-        Inner Circumference: 50 ~ 57 MM<br>\
-        <br>\
-        PRODUCT CARE<br>\
-        - Avoid wearing it while showering, or letting it be in contact with any soap or detergent. It will corrode the surface jewellery.<br>\
-        <br>\
-        <br>\
-        - Avoid wearing out for activities which may induce lots of sweat. Sweat will affect the jewellery.<br>\
-        <br>\
-        <br>\
-        - Avoid getting in contact with chemical substances, aerosols, perfumes or make up.<br>\
-        <br>\
-        <br>\
-        - Avoid dropping or scratching your jewellery. It may scratch off the layer on the jewellery.<br>\
-        <br>\
-        <br>\
-        - For cleaning, use a soft cloth to clean. Avoid using rough cloths and avoid cleaning under running water.<br>\
-        <br>\
-        <br>\
-        - When not using, keep it in a cool and dry place.<br>\
-        <br>\
-        <br>\
-        - Avoid letting kids touch the jewellery.<br>\
-        <br>\
+      "Wanderer's String-Kettle Necklace\n\
+        Material: Plated Copper, Inlaid Zircon\n\
+        Weight: Approx. 4.2g \n\
+        Length of the Necklace: 420 mm\n\
+        Length of the charm: 17.5 X 10 mm\n\
+        Bard's Arrow Feather Enamel pin\n\
+        Material:  Plated Copper, Inlaid Zircon\n\
+        Weight: Approx. 4.1g \n\
+        Length of item: 31.5 X 16 mm\n\
+        Concert's Final Hour Adjustable Ring\n\
+        Material:  Plated Copper, Inlaid Zircon\n\
+        Weight: Approx. 4.1g \n\
+        Inner Diameter: 15.9 ~ 18.2 MM\n\
+        Inner Circumference: 50 ~ 57 MM\n\
+        \n\
+        PRODUCT CARE\n\
+        - Avoid wearing it while showering, or letting it be in contact with any soap or detergent. It will corrode the surface jewellery.\n\
+        \n\
+        \n\
+        - Avoid wearing out for activities which may induce lots of sweat. Sweat will affect the jewellery.\n\
+        \n\
+        \n\
+        - Avoid getting in contact with chemical substances, aerosols, perfumes or make up.\n\
+        \n\
+        \n\
+        - Avoid dropping or scratching your jewellery. It may scratch off the layer on the jewellery.\n\
+        \n\
+        \n\
+        - For cleaning, use a soft cloth to clean. Avoid using rough cloths and avoid cleaning under running water.\n\
+        \n\
+        \n\
+        - When not using, keep it in a cool and dry place.\n\
+        \n\
+        \n\
+        - Avoid letting kids touch the jewellery.\n\
+        \n\
         STRICTLY NO RETURNS ON THESE PRODUCTS.",
   }
 ];
 export const plush = [
   {
+    url: "/collectibles/plush/cryo_abyss_mage_plush_keychain",
     name: "Cryo Abyss Mage Plush Keychain",
     price: "28.99",
     images: [
@@ -589,10 +601,11 @@ export const plush = [
       "/images/Products/Collectibles/Plush/Plush1_3.png"
     ],
     description:
-      "Material: Environmentally Friendly PP Cotton<br>\
+      "Material: Environmentally Friendly PP Cotton\n\
         Size: 12 x 14cm",
   },
   {
+    url: "/collectibles/plush/taroumaru_plushie",
     name: "Taroumaru Plushie",
     price: "69.99",
     images: [
@@ -602,13 +615,14 @@ export const plush = [
       "/images/Products/Collectibles/Plush/Plush3_4.png"
     ],
     description:
-      "Place your order now to secure your favorite merchandise!<br>\
-        Body: Fine velvet, stuffed with environmentally-friendly PP cotton<br>\
-        Shirt: Canvas Fabric<br>\
-        Head Band: Cloth (Towel Cloth)<br>\
+      "Place your order now to secure your favorite merchandise!\n\
+        Body: Fine velvet, stuffed with environmentally-friendly PP cotton\n\
+        Shirt: Canvas Fabric\n\
+        Head Band: Cloth (Towel Cloth)\n\
         Size: 15 x 23 x 20cm ",
   },
   {
+    url: "/collectibles/plush/taroumaru_plushie",
     name: "Zhong Li Rex Lapis XL-Size Plushie [End Oct]",
     price: "119.99",
     images: [
@@ -618,18 +632,19 @@ export const plush = [
       "/images/Products/Collectibles/Plush/Plush2_4.png"
     ],
     description:
-      "Place your order now to secure your favorite merchandise!<br>\
-        Material: Polyester cover, stuffed with environmentally-friendly PP cotton<br>\
-        Size: 67 x 24 x 17cm<br>\
-        As this plushie is HUGE, we will be using express/expedited shipping options, hence the higher price.<br>\
-        <br>\
-        Item is estimated to ship out around End October 2022.<br>\
+      "Place your order now to secure your favorite merchandise!\n\
+        Material: Polyester cover, stuffed with environmentally-friendly PP cotton\n\
+        Size: 67 x 24 x 17cm\n\
+        As this plushie is HUGE, we will be using express/expedited shipping options, hence the higher price.\n\
+        \n\
+        Item is estimated to ship out around End October 2022.\n\
         'Earlybird' code is not applicable for this item.",
   }
 ];
 
 export const figures = [
   {
+    url: "/collectibles/figures/genshin_impact_paimon_1:7_figurine",
     name: "Genshin Impact Paimon 1:7 Figurine",
     price: "78.99",
     images: [
@@ -641,13 +656,14 @@ export const figures = [
       "/images/Products/Collectibles/Figures/Figure1_6.png"
     ],
     description:
-      "Height: 13.5 CM (14CM with Base)<br>\
-        Base Length: 8.5 CM Diameter<br>\
-        Material: PVC & ABS<br>\
-        <br>\
+      "Height: 13.5 CM (14CM with Base)\n\
+        Base Length: 8.5 CM Diameter\n\
+        Material: PVC & ABS\n\
+        \n\
         The figurine base is blue, not white.",
   },
   {
+    url: "/collectibles/figures/klee_jumpy_dumpty_rider_1:7_figurine_[mid_april]",
     name: "Klee Jumpy Dumpty Rider 1:7 Figurine [Mid April]",
     price: "260.0",
     images: [
@@ -659,23 +675,24 @@ export const figures = [
       "/images/Products/Collectibles/Figures/Figure2_6.png"
     ],
     description:
-      "Klee Jumpy Dumpty Rider 1:7 Figurine<br>\
-        <br>\
-        Height: 17.5 CM<br>\
-        <br>\
-        Length: 20 CM<br>\
-        <br>\
-        Width: 17 CM<br>\
-        <br>\
-        Material: PVC & ABS<br>\
-        <br>\
-        The current listing will be for figurine only. There will be no more gifts.<br>\
-        <br>\
-        <br>\
-        <br>\
+      "Klee Jumpy Dumpty Rider 1:7 Figurine\n\
+        \n\
+        Height: 17.5 CM\n\
+        \n\
+        Length: 20 CM\n\
+        \n\
+        Width: 17 CM\n\
+        \n\
+        Material: PVC & ABS\n\
+        \n\
+        The current listing will be for figurine only. There will be no more gifts.\n\
+        \n\
+        \n\
+        \n\
         To be ready to ship out around Mid April 2022.",
   },
   {
+    url: "/collectibles/figures/aether_nendoroid_[late_oct]",
     name: "Aether Nendoroid [Late Oct]",
     price: "95.99",
     images: [
@@ -685,22 +702,23 @@ export const figures = [
       "/images/Products/Collectibles/Figures/Figure3_4.png",
       "/images/Products/Collectibles/Figures/Figure3_5.png"
     ],
-    description: "Aether Nendoroid<br>\
-    Size: 100mm in Height<br>\
-    Material: PVC & ABS<br>\
-    Manufacturer: Good Smile Company<br>\
-    <br>\
-    <br>\
-    The shipment will include a free gift which is an Aether Rubber Keychain and the Nendoroid itself which is set to be shipped out in Late October 2022.<br>\
-    <br>\
-    We would recommend opting for expedited shipping to better ensure the safe arrival of your parcel.<br>\
-    <br>\
+    description: "Aether Nendoroid\n\
+    Size: 100mm in Height\n\
+    Material: PVC & ABS\n\
+    Manufacturer: Good Smile Company\n\
+    \n\
+    \n\
+    The shipment will include a free gift which is an Aether Rubber Keychain and the Nendoroid itself which is set to be shipped out in Late October 2022.\n\
+    \n\
+    We would recommend opting for expedited shipping to better ensure the safe arrival of your parcel.\n\
+    \n\
     'Earlybird' code is not applicable for this item.",
   }
 ];
 
 export const keychains = [
   {
+    url: "/collectibles/keychains/genshin_impact_weapon_keychain",
     name: "Genshin Impact Weapon Keychain",
     price: "14.99",
     images: [
@@ -713,18 +731,19 @@ export const keychains = [
       "/images/Products/Collectibles/Keychains/Keychain1_7.png",
       "/images/Products/Collectibles/Keychains/Keychain1_8.png"
     ],
-    description: "Material: Alloy<br>\
-    Dimensions<br>\
-    Skyward Harp: 6.6cm x 3cm<br>\
-    Wolf's Gravestone: 7.7cm x 3cm<br>\
-    Vortex Vanquisher: 1.6cm x 8cm<br>\
-    Song of Broken Pines: 2.2cm x 8cm<br>\
-    <br>\
-    Wolf's Gravestone and Skyward Harp keychains are estimated to be ready by Early April 2022.<br>\
-    <br>\
+    description: "Material: Alloy\n\
+    Dimensions\n\
+    Skyward Harp: 6.6cm x 3cm\n\
+    Wolf's Gravestone: 7.7cm x 3cm\n\
+    Vortex Vanquisher: 1.6cm x 8cm\n\
+    Song of Broken Pines: 2.2cm x 8cm\n\
+    \n\
+    Wolf's Gravestone and Skyward Harp keychains are estimated to be ready by Early April 2022.\n\
+    \n\
     Staff Of Homa and Cinnabar Spindle are estimated to be ready around Mid may 2022",
   },
   {
+    url: "/collectibles/keychains/metallic_character_keychain_2.0_[end_oct]",
     name: "Metallic Character Keychain 2.0 [End Oct]",
     price: "14.99",
     images: [
@@ -735,17 +754,18 @@ export const keychains = [
       "/images/Products/Collectibles/Keychains/Keychain2_5.png",
       "/images/Products/Collectibles/Keychains/Keychain2_6.png"
     ],
-    description: "Material: Premium Zinc Alloy<br>\
-    <br>\
-    Size: Varies according to character<br>\
-    Baal: 5.6 x 6.3 cm<br>\
-    Kokomi: 5.3 x 6.5 cm<br>\
-    Itto: 6.5 x 6.7 cm<br>\
-    Gorou: 6.1 x 6.9 cm<br>\
-    Sayu: 6.1 x 6.8 cm<br>\
+    description: "Material: Premium Zinc Alloy\n\
+    \n\
+    Size: Varies according to character\n\
+    Baal: 5.6 x 6.3 cm\n\
+    Kokomi: 5.3 x 6.5 cm\n\
+    Itto: 6.5 x 6.7 cm\n\
+    Gorou: 6.1 x 6.9 cm\n\
+    Sayu: 6.1 x 6.8 cm\n\
     Keychains are expected to ship out by End October 2022.",
   },
   {
+    url: "/collectibles/keychains/azhdaha_keychains",
     name: "Azhdaha Keychains",
     price: "19.99",
     images: [
@@ -757,16 +777,17 @@ export const keychains = [
       "/images/Products/Collectibles/Keychains/Keychain3_6.png",
       "/images/Products/Collectibles/Keychains/Keychain3_7.png"
     ],
-    description: "Azhdaha Keychains come in 2 variations:<br>\
-    - Angry Azhdaha (smooth)<br>\
-    - Confused Azhdaha (furry)<br>\
-    Material: Environmentally Friendly PP Cotton<br>\
+    description: "Azhdaha Keychains come in 2 variations:\n\
+    - Angry Azhdaha (smooth)\n\
+    - Confused Azhdaha (furry)\n\
+    Material: Environmentally Friendly PP Cotton\n\
     Size: 10.8cm X 9.5cm",
   }
 ];
 
 export const mugs = [
   {
+    url: "/accessories/mugs/gorou's_shiba_inu_mug_[end_sept]",
     name: "Gorou's Shiba Inu Mug [End Sept]",
     price: "63.99",
     images: [
@@ -776,15 +797,16 @@ export const mugs = [
       "/images/Products/Accessories/Mugs/Mug1_4.png",
       "/images/Products/Accessories/Mugs/Mug1_5.png"
     ],
-    description: "Gorou Shiba Inu Mug<br>\
-    Material: High-quality ceramic<br>\
-    Size: 126 x 121 x 148 mm, capacity of 370ml<br>\
-    Stirring rod: 155mm long, stainless steel rod with silicone flag<br>\
-    'Earlybird' code is not applicable for this item.<br>\
-    The item is expected to be shipped out around End September 2022.<br>\
+    description: "Gorou Shiba Inu Mug\n\
+    Material: High-quality ceramic\n\
+    Size: 126 x 121 x 148 mm, capacity of 370ml\n\
+    Stirring rod: 155mm long, stainless steel rod with silicone flag\n\
+    'Earlybird' code is not applicable for this item.\n\
+    The item is expected to be shipped out around End September 2022.\n\
     Place your order now to secure your favorite Genshin Impact merchandise!",
   },
   {
+    url: "/accessories/mugs/klee_jumpy_dumpty_mug_[end_july]",
     name: "Klee Jumpy Dumpty Mug [End July]",
     price: "49.99",
     images: [
@@ -795,48 +817,51 @@ export const mugs = [
       "/images/Products/Accessories/Mugs/Mug2_5.png",
       "/images/Products/Accessories/Mugs/Mug2_6.png"
     ],
-    description: "Material: High-quality ceramic<br>\
-    'Earlybird' code is not applicable for this item.<br>\
-    The item is expected to be shipped out around End July 2022.<br>\
+    description: "Material: High-quality ceramic\n\
+    'Earlybird' code is not applicable for this item.\n\
+    The item is expected to be shipped out around End July 2022.\n\
     Place your order now to secure your favorite Genshin Impact merchandise!",
   },
   {
+    url: "/accessories/mugs/klee_acrylic_coaster",
     name: "Klee Acrylic Coaster",
     price: "15.99",
     images: ["/images/Products/Accessories/Mugs/Mug3_1.png"],
-    description: "Material: Acrylic, oil filling, glitter<br>\
-    Size: 10cm diameter<br>\
-    <br>\
-    Perfect match for your Klee Mug!<br>\
-    <br>\
+    description: "Material: Acrylic, oil filling, glitter\n\
+    Size: 10cm diameter\n\
+    \n\
+    Perfect match for your Klee Mug!\n\
+    \n\
     Do note that the glitter inside is moveable! ",
   }
 ];
 
 export const mousepads = [
   {
+    url: "/accessories/mousepads/genshin_impact_themed_mouse_mat",
     name: "Genshin Impact Themed Mouse Mat",
     price: "38.99",
     images: [
-      "/images/Products/Accessories/MousePad1/MousePad1_1.png",
-      "/images/Products/Accessories/MousePad1/MousePad1_2.png",
-      "/images/Products/Accessories/MousePad1/MousePad1_3.png",
-      "/images/Products/Accessories/MousePad1/MousePad1_4.png",
-      "/images/Products/Accessories/MousePad1/MousePad1_5.png",
-      "/images/Products/Accessories/MousePad1/MousePad1_6.png"
+      "/images/Products/Accessories/MousePads/MousePad1_1.png",
+      "/images/Products/Accessories/MousePads/MousePad1_2.png",
+      "/images/Products/Accessories/MousePads/MousePad1_3.png",
+      "/images/Products/Accessories/MousePads/MousePad1_4.png",
+      "/images/Products/Accessories/MousePads/MousePad1_5.png",
+      "/images/Products/Accessories/MousePads/MousePad1_6.png"
     ],
-    description: "Size: 40cm X 70cm<br>\
-    Thickness: 4mm<br>\
+    description: "Size: 40cm X 70cm\n\
+    Thickness: 4mm\n\
     Material: Premium Natural Rubber",
   },
   {
+    url: "/accessories/mousepads/firefly_acg_convention_series_baal_merchandise_[end_dec]",
     name: "Firefly ACG Convention Series Baal Merchandise [End Dec]",
     price: "38.99",
-    images: ["/images/Products/Accessories/MousePad1/MousePad2_1.png"],
-    description: "Raiden Shogun Mousemat<br>\
-    Material: Natural Rubber<br>\
-    Size: 400 X 700 mm<br>\
-    Thickness: 3mm<br>\
+    images: ["/images/Products/Accessories/MousePads/MousePad2_1.png"],
+    description: "Raiden Shogun Mousemat\n\
+    Material: Natural Rubber\n\
+    Size: 400 X 700 mm\n\
+    Thickness: 3mm\n\
     The items are estimated to be ready to ship by End December 2022.",
   }
 ];
@@ -855,11 +880,11 @@ export const sales = [
         "/images/Products/Sales/Sale1_6.png",
         "/images/Products/Sales/Sale1_7.png"
       ],
-      description: "Material: Acrylic, Glass <br>\
-      <br>\
-      Size: 80 x 75 mm<br>\
-      <br>\
-      The item is expected to be ready by Early December 2022.<br>\
+      description: "Material: Acrylic, Glass \n\
+      \n\
+      Size: 80 x 75 mm\n\
+      \n\
+      The item is expected to be ready by Early December 2022.\n\
        ShareShare on Facebook  TweetTweet on Twitter  Pin itPin on Pinterest",
     },
     {
@@ -872,12 +897,12 @@ export const sales = [
         "/images/Products/Sales/Sale2_3.png",
         "/images/Products/Sales/Sale2_4.png"
     ],
-      description: "This is the badge listing for Paimon and [Traveler] characters. Check out our other listings for more characters!<br>\
-      Diameter: 7.5CM<br>\
-      Material: Tin Plate<br>\
-      <br>\
-      Use \"Badgelover\" when you buy 4 or more badges at 12% off!<br>\
-      <br>\
+      description: "This is the badge listing for Paimon and [Traveler] characters. Check out our other listings for more characters!\n\
+      Diameter: 7.5CM\n\
+      Material: Tin Plate\n\
+      \n\
+      Use \"Badgelover\" when you buy 4 or more badges at 12% off!\n\
+      \n\
       Paimon, Lumine, and Aether badges are estimated to be ready around End July 2022.",
     },
     {
@@ -892,19 +917,19 @@ export const sales = [
           "/images/Products/Sales/Sale3_5.png",
           "/images/Products/Sales/Sale3_6.png"
       ],
-        description: "The long awaited Concert CD set is finally here! <br>\
-        <br>\
-        Items in the set<br>\
-        1. Musical Score<br>\
-        2. Concert's coloured paper<br>\
-        3. Concert's Postcard<br>\
-        4. Concert's Pin<br>\
-        5. Concert's CD<br>\
-        <br>\
-        Sizing<br>\
-        365*260*100 mm<br>\
-        36.5*26*10 cm<br>\
-        <br>\
+        description: "The long awaited Concert CD set is finally here! \n\
+        \n\
+        Items in the set\n\
+        1. Musical Score\n\
+        2. Concert's coloured paper\n\
+        3. Concert's Postcard\n\
+        4. Concert's Pin\n\
+        5. Concert's CD\n\
+        \n\
+        Sizing\n\
+        365*260*100 mm\n\
+        36.5*26*10 cm\n\
+        \n\
         Price has been revised due to high international shipment cost (Bulky and heavy item)",
       },
       {
@@ -914,9 +939,9 @@ export const sales = [
         images: [
           "/images/Products/Sales/Sale4_1.png"
       ],
-        description: "Genshin Impact Tote Bag<br>\
-        Material: Cotton and Polyester<br>\
-        Size: 38x32cm<br>\
+        description: "Genshin Impact Tote Bag\n\
+        Material: Cotton and Polyester\n\
+        Size: 38x32cm\n\
         Length (including handle): 90cm",
       },
       {
@@ -930,10 +955,10 @@ export const sales = [
           "/images/Products/Sales/Sale5_4.png",
           "/images/Products/Sales/Sale5_5.png"
       ],
-        description: "Genshin Impact Airpods Pro Protective Casing<br>\
-        Material: PVC<br>\
-        Dodoco: 8.2 x 7.3 x 3.8 cm<br>\
-        Guoba: 8.8 x 7.7 x 3.9 cm<br>\
+        description: "Genshin Impact Airpods Pro Protective Casing\n\
+        Material: PVC\n\
+        Dodoco: 8.2 x 7.3 x 3.8 cm\n\
+        Guoba: 8.8 x 7.7 x 3.9 cm\n\
         Note: This item is strictly for the Airpods PRO model only.",
       }
   ];

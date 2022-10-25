@@ -1,6 +1,7 @@
 import React from "react";
 import "./Product.css";
 
+//Elements ของกรอบตัวอย่างรายการสินค้า 1 กล่องที่มีรูป ชื่อ และราคา และราคาที่ลดแล้ว
 const ProductSale = (props) => {
   return (
     <div className="frame">
