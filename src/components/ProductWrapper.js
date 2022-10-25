@@ -1,7 +1,21 @@
 import Product from "./Product";
 import ProductSale from "./ProductSale";
-import { tops, bottoms, sales, badges, pins, standees, plush } from "../data/ProductList";
+import {
+  tops,
+  bottoms,
+  sales,
+  badges,
+  pins,
+  standees,
+  plush,
+} from "../data/ProductList";
 import "./ProductWrapper.css";
+
+const ProductElements = (props) => {
+  return props.product.slice(0, props.length).map((list) => {
+    return <Product list={list} />;
+  });
+};
 
 const ProductElementsSales = (props) => {
   return props.product.slice(0, props.length).map((list) => {
