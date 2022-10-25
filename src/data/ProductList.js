@@ -1,5 +1,6 @@
 export const tops = [
   {
+    url: "/apparel/tops/genshin_impact_concert_t-shirt",
     name: "Genshin Impact Concert T-Shirt",
     price: "30.99",
     images: [
@@ -35,8 +36,10 @@ export const tops = [
         <br>\
         - - - - - - - -<br>\
         No returns or exchanges are allowed for this product.",
+        id: "genshin-impact-concert-t-shirt"
   },
   {
+    url: "/apparel/tops/genshin_impact_diluc_t-shirt",
     name: "Genshin Impact Diluc T-Shirt",
     price: "30.99",
     images: [
@@ -73,6 +76,7 @@ export const tops = [
         No returns or exchanges are allowed for this product.",
   },
   {
+    url: "/apparel/tops/genshin_impact_frolicking_flame_yoimiya_t-shirt",
     name: "Genshin Impact Frolicking Flame Yoimiya T-shirt",
     price: "41.99",
     images: [
@@ -115,6 +119,7 @@ export const tops = [
         No returns or exchanges are allowed for this product.",
   },
   {
+    url: "/apparel/tops/genshin_impact_klee_t-shirt",
     name: "Genshin Impact Klee T-Shirt",
     price: "30.99",
     images: [
@@ -151,6 +156,7 @@ export const tops = [
         No returns or exchanges are allowed for this product.",
   },
   {
+    url: "/apparel/tops/genshin_impact_baal_themed_t-shirt",
     name: "Genshin Impact Baal Themed T-shirt",
     price: "41.99",
     images: [
@@ -196,6 +202,7 @@ export const tops = [
         No returns or exchanges are allowed for this product.",
   },
   {
+    url: "/apparel/tops/xiao_series_long_sleeve_shirt",
     name: "Xiao Series Long Sleeve Shirt",
     price: "82.99",
     images: [
@@ -349,13 +356,13 @@ export const badges = [
     name: "Genshin Impact Taste of Summer Badges",
     price: "6.99",
     images: [
-      "/images/Products/Collectible/Badges/Badge1_1.png",
-      "/images/Products/Collectible/Badges/Badge1_2.png",
-      "/images/Products/Collectible/Badges/Badge1_3.png",
-      "/images/Products/Collectible/Badges/Badge1_4.png",
-      "/images/Products/Collectible/Badges/Badge1_5.png",
-      "/images/Products/Collectible/Badges/Badge1_6.png",
-      "/images/Products/Collectible/Badges/Badge1_7.png"
+      "/images/Products/Collectibles/Badges/Badge1_1.png",
+      "/images/Products/Collectibles/Badges/Badge1_2.png",
+      "/images/Products/Collectibles/Badges/Badge1_3.png",
+      "/images/Products/Collectibles/Badges/Badge1_4.png",
+      "/images/Products/Collectibles/Badges/Badge1_5.png",
+      "/images/Products/Collectibles/Badges/Badge1_6.png",
+      "/images/Products/Collectibles/Badges/Badge1_7.png"
     ],
     description:
       "Badge<br>\
@@ -366,13 +373,13 @@ export const badges = [
     name: "Genshin Impact Chibi Badges",
     price: "6.99",
     images: [
-      "/images/Products/Collectible/Badges/Badge2_1.png",
-      "/images/Products/Collectible/Badges/Badge2_2.png",
-      "/images/Products/Collectible/Badges/Badge2_3.png",
-      "/images/Products/Collectible/Badges/Badge2_4.png",
-      "/images/Products/Collectible/Badges/Badge2_5.png",
-      "/images/Products/Collectible/Badges/Badge2_6.png",
-      "/images/Products/Collectible/Badges/Badge2_7.png"
+      "/images/Products/Collectibles/Badges/Badge2_1.png",
+      "/images/Products/Collectibles/Badges/Badge2_2.png",
+      "/images/Products/Collectibles/Badges/Badge2_3.png",
+      "/images/Products/Collectibles/Badges/Badge2_4.png",
+      "/images/Products/Collectibles/Badges/Badge2_5.png",
+      "/images/Products/Collectibles/Badges/Badge2_6.png",
+      "/images/Products/Collectibles/Badges/Badge2_7.png"
     ],
     description:
       "Genshin Impact Chibi Badges<br>\
@@ -385,13 +392,13 @@ export const badges = [
     name: "Genshin Impact Halloween Badge",
     price: "6.99",
     images: [
-      "/images/Products/Collectible/Badges/Badge3_1.png",
-      "/images/Products/Collectible/Badges/Badge3_2.png",
-      "/images/Products/Collectible/Badges/Badge3_3.png",
-      "/images/Products/Collectible/Badges/Badge3_4.png",
-      "/images/Products/Collectible/Badges/Badge3_5.png",
-      "/images/Products/Collectible/Badges/Badge3_6.png",
-      "/images/Products/Collectible/Badges/Badge3_7.png"
+      "/images/Products/Collectibles/Badges/Badge3_1.png",
+      "/images/Products/Collectibles/Badges/Badge3_2.png",
+      "/images/Products/Collectibles/Badges/Badge3_3.png",
+      "/images/Products/Collectibles/Badges/Badge3_4.png",
+      "/images/Products/Collectibles/Badges/Badge3_5.png",
+      "/images/Products/Collectibles/Badges/Badge3_6.png",
+      "/images/Products/Collectibles/Badges/Badge3_7.png"
     ],
     description:
       "Genshin Impact Halloween Badges<br>\
@@ -406,13 +413,13 @@ export const standees = [
     name: "Genshin Impact Halloween Standee",
     price: "16.99",
     images: [
-      "/images/Products/Collectible/Standees/Standee1_1.png",
-      "/images/Products/Collectible/Standees/Standee1_2.png",
-      "/images/Products/Collectible/Standees/Standee1_3.png",
-      "/images/Products/Collectible/Standees/Standee1_4.png",
-      "/images/Products/Collectible/Standees/Standee1_5.png",
-      "/images/Products/Collectible/Standees/Standee1_6.png",
-      "/images/Products/Collectible/Standees/Standee1_7.png"
+      "/images/Products/Collectibles/Standees/Standee1_1.png",
+      "/images/Products/Collectibles/Standees/Standee1_2.png",
+      "/images/Products/Collectibles/Standees/Standee1_3.png",
+      "/images/Products/Collectibles/Standees/Standee1_4.png",
+      "/images/Products/Collectibles/Standees/Standee1_5.png",
+      "/images/Products/Collectibles/Standees/Standee1_6.png",
+      "/images/Products/Collectibles/Standees/Standee1_7.png"
     ],
     description:
       "Genshin Impact Halloween Standees<br>\
@@ -428,13 +435,13 @@ export const standees = [
     name: "Genshin Impact Chibi Standees",
     price: "16.99",
     images: [
-      "/images/Products/Collectible/Standees/Standee2_1.png",
-      "/images/Products/Collectible/Standees/Standee2_2.png",
-      "/images/Products/Collectible/Standees/Standee2_3.png",
-      "/images/Products/Collectible/Standees/Standee2_4.png",
-      "/images/Products/Collectible/Standees/Standee2_5.png",
-      "/images/Products/Collectible/Standees/Standee2_6.png",
-      "/images/Products/Collectible/Standees/Standee2_7.png"
+      "/images/Products/Collectibles/Standees/Standee2_1.png",
+      "/images/Products/Collectibles/Standees/Standee2_2.png",
+      "/images/Products/Collectibles/Standees/Standee2_3.png",
+      "/images/Products/Collectibles/Standees/Standee2_4.png",
+      "/images/Products/Collectibles/Standees/Standee2_5.png",
+      "/images/Products/Collectibles/Standees/Standee2_6.png",
+      "/images/Products/Collectibles/Standees/Standee2_7.png"
     ],
     description:
       "Genshin Impact Chibi Standees<br>\
@@ -449,15 +456,15 @@ export const standees = [
     name: "Special Character Phone Stands",
     price: "19.99",
     images: [
-      "/images/Products/Collectible/Standees/Standee3_1.png",
-      "/images/Products/Collectible/Standees/Standee3_2.png",
-      "/images/Products/Collectible/Standees/Standee3_3.png",
-      "/images/Products/Collectible/Standees/Standee3_4.png",
-      "/images/Products/Collectible/Standees/Standee3_5.png",
-      "/images/Products/Collectible/Standees/Standee3_6.png",
-      "/images/Products/Collectible/Standees/Standee3_7.png",
-      "/images/Products/Collectible/Standees/Standee3_8.png",
-      "/images/Products/Collectible/Standees/Standee3_9.png"
+      "/images/Products/Collectibles/Standees/Standee3_1.png",
+      "/images/Products/Collectibles/Standees/Standee3_2.png",
+      "/images/Products/Collectibles/Standees/Standee3_3.png",
+      "/images/Products/Collectibles/Standees/Standee3_4.png",
+      "/images/Products/Collectibles/Standees/Standee3_5.png",
+      "/images/Products/Collectibles/Standees/Standee3_6.png",
+      "/images/Products/Collectibles/Standees/Standee3_7.png",
+      "/images/Products/Collectibles/Standees/Standee3_8.png",
+      "/images/Products/Collectibles/Standees/Standee3_9.png"
     ],
     description:
       "Material: High Quality Acrylic<br>\
@@ -473,10 +480,10 @@ export const pins = [
     name: "Noblesse Oblige Artifact Pin",
     price: "18.99",
     images: [
-      "/images/Products/Collectible/Pins/Pin1_1.png",
-      "/images/Products/Collectible/Pins/Pin1_2.png",
-      "/images/Products/Collectible/Pins/Pin1_3.png",
-      "/images/Products/Collectible/Pins/Pin1_4.png"
+      "/images/Products/Collectibles/Pins/Pin1_1.png",
+      "/images/Products/Collectibles/Pins/Pin1_2.png",
+      "/images/Products/Collectibles/Pins/Pin1_3.png",
+      "/images/Products/Collectibles/Pins/Pin1_4.png"
     ],
     description:
       "Genshin Impact Artifact Metal Pin/Brooch<br>\
@@ -503,8 +510,8 @@ export const pins = [
     name: "Shanghai Symphony Orchestra Collaboration Collection",
     price: "16.99",
     images: [
-      "/images/Products/Collectible/Pins/Pin2_1.png",
-      "/images/Products/Collectible/Pins/Pin2_2.png"
+      "/images/Products/Collectibles/Pins/Pin2_1.png",
+      "/images/Products/Collectibles/Pins/Pin2_2.png"
     ],
     description:
       "Shanghai Symphony Orchestra Collaboration Collection<br>\
@@ -527,10 +534,10 @@ export const pins = [
     name: "Wanderer's Troupe Jewellery",
     price: "44.99",
     images: [
-      "/images/Products/Collectible/Pins/Pin3_1.png",
-      "/images/Products/Collectible/Pins/Pin3_2.png",
-      "/images/Products/Collectible/Pins/Pin3_3.png",
-      "/images/Products/Collectible/Pins/Pin3_4.png"
+      "/images/Products/Collectibles/Pins/Pin3_1.png",
+      "/images/Products/Collectibles/Pins/Pin3_2.png",
+      "/images/Products/Collectibles/Pins/Pin3_3.png",
+      "/images/Products/Collectibles/Pins/Pin3_4.png"
     ],
     description:
       "Wanderer's String-Kettle Necklace<br>\
@@ -577,22 +584,38 @@ export const plush = [
     name: "Cryo Abyss Mage Plush Keychain",
     price: "28.99",
     images: [
-      "/images/Products/Collectible/Plush/Plush1_1.png",
-      "/images/Products/Collectible/Plush/Plush1_2.png",
-      "/images/Products/Collectible/Plush/Plush1_3.png"
+      "/images/Products/Collectibles/Plush/Plush1_1.png",
+      "/images/Products/Collectibles/Plush/Plush1_2.png",
+      "/images/Products/Collectibles/Plush/Plush1_3.png"
     ],
     description:
       "Material: Environmentally Friendly PP Cotton<br>\
         Size: 12 x 14cm",
   },
   {
+    name: "Taroumaru Plushie",
+    price: "69.99",
+    images: [
+      "/images/Products/Collectibles/Plush/Plush3_1.png",
+      "/images/Products/Collectibles/Plush/Plush3_2.png",
+      "/images/Products/Collectibles/Plush/Plush3_3.png",
+      "/images/Products/Collectibles/Plush/Plush3_4.png"
+    ],
+    description:
+      "Place your order now to secure your favorite merchandise!<br>\
+        Body: Fine velvet, stuffed with environmentally-friendly PP cotton<br>\
+        Shirt: Canvas Fabric<br>\
+        Head Band: Cloth (Towel Cloth)<br>\
+        Size: 15 x 23 x 20cm ",
+  },
+  {
     name: "Zhong Li Rex Lapis XL-Size Plushie [End Oct]",
     price: "119.99",
     images: [
-      "/images/Products/Collectible/Plush/Plush2_1.png",
-      "/images/Products/Collectible/Plush/Plush2_2.png",
-      "/images/Products/Collectible/Plush/Plush2_3.png",
-      "/images/Products/Collectible/Plush/Plush2_4.png"
+      "/images/Products/Collectibles/Plush/Plush2_1.png",
+      "/images/Products/Collectibles/Plush/Plush2_2.png",
+      "/images/Products/Collectibles/Plush/Plush2_3.png",
+      "/images/Products/Collectibles/Plush/Plush2_4.png"
     ],
     description:
       "Place your order now to secure your favorite merchandise!<br>\
@@ -602,22 +625,6 @@ export const plush = [
         <br>\
         Item is estimated to ship out around End October 2022.<br>\
         'Earlybird' code is not applicable for this item.",
-  },
-  {
-    name: "Taroumaru Plushie",
-    price: "69.99",
-    images: [
-      "/images/Products/Collectible/Plush/Plush3_1.png",
-      "/images/Products/Collectible/Plush/Plush3_2.png",
-      "/images/Products/Collectible/Plush/Plush3_3.png",
-      "/images/Products/Collectible/Plush/Plush3_4.png"
-    ],
-    description:
-      "Place your order now to secure your favorite merchandise!<br>\
-        Body: Fine velvet, stuffed with environmentally-friendly PP cotton<br>\
-        Shirt: Canvas Fabric<br>\
-        Head Band: Cloth (Towel Cloth)<br>\
-        Size: 15 x 23 x 20cm ",
   }
 ];
 
@@ -626,12 +633,12 @@ export const figures = [
     name: "Genshin Impact Paimon 1:7 Figurine",
     price: "78.99",
     images: [
-      "/images/Products/Collectible/Figures/Figure1_1.png",
-      "/images/Products/Collectible/Figures/Figure1_2.png",
-      "/images/Products/Collectible/Figures/Figure1_3.png",
-      "/images/Products/Collectible/Figures/Figure1_4.png",
-      "/images/Products/Collectible/Figures/Figure1_5.png",
-      "/images/Products/Collectible/Figures/Figure1_6.png"
+      "/images/Products/Collectibles/Figures/Figure1_1.png",
+      "/images/Products/Collectibles/Figures/Figure1_2.png",
+      "/images/Products/Collectibles/Figures/Figure1_3.png",
+      "/images/Products/Collectibles/Figures/Figure1_4.png",
+      "/images/Products/Collectibles/Figures/Figure1_5.png",
+      "/images/Products/Collectibles/Figures/Figure1_6.png"
     ],
     description:
       "Height: 13.5 CM (14CM with Base)<br>\
@@ -644,12 +651,12 @@ export const figures = [
     name: "Klee Jumpy Dumpty Rider 1:7 Figurine [Mid April]",
     price: "260.0",
     images: [
-      "/images/Products/Collectible/Figures/Figure2_1.png",
-      "/images/Products/Collectible/Figures/Figure2_2.png",
-      "/images/Products/Collectible/Figures/Figure2_3.png",
-      "/images/Products/Collectible/Figures/Figure2_4.png",
-      "/images/Products/Collectible/Figures/Figure2_5.png",
-      "/images/Products/Collectible/Figures/Figure2_6.png"
+      "/images/Products/Collectibles/Figures/Figure2_1.png",
+      "/images/Products/Collectibles/Figures/Figure2_2.png",
+      "/images/Products/Collectibles/Figures/Figure2_3.png",
+      "/images/Products/Collectibles/Figures/Figure2_4.png",
+      "/images/Products/Collectibles/Figures/Figure2_5.png",
+      "/images/Products/Collectibles/Figures/Figure2_6.png"
     ],
     description:
       "Klee Jumpy Dumpty Rider 1:7 Figurine<br>\
@@ -672,11 +679,11 @@ export const figures = [
     name: "Aether Nendoroid [Late Oct]",
     price: "95.99",
     images: [
-      "/images/Products/Collectible/Figures/Figure3_1.png",
-      "/images/Products/Collectible/Figures/Figure3_2.png",
-      "/images/Products/Collectible/Figures/Figure3_3.png",
-      "/images/Products/Collectible/Figures/Figure3_4.png",
-      "/images/Products/Collectible/Figures/Figure3_5.png"
+      "/images/Products/Collectibles/Figures/Figure3_1.png",
+      "/images/Products/Collectibles/Figures/Figure3_2.png",
+      "/images/Products/Collectibles/Figures/Figure3_3.png",
+      "/images/Products/Collectibles/Figures/Figure3_4.png",
+      "/images/Products/Collectibles/Figures/Figure3_5.png"
     ],
     description: "Aether Nendoroid<br>\
     Size: 100mm in Height<br>\
@@ -697,14 +704,14 @@ export const keychains = [
     name: "Genshin Impact Weapon Keychain",
     price: "14.99",
     images: [
-      "/images/Products/Collectible/Keychains/Keychain1_1.png",
-      "/images/Products/Collectible/Keychains/Keychain1_2.png",
-      "/images/Products/Collectible/Keychains/Keychain1_3.png",
-      "/images/Products/Collectible/Keychains/Keychain1_4.png",
-      "/images/Products/Collectible/Keychains/Keychain1_5.png",
-      "/images/Products/Collectible/Keychains/Keychain1_6.png",
-      "/images/Products/Collectible/Keychains/Keychain1_7.png",
-      "/images/Products/Collectible/Keychains/Keychain1_8.png"
+      "/images/Products/Collectibles/Keychains/Keychain1_1.png",
+      "/images/Products/Collectibles/Keychains/Keychain1_2.png",
+      "/images/Products/Collectibles/Keychains/Keychain1_3.png",
+      "/images/Products/Collectibles/Keychains/Keychain1_4.png",
+      "/images/Products/Collectibles/Keychains/Keychain1_5.png",
+      "/images/Products/Collectibles/Keychains/Keychain1_6.png",
+      "/images/Products/Collectibles/Keychains/Keychain1_7.png",
+      "/images/Products/Collectibles/Keychains/Keychain1_8.png"
     ],
     description: "Material: Alloy<br>\
     Dimensions<br>\
@@ -721,12 +728,12 @@ export const keychains = [
     name: "Metallic Character Keychain 2.0 [End Oct]",
     price: "14.99",
     images: [
-      "/images/Products/Collectible/Keychains/Keychain2_1.png",
-      "/images/Products/Collectible/Keychains/Keychain2_2.png",
-      "/images/Products/Collectible/Keychains/Keychain2_3.png",
-      "/images/Products/Collectible/Keychains/Keychain2_4.png",
-      "/images/Products/Collectible/Keychains/Keychain2_5.png",
-      "/images/Products/Collectible/Keychains/Keychain2_6.png"
+      "/images/Products/Collectibles/Keychains/Keychain2_1.png",
+      "/images/Products/Collectibles/Keychains/Keychain2_2.png",
+      "/images/Products/Collectibles/Keychains/Keychain2_3.png",
+      "/images/Products/Collectibles/Keychains/Keychain2_4.png",
+      "/images/Products/Collectibles/Keychains/Keychain2_5.png",
+      "/images/Products/Collectibles/Keychains/Keychain2_6.png"
     ],
     description: "Material: Premium Zinc Alloy<br>\
     <br>\
@@ -742,13 +749,13 @@ export const keychains = [
     name: "Azhdaha Keychains",
     price: "19.99",
     images: [
-      "/images/Products/Collectible/Keychains/Keychain3_1.png",
-      "/images/Products/Collectible/Keychains/Keychain3_2.png",
-      "/images/Products/Collectible/Keychains/Keychain3_3.png",
-      "/images/Products/Collectible/Keychains/Keychain3_4.png",
-      "/images/Products/Collectible/Keychains/Keychain3_5.png",
-      "/images/Products/Collectible/Keychains/Keychain3_6.png",
-      "/images/Products/Collectible/Keychains/Keychain3_7.png"
+      "/images/Products/Collectibles/Keychains/Keychain3_1.png",
+      "/images/Products/Collectibles/Keychains/Keychain3_2.png",
+      "/images/Products/Collectibles/Keychains/Keychain3_3.png",
+      "/images/Products/Collectibles/Keychains/Keychain3_4.png",
+      "/images/Products/Collectibles/Keychains/Keychain3_5.png",
+      "/images/Products/Collectibles/Keychains/Keychain3_6.png",
+      "/images/Products/Collectibles/Keychains/Keychain3_7.png"
     ],
     description: "Azhdaha Keychains come in 2 variations:<br>\
     - Angry Azhdaha (smooth)<br>\
