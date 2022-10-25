@@ -29,7 +29,7 @@
     transition: 0.1s linear;
 }
 
-.frame img:hover {
+.frame:hover img {
     transform: scale(1.05);
     cursor: pointer;
 }

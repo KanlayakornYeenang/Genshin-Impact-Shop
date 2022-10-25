@@ -12,12 +12,6 @@ const images = [
   {
     original:"/images/Slideshow/3.jpg"
   },
-  // {
-  //   original:"/images/Slideshow/4.jpg"
-  // },
-  // {
-  //   original:"/images/Slideshow/5.jpg"
-  // },
 ];
 
 class MyGallery extends React.Component {

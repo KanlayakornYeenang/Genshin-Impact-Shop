@@ -1,8 +1,8 @@
 import React from "react";
 import Header from "../components/Header";
 import MyGallery from "../components/Slideshow";
-import Product from "../components/Product";
 import ProductWrapper from "../components/ProductWrapper";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -10,6 +10,7 @@ const Home = () => {
       <Header />
       <MyGallery />
       <ProductWrapper />
+      <Footer/>
     </div>
   );
 };

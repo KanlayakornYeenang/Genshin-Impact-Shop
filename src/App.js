@@ -10,7 +10,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Home />} />
-        {tops.map((top) => <Route path={top.url} element={<ProductDetails product={top}/>} />)}
+        {tops.map((top) => <Route path={top.url} element={<ProductDetails products={top}/>} />)}
       </Routes>
     </BrowserRouter>
   );
