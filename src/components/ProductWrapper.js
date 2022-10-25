@@ -3,9 +3,18 @@ import ProductSale from "./ProductSale";
 import { tops, bottoms, sales, badges, pins, standees, plush } from "../data/ProductList";
 import "./ProductWrapper.css";
 
+<<<<<<< HEAD
 const ProductElements = (props) => {
   return props.product.slice(0, props.length).map((list) => {
     return <Product list={list} />;
+=======
+const ProductWrapper = () => {
+  const productElementsTops = tops.map((list, index) => {
+    return <Product key={index} list={list} />;
+  });
+  const productElementsBottoms = bottoms.map((list, index) => {
+    return <Product key={index} list={list} />;
+>>>>>>> 82b2f6e58f724018e554040d352c20285c579147
   });
 };
 
