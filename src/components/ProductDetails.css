@@ -57,9 +57,6 @@
     border-radius: 0.25vw;
 }
 
-.product-details .image-gallery-slide {
-}
-
 .product-details .image-gallery-slide .image-gallery-image {
     width: fit-content !important;
     position: relative;

@@ -34,6 +34,8 @@ export class MyGalleryProducts extends React.Component {
           showFullscreenButton={false}
           showNav={false}
           disableThumbnailScroll={true}
+          disableThumbnailSwipe={true}
+          disableSwipe={true}
         />
       </div>
     );

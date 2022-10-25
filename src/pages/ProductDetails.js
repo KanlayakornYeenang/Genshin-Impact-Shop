@@ -13,7 +13,7 @@ const Details = (props) => {
         <div className="details-price">${props.products.price}</div>
       </div>
       <button className="addtocart">
-        <div className="addtocart-txt">${props.products.price} - Add to Cart+</div>
+        <div className="addtocart-txt">${props.products.price} - Add to Cart</div>
         <div className="addtocart-bg"></div>
       </button>
       <div className="line"></div>
