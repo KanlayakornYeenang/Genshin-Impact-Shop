@@ -1,31 +1,36 @@
 import React from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
-
-const images = [
-  {
-    original:"/images/Slideshow/1.jpg"
-  },
-  {
-    original:"/images/Slideshow/2.jpg"
-  },
-  {
-    original:"/images/Slideshow/3.jpg"
-  },
-];
+import { bottoms } from "../data/ProductList";
 
 class MyGallery extends React.Component {
   render() {
     return (
       <div class="image-gallery-wrapper">
         <ImageGallery
-          items={images}
+          items={this.props.images}
           showThumbnails={false}
           showPlayButton={false}
           autoPlay={true}
           showFullscreenButton={false}
           showBullets={true}
           slideInterval={4000}
+        />
+      </div>
+    );
+  }
+}
+
+export class MyGalleryProducts extends React.Component {
+  render() {
+    return (
+      <div class="image-gallery-wrapper">
+        <ImageGallery
+          items={this.props.images}
+          showThumbnails={true}
+          thumbnailPosition={"left"}
+          showPlayButton={false}
+          showBullets={true}
         />
       </div>
     );

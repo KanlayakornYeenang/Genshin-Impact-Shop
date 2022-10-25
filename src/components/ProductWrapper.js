@@ -11,7 +11,7 @@ import {
 } from "../data/ProductList";
 import "./ProductWrapper.css";
 
-const ProductElements = (props) => {
+export const ProductElements = (props) => {
   return props.product.slice(0, props.length).map((list) => {
     return <Product list={list} />;
   });

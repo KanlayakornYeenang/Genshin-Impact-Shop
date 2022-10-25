@@ -3,6 +3,10 @@
   src: url("./components/font/zh-cn.ttf");
 }
 
+body {
+  overflow-x: hidden;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -139,7 +143,7 @@ nav {
   width: 15vw;
 }
 
-.image-gallery-slide .image-gallery-image {
+.home .image-gallery-slide .image-gallery-image {
   position: relative;
   margin-top: 10vh;
   object-fit: cover !important;
@@ -148,14 +152,14 @@ nav {
   object-position: top;
 }
 
-.image-gallery-left-nav, .image-gallery-right-nav {
+.home .image-gallery-left-nav, .home .image-gallery-right-nav {
   margin-top: 10vh;
 }
 
 .path-wrapper {
   position: absolute;
   width: 100vw;
-  height: 3.5vw;
+  height: 7vh;
   background-color: #292929;
   top: 10vh;
   color: #adacaa;
@@ -170,4 +174,27 @@ nav {
 
 .path-section {
   padding: 0vw 0.25vw;
+}
+
+.product-details .image-gallery-wrapper {
+  width: 40vw;
+}
+
+.product-details .left {
+}
+
+.product-details .image-gallery-thumbnails-container {
+  grid-template-columns: auto;
+  gap: 0;
+}
+
+.product-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  margin-top: 17vh;
+  width: 100vw;
+  height: 83vh;
+  background-color: #e7e6e3;
 }

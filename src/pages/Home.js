@@ -6,11 +6,23 @@ import Footer from "../components/Footer";
 
 const Home = () => {
   return (
-    <div>
+    <div className="home">
       <Header />
-      <MyGallery />
+      <MyGallery
+        images={[
+          {
+            original: "/images/Slideshow/1.jpg",
+          },
+          {
+            original: "/images/Slideshow/2.jpg",
+          },
+          {
+            original: "/images/Slideshow/3.jpg",
+          },
+        ]}
+      />
       <ProductWrapper />
-      <Footer/>
+      <Footer />
     </div>
   );
 };
