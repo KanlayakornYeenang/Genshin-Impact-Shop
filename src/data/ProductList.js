@@ -622,8 +622,8 @@ export const plush = [
         Size: 15 x 23 x 20cm ",
   },
   {
-    url: "/collectibles/plush/taroumaru_plushie",
-    name: "Zhong Li Rex Lapis XL-Size Plushie [End Oct]",
+    url: "/accessories/mousepads/zhong_li_rex_lapis_xl-size_plushie",
+    name: "Zhong Li Rex Lapis XL-Size Plushie",
     price: "119.99",
     images: [
       "/images/Products/Collectibles/Plush/Plush2_1.png",
