@@ -31,6 +31,9 @@ export class MyGalleryProducts extends React.Component {
           showThumbnails={true}
           thumbnailPosition={"left"}
           showPlayButton={false}
+          showFullscreenButton={false}
+          showNav={false}
+          disableThumbnailScroll={true}
         />
       </div>
     );

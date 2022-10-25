@@ -1,67 +1,69 @@
 .footer {
-    background-color: rgb(37 36 35);
-    width: 100%;
-    height: 50vh;
-    display: grid;
-    grid-template-columns: auto auto;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+  background-color: rgb(37 36 35);
+  width: 100%;
+  height: 50vh;
+  display: grid;
+  grid-template-columns: auto auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
 }
 
 .footer div img {
-    width: 8vw;
+  width: 8vw;
 }
 
 .footer-logo-img {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-text-frame {
-    display: grid;
-    grid-template-columns: auto auto;
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
 .footer-shop-frame {
-    width: fit-content;
+  width: fit-content;
 }
 
 h2 {
-    font-size: 1.2vw;
+  font-size: 1.2vw;
 }
 
 .shop-frame-content p,
 .footer-support-frame div p {
-    font-size: 1vw;
-    transition: 0.1s linear;
+  font-size: 1vw;
+  transition: 0.1s linear;
 }
 
 .shop-frame-content p:hover,
-.footer-support-frame div p:hover{
-    text-decoration: underline;
-    transform: translateY(10%);
+.footer-support-frame div p:hover {
+  text-decoration: underline;
+  transform: translateY(10%);
 }
 
 .shop-frame-content {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 1vw 3vw;
-    color: #ffffff;
-    margin-top: 1.5vw;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1vw 3vw;
+  color: #ffffff;
+  margin-top: 1.5vw;
 }
 
 .footer-title {
-    font-weight: 100;
-    color: #656462;
-    cursor: context-menu;
+  font-weight: 100;
+  color: #656462;
+  cursor: context-menu;
 }
 
-.support-frame-content{
-    margin-top: 1.5vw;
+.support-frame-content {
+  margin-top: 1.5vw;
 }
 
-.footer-wrapper {
-    top: 93vh;
-    position: relative;
+.footer-warpper {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
