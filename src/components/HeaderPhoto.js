@@ -5,7 +5,7 @@ import "./HeaderPhoto.css";
 
 const HeaderPhoto = (props) => {
     return (
-        <div className="header-photo">
+        <div className={"header-photo " + props.head.slice(1, -1)}>
             <h1>{props.text}</h1>
         </div>
     );

@@ -15,7 +15,7 @@ const Footer = () => {
           <h2 className="footer-title">Shop</h2>
           <div className="shop-frame-content">
             <a href="/apparel/tops"><p>TOPS</p></a>
-            <a href="apparel/bottoms"><p>BOTTOMS</p></a>
+            <a href="/apparel/bottoms"><p>BOTTOMS</p></a>
             <a href="/collectibles/badges"><p>BADGES</p></a>
             <a href="/collectibles/standees"><p>STANDEES</p></a>
             <a href="/collectibles/pins"><p>PINS</p></a>

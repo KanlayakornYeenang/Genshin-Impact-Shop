@@ -89,7 +89,7 @@ export const accessories = [
   },
   {
     title: "Mouse pads",
-    url: "/accessories/mousepad",
+    url: "/accessories/mousepads",
   },
   {
     pictitle: [

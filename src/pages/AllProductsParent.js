@@ -4,17 +4,19 @@ import Header from "../components/Header";
 import HeaderPhoto from "../components/HeaderPhoto";
 import { ProductElements } from "../components/ProductWrapper";
 
-const CollectiblesProduct = (props) => {
+const AllProductsParent = (props) => {
     return (
         <div>
             <Header />
-            <HeaderPhoto text={props.text} />
+            <HeaderPhoto text={props.text} head={props.head} />
             <div className="frame-wrapper">
-                <ProductElements  product={props.product} length={props.product.length}/>
+                {props.product.map((allproduct) => {
+                    return <ProductElements  product={allproduct} length={allproduct.length}/>
+                })}
             </div>
             <Footer />
         </div>
     );
 }
 
-export default CollectiblesProduct;
+export default AllProductsParent;

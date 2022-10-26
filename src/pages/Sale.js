@@ -1,10 +1,23 @@
 import React from "react";
-import Navbar from "./components/Navbar"
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+import HeaderPhoto from "../components/HeaderPhoto";
+import ProductSale from "../components/ProductSale";
+import { sales } from "../data/ProductList";
+import "../components/ProductWrapper.css";
 
 function Sale() {
-    return (
+  const productElementsSales = sales.slice(0, 4).map((list, index) => {
+    return <ProductSale key={index} list={list} />;
+  });
+  return (
         <div>
-          <Navbar />
+          <Header />
+          <HeaderPhoto text={"Sale"} />
+          <div className="frame-wrapper">
+            {productElementsSales}
+          </div>
+          <Footer />
         </div>
       );
 }

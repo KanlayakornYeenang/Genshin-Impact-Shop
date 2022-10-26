@@ -1,6 +1,4 @@
 .header-photo{
-    background-image: url("/public/images/HeaderPhoto.jpg");
-    background-position: 0vw -12vw;
     background-size: cover;
     width: 100vw;
     height: 20vw;
@@ -9,6 +7,26 @@
     display: flex;
     align-items: center;
 }
+
+.collectibles{
+    background-image: url("/public/images/HeaderPhotoCollectibles.jpg");
+    background-position: 0vw -12vw;
+}
+
+.apparel{
+    background-image: url("/public/images/HeaderPhotoApparel.png");
+    background-position: 0vw 0vw;
+}
+
+/* .accessories{
+    background-image: url("/public/images/HeaderPhotoAccessories.png");
+    background-position: 0vw 0vw;
+}
+
+.sale{
+    background-image: url("/public/images/HeaderPhotoSale.png");
+    background-position: 0vw -9.5vw;
+} */
 
 .header-photo h1{
     color: #fff;

@@ -1,102 +1,117 @@
-.product-frame{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: fit-content;
-    background-color: #e7e6e3;
+.product-frame {
+  display: grid;
+  justify-content: center;
+  background-color: #e7e6e3;
+  padding-top: 1.5vw;
+  padding-bottom: 4vw;
+  row-gap: 3vw;
 }
 
 .product-details {
-    background-color: #e7e6e3;
-    top: 0;
-    width: 80%;
-    height: 100%;
-    margin-top: 10vh;
-    display: grid;
-    grid-template-columns: auto auto;
-    justify-items: center;
-    align-items: center;
-    padding: 5vw 0vw;
+  width: 100vw;
+  margin-top: 10vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
-.product-details .image-gallery-content {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    position: static;
-    gap: 5vw;
-}
-
-.product-details .image-gallery-thumbnail {
-    width: 10vw;
-}
-
-.product-details .image-gallery-thumbnails {
-    position: relative !important;
-    top: 0;
-    transform: scale(1.35);
+.product-details .image-gallery {
+  width: 60vw !important;
+  /* background-color: red; */
+  min-height: 83vh;
+  z-index: 999;
+  display: grid;
+  position: sticky;
+  top: 17vh;
 }
 
 .product-details .image-gallery-thumbnails-container {
-    position: relative;
-    top: 5vh;
-    display: flex;
-    flex-flow: wrap;
-    row-gap: 0;
-    max-height: 20vw;
-    padding-right: 0.3vw;
-    overflow: auto;
+  display: flex;
+  flex-flow: wrap;
+  row-gap: 0;
+  grid-template-columns: auto !important;
+  gap: 0;
 }
 
-.product-details .image-gallery-thumbnail.active, .product-details .image-gallery-thumbnail:hover, .product-details .image-gallery-thumbnail:hover::before {
-    border-radius: 0.5vw;
-    border: 4px solid #252423;
+.product-details .image-gallery-content {
+  display: grid !important;
+  grid-template-columns: auto auto;
+  justify-content: space-around;
+  height: 100% !important;
 }
 
-.product-details .image-gallery-thumbnail-image {
-    border-radius: 0.25vw;
+.product-details .image-gallery-thumbnail {
+  width: 95%;
 }
 
-.product-details .image-gallery-slide .image-gallery-image {
-    width: fit-content !important;
-    position: relative;
-    object-fit: contain !important;
-    max-width: 100% !important;
-    max-height: 100vh !important;
-    border-radius: 1vw;
+.product-details .image-gallery-thumbnails {
+  height: 100% !important;
+  overflow: auto;
+}
+
+.product-details .image-gallery-thumbnails-wrapper {
+  display: inline-block;
+  vertical-align: top;
+  width: 7vw;
+  height: 100%;
+}
+
+.product-details .image-gallery-slide-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100% !important;
+  width: 50vw;
+}
+
+.details {
+  display: flex;
+  justify-content: start;
+  width: fit-content;
+  height: fit-content;
+  min-height: 83vh;
+  flex-direction: column;
+}
+
+.shape {
+    background-size: contain;
+    height: 1.75vw;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+.shapebottom {
+    background-position: top;
+    background-image: url("/public/images/ShapeBottom.png");
+}
+
+.shapetop {
+    background-position: right;
+    background-image: url("/public/images/ShapeTop.png");
 }
 
 .details-wrapper {
-    width: 18vw;
-    height: fit-content;
-    background-color: #252423;
-    color: #ffffff;
-    display: grid;
-    row-gap: 2vw;
-    padding: 5vw;
-    border-radius: 1.5vw;
-    line-height: 2vw;
-    position: relative;
-    right: -7vw;
+  width: fit-content;
+  background-color: #252423;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.25vw;
+  justify-content: center;
+  line-height: 2vw;
+  padding: 3vw;
 }
 
-.details-header {
-    display: grid;
-    grid-template-columns: auto auto;
+::-webkit-scrollbar {
+  width: 0.7vw;
+  background: transparent;
 }
 
-.details-name {
-    font-size: 2vw;
-    font-weight: bold;
-    width: 10vw;
-    line-height: 3vw;
+::-webkit-scrollbar-thumb {
+  background: #393736;
 }
 
-.details-price {
-    font-size: 1.25vw;
-    margin-top: 0.8vw;
-    width: 8vw;
-    text-align: right;
+.product-details .image-gallery-thumbnail.active, .product-details .image-gallery-thumbnail:hover, .product-details .image-gallery-thumbnail:hover::before {
+    border: 0.25vw solid #252423;
 }
 
 .addtocart {
@@ -109,6 +124,7 @@
     border-radius: 2vw;
     transition: 0.2s linear;
     overflow: hidden;
+    min-height: fit-content;
 }
 
 .addtocart:hover{
@@ -117,7 +133,7 @@
 }
 
 .addtocart:hover .addtocart-bg {
-    transform: rotate(-6deg) scale(6.5) translateY(0vw);
+    transform: rotate(-6deg) scale(6.5) translateY(0%);
 }
 
 .addtocart-txt {
@@ -130,7 +146,7 @@
     height: 100%;
     position: relative;
     background-color: #9e2c29;;
-    transform: rotate(-6deg) scale(6.5) translateY(2vw);
+    transform: rotate(-6deg) scale(6.5) translateY(100%);
     transition: 0.5s;
 }
 
@@ -147,26 +163,23 @@
     background-color: #ffffff;
 }
 
-.product-details .image-gallery-wrapper {
-    position: sticky;
-    top: 11vh;
-    bottom: 1vh;
+.details-header {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
 }
 
-::-webkit-scrollbar {
-    width: 0.7vw;
-    background: transparent;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    border-radius: 1vw;
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #252423;
-    border-radius: 10px;
-  }
-  
-  /* Handle on hover */
+.details-name {
+    font-size: 2vw;
+    font-weight: bold;
+    width: 90%;
+    line-height: 3vw;
+}
+
+.details-price {
+    font-size: 1.25vw;
+    margin-top: 0.8vw;
+    width: 10%;
+    text-align: right;
+}
+

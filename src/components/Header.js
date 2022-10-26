@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "./Navbar";
 import Logo from "./Logo";
 
-// ส่วนบนของ HTML
+// ส่วนบนของ HTML 
 
 const Header = () => {
   return (
