@@ -7,13 +7,13 @@ import { sales } from "../data/ProductList";
 import "../components/ProductWrapper.css";
 
 function Sale() {
-  const productElementsSales = sales.slice(0, 4).map((list, index) => {
+  const productElementsSales = sales.map((list, index) => {
     return <ProductSale key={index} list={list} />;
   });
   return (
         <div>
           <Header />
-          <HeaderPhoto text={"Sale"} />
+          <HeaderPhoto text={"Sale"} head={"/sale/"}/>
           <div className="frame-wrapper">
             {productElementsSales}
           </div>

@@ -10,7 +10,7 @@ const ProductSale = (props) => {
       </div>
       <p className="product_name">{props.list.name}</p>
       <div className="inline">
-        <p className="product_price sale">${props.list.price}</p>
+        <p className="product_price sale-text">${props.list.price}</p>
         <p className="product_before">${props.list.before}</p>
       </div>
     </div>

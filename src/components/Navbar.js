@@ -41,14 +41,12 @@ const TabsExpends = (props) => {
             return <a href={menu.url}>{menu.title}</a>;
           })}
         </div>
-        <div className="expends_item_img">
-          {props.menu[props.menu.length - 1].pic.map((pic) => (
-            <img src={pic} />
-          ))}
-          {props.menu[props.menu.length - 1].pictitle.map((pictitle) => (
-            <p>{pictitle}</p>
-          ))}
-        </div>
+        {props.menu.slice(props.menu.length - 2).map((data) => (
+          <a href={data.url} className="expends_item_img">
+            <img src={data.pic} />
+            <p>{data.pictitle}</p>
+          </a>
+        ))}
       </div>
     );
   };

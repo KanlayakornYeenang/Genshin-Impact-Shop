@@ -8,7 +8,7 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top1_2.png",
       "/images/Products/Apparel/Tops/Top1_3.png",
       "/images/Products/Apparel/Tops/Top1_4.png",
-      "/images/Products/Apparel/Tops/Top1_5.png"
+      "/images/Products/Apparel/Tops/Top1_5.png",
     ],
     description:
       "Theme Print Material: 65% Cotton, 35% Polyester\n\
@@ -36,7 +36,7 @@ export const tops = [
         \n\
         - - - - - - - -\n\
         No returns or exchanges are allowed for this product.",
-        id: "genshin-impact-concert-t-shirt"
+    id: "genshin-impact-concert-t-shirt",
   },
   {
     url: "/apparel/tops/genshin_impact_diluc_t-shirt",
@@ -47,7 +47,7 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top2_2.png",
       "/images/Products/Apparel/Tops/Top2_3.png",
       "/images/Products/Apparel/Tops/Top2_4.png",
-      "/images/Products/Apparel/Tops/Top2_5.png"
+      "/images/Products/Apparel/Tops/Top2_5.png",
     ],
     description:
       "Theme Print Material: 59% Cotton, 41% Polyester\n\
@@ -84,7 +84,7 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top3_2.png",
       "/images/Products/Apparel/Tops/Top3_3.png",
       "/images/Products/Apparel/Tops/Top3_4.png",
-      "/images/Products/Apparel/Tops/Top3_5.png"
+      "/images/Products/Apparel/Tops/Top3_5.png",
     ],
     description:
       "Shirt Material: 100% Cotton\n\
@@ -127,7 +127,7 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top4_2.png",
       "/images/Products/Apparel/Tops/Top4_3.png",
       "/images/Products/Apparel/Tops/Top4_4.png",
-      "/images/Products/Apparel/Tops/Top4_5.png"
+      "/images/Products/Apparel/Tops/Top4_5.png",
     ],
     description:
       "Theme Print Material: 100% Cotton\n\
@@ -164,7 +164,7 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top5_2.png",
       "/images/Products/Apparel/Tops/Top5_3.png",
       "/images/Products/Apparel/Tops/Top5_4.png",
-      "/images/Products/Apparel/Tops/Top5_5.png"
+      "/images/Products/Apparel/Tops/Top5_5.png",
     ],
     description:
       "Shirt Material: 100% Cotton\n\
@@ -210,7 +210,7 @@ export const tops = [
       "/images/Products/Apparel/Tops/Top6_2.png",
       "/images/Products/Apparel/Tops/Top6_3.png",
       "/images/Products/Apparel/Tops/Top6_4.png",
-      "/images/Products/Apparel/Tops/Top6_5.png"
+      "/images/Products/Apparel/Tops/Top6_5.png",
     ],
     description:
       "Material: Cotton\n\
@@ -264,7 +264,7 @@ export const bottoms = [
       "/images/Products/Apparel/Bottoms/Bottom1_2.png",
       "/images/Products/Apparel/Bottoms/Bottom1_3.png",
       "/images/Products/Apparel/Bottoms/Bottom1_4.png",
-      "/images/Products/Apparel/Bottoms/Bottom1_5.png"
+      "/images/Products/Apparel/Bottoms/Bottom1_5.png",
     ],
     description:
       "Shorts Material: 100% Cotton\n\
@@ -311,7 +311,7 @@ export const bottoms = [
       "/images/Products/Apparel/Bottoms/Bottom2_2.png",
       "/images/Products/Apparel/Bottoms/Bottom2_3.png",
       "/images/Products/Apparel/Bottoms/Bottom2_4.png",
-      "/images/Products/Apparel/Bottoms/Bottom2_5.png"
+      "/images/Products/Apparel/Bottoms/Bottom2_5.png",
     ],
     description:
       "Shorts Material: 32% Cotton 68% polyester\n\
@@ -350,7 +350,7 @@ export const bottoms = [
         No returns or exchanges are allowed for this product.\n\
         \n\
         Yoimiya Badge gift is subjected to availability",
-  }
+  },
 ];
 
 export const badges = [
@@ -365,7 +365,7 @@ export const badges = [
       "/images/Products/Collectibles/Badges/Badge1_4.png",
       "/images/Products/Collectibles/Badges/Badge1_5.png",
       "/images/Products/Collectibles/Badges/Badge1_6.png",
-      "/images/Products/Collectibles/Badges/Badge1_7.png"
+      "/images/Products/Collectibles/Badges/Badge1_7.png",
     ],
     description:
       "Badge\n\
@@ -383,7 +383,7 @@ export const badges = [
       "/images/Products/Collectibles/Badges/Badge2_4.png",
       "/images/Products/Collectibles/Badges/Badge2_5.png",
       "/images/Products/Collectibles/Badges/Badge2_6.png",
-      "/images/Products/Collectibles/Badges/Badge2_7.png"
+      "/images/Products/Collectibles/Badges/Badge2_7.png",
     ],
     description:
       "Genshin Impact Chibi Badges\n\
@@ -403,14 +403,14 @@ export const badges = [
       "/images/Products/Collectibles/Badges/Badge3_4.png",
       "/images/Products/Collectibles/Badges/Badge3_5.png",
       "/images/Products/Collectibles/Badges/Badge3_6.png",
-      "/images/Products/Collectibles/Badges/Badge3_7.png"
+      "/images/Products/Collectibles/Badges/Badge3_7.png",
     ],
     description:
       "Genshin Impact Halloween Badges\n\
         Material: Alloy\n\
         Diameter: 5.8cm\n\
         'Earlybird' code is not applicable for this item.",
-  }
+  },
 ];
 
 export const standees = [
@@ -425,7 +425,7 @@ export const standees = [
       "/images/Products/Collectibles/Standees/Standee1_4.png",
       "/images/Products/Collectibles/Standees/Standee1_5.png",
       "/images/Products/Collectibles/Standees/Standee1_6.png",
-      "/images/Products/Collectibles/Standees/Standee1_7.png"
+      "/images/Products/Collectibles/Standees/Standee1_7.png",
     ],
     description:
       "Genshin Impact Halloween Standees\n\
@@ -448,7 +448,7 @@ export const standees = [
       "/images/Products/Collectibles/Standees/Standee2_4.png",
       "/images/Products/Collectibles/Standees/Standee2_5.png",
       "/images/Products/Collectibles/Standees/Standee2_6.png",
-      "/images/Products/Collectibles/Standees/Standee2_7.png"
+      "/images/Products/Collectibles/Standees/Standee2_7.png",
     ],
     description:
       "Genshin Impact Chibi Standees\n\
@@ -472,7 +472,7 @@ export const standees = [
       "/images/Products/Collectibles/Standees/Standee3_6.png",
       "/images/Products/Collectibles/Standees/Standee3_7.png",
       "/images/Products/Collectibles/Standees/Standee3_8.png",
-      "/images/Products/Collectibles/Standees/Standee3_9.png"
+      "/images/Products/Collectibles/Standees/Standee3_9.png",
     ],
     description:
       "Material: High Quality Acrylic\n\
@@ -480,7 +480,7 @@ export const standees = [
         The Zhong Li phone stand is expected to ship out around End November 2022.\n\
         \n\
         Place your order now to secure your favorite Genshin Impact merchandise!",
-  }
+  },
 ];
 
 export const pins = [
@@ -492,7 +492,7 @@ export const pins = [
       "/images/Products/Collectibles/Pins/Pin1_1.png",
       "/images/Products/Collectibles/Pins/Pin1_2.png",
       "/images/Products/Collectibles/Pins/Pin1_3.png",
-      "/images/Products/Collectibles/Pins/Pin1_4.png"
+      "/images/Products/Collectibles/Pins/Pin1_4.png",
     ],
     description:
       "Genshin Impact Artifact Metal Pin/Brooch\n\
@@ -521,7 +521,7 @@ export const pins = [
     price: "16.99",
     images: [
       "/images/Products/Collectibles/Pins/Pin2_1.png",
-      "/images/Products/Collectibles/Pins/Pin2_2.png"
+      "/images/Products/Collectibles/Pins/Pin2_2.png",
     ],
     description:
       "Shanghai Symphony Orchestra Collaboration Collection\n\
@@ -548,7 +548,7 @@ export const pins = [
       "/images/Products/Collectibles/Pins/Pin3_1.png",
       "/images/Products/Collectibles/Pins/Pin3_2.png",
       "/images/Products/Collectibles/Pins/Pin3_3.png",
-      "/images/Products/Collectibles/Pins/Pin3_4.png"
+      "/images/Products/Collectibles/Pins/Pin3_4.png",
     ],
     description:
       "Wanderer's String-Kettle Necklace\n\
@@ -588,7 +588,7 @@ export const pins = [
         - Avoid letting kids touch the jewellery.\n\
         \n\
         STRICTLY NO RETURNS ON THESE PRODUCTS.",
-  }
+  },
 ];
 export const plush = [
   {
@@ -598,7 +598,7 @@ export const plush = [
     images: [
       "/images/Products/Collectibles/Plush/Plush1_1.png",
       "/images/Products/Collectibles/Plush/Plush1_2.png",
-      "/images/Products/Collectibles/Plush/Plush1_3.png"
+      "/images/Products/Collectibles/Plush/Plush1_3.png",
     ],
     description:
       "Material: Environmentally Friendly PP Cotton\n\
@@ -612,7 +612,7 @@ export const plush = [
       "/images/Products/Collectibles/Plush/Plush3_1.png",
       "/images/Products/Collectibles/Plush/Plush3_2.png",
       "/images/Products/Collectibles/Plush/Plush3_3.png",
-      "/images/Products/Collectibles/Plush/Plush3_4.png"
+      "/images/Products/Collectibles/Plush/Plush3_4.png",
     ],
     description:
       "Place your order now to secure your favorite merchandise!\n\
@@ -629,7 +629,7 @@ export const plush = [
       "/images/Products/Collectibles/Plush/Plush2_1.png",
       "/images/Products/Collectibles/Plush/Plush2_2.png",
       "/images/Products/Collectibles/Plush/Plush2_3.png",
-      "/images/Products/Collectibles/Plush/Plush2_4.png"
+      "/images/Products/Collectibles/Plush/Plush2_4.png",
     ],
     description:
       "Place your order now to secure your favorite merchandise!\n\
@@ -639,7 +639,7 @@ export const plush = [
         \n\
         Item is estimated to ship out around End October 2022.\n\
         'Earlybird' code is not applicable for this item.",
-  }
+  },
 ];
 
 export const figures = [
@@ -653,7 +653,7 @@ export const figures = [
       "/images/Products/Collectibles/Figures/Figure1_3.png",
       "/images/Products/Collectibles/Figures/Figure1_4.png",
       "/images/Products/Collectibles/Figures/Figure1_5.png",
-      "/images/Products/Collectibles/Figures/Figure1_6.png"
+      "/images/Products/Collectibles/Figures/Figure1_6.png",
     ],
     description:
       "Height: 13.5 CM (14CM with Base)\n\
@@ -672,7 +672,7 @@ export const figures = [
       "/images/Products/Collectibles/Figures/Figure2_3.png",
       "/images/Products/Collectibles/Figures/Figure2_4.png",
       "/images/Products/Collectibles/Figures/Figure2_5.png",
-      "/images/Products/Collectibles/Figures/Figure2_6.png"
+      "/images/Products/Collectibles/Figures/Figure2_6.png",
     ],
     description:
       "Klee Jumpy Dumpty Rider 1:7 Figurine\n\
@@ -700,9 +700,10 @@ export const figures = [
       "/images/Products/Collectibles/Figures/Figure3_2.png",
       "/images/Products/Collectibles/Figures/Figure3_3.png",
       "/images/Products/Collectibles/Figures/Figure3_4.png",
-      "/images/Products/Collectibles/Figures/Figure3_5.png"
+      "/images/Products/Collectibles/Figures/Figure3_5.png",
     ],
-    description: "Aether Nendoroid\n\
+    description:
+      "Aether Nendoroid\n\
     Size: 100mm in Height\n\
     Material: PVC & ABS\n\
     Manufacturer: Good Smile Company\n\
@@ -713,7 +714,7 @@ export const figures = [
     We would recommend opting for expedited shipping to better ensure the safe arrival of your parcel.\n\
     \n\
     'Earlybird' code is not applicable for this item.",
-  }
+  },
 ];
 
 export const keychains = [
@@ -729,9 +730,10 @@ export const keychains = [
       "/images/Products/Collectibles/Keychains/Keychain1_5.png",
       "/images/Products/Collectibles/Keychains/Keychain1_6.png",
       "/images/Products/Collectibles/Keychains/Keychain1_7.png",
-      "/images/Products/Collectibles/Keychains/Keychain1_8.png"
+      "/images/Products/Collectibles/Keychains/Keychain1_8.png",
     ],
-    description: "Material: Alloy\n\
+    description:
+      "Material: Alloy\n\
     Dimensions\n\
     Skyward Harp: 6.6cm x 3cm\n\
     Wolf's Gravestone: 7.7cm x 3cm\n\
@@ -752,9 +754,10 @@ export const keychains = [
       "/images/Products/Collectibles/Keychains/Keychain2_3.png",
       "/images/Products/Collectibles/Keychains/Keychain2_4.png",
       "/images/Products/Collectibles/Keychains/Keychain2_5.png",
-      "/images/Products/Collectibles/Keychains/Keychain2_6.png"
+      "/images/Products/Collectibles/Keychains/Keychain2_6.png",
     ],
-    description: "Material: Premium Zinc Alloy\n\
+    description:
+      "Material: Premium Zinc Alloy\n\
     \n\
     Size: Varies according to character\n\
     Baal: 5.6 x 6.3 cm\n\
@@ -775,14 +778,15 @@ export const keychains = [
       "/images/Products/Collectibles/Keychains/Keychain3_4.png",
       "/images/Products/Collectibles/Keychains/Keychain3_5.png",
       "/images/Products/Collectibles/Keychains/Keychain3_6.png",
-      "/images/Products/Collectibles/Keychains/Keychain3_7.png"
+      "/images/Products/Collectibles/Keychains/Keychain3_7.png",
     ],
-    description: "Azhdaha Keychains come in 2 variations:\n\
+    description:
+      "Azhdaha Keychains come in 2 variations:\n\
     - Angry Azhdaha (smooth)\n\
     - Confused Azhdaha (furry)\n\
     Material: Environmentally Friendly PP Cotton\n\
     Size: 10.8cm X 9.5cm",
-  }
+  },
 ];
 
 export const mugs = [
@@ -795,9 +799,10 @@ export const mugs = [
       "/images/Products/Accessories/Mugs/Mug1_2.png",
       "/images/Products/Accessories/Mugs/Mug1_3.png",
       "/images/Products/Accessories/Mugs/Mug1_4.png",
-      "/images/Products/Accessories/Mugs/Mug1_5.png"
+      "/images/Products/Accessories/Mugs/Mug1_5.png",
     ],
-    description: "Gorou Shiba Inu Mug\n\
+    description:
+      "Gorou Shiba Inu Mug\n\
     Material: High-quality ceramic\n\
     Size: 126 x 121 x 148 mm, capacity of 370ml\n\
     Stirring rod: 155mm long, stainless steel rod with silicone flag\n\
@@ -815,9 +820,10 @@ export const mugs = [
       "/images/Products/Accessories/Mugs/Mug2_3.png",
       "/images/Products/Accessories/Mugs/Mug2_4.png",
       "/images/Products/Accessories/Mugs/Mug2_5.png",
-      "/images/Products/Accessories/Mugs/Mug2_6.png"
+      "/images/Products/Accessories/Mugs/Mug2_6.png",
     ],
-    description: "Material: High-quality ceramic\n\
+    description:
+      "Material: High-quality ceramic\n\
     'Earlybird' code is not applicable for this item.\n\
     The item is expected to be shipped out around End July 2022.\n\
     Place your order now to secure your favorite Genshin Impact merchandise!",
@@ -827,13 +833,14 @@ export const mugs = [
     name: "Klee Acrylic Coaster",
     price: "15.99",
     images: ["/images/Products/Accessories/Mugs/Mug3_1.png"],
-    description: "Material: Acrylic, oil filling, glitter\n\
+    description:
+      "Material: Acrylic, oil filling, glitter\n\
     Size: 10cm diameter\n\
     \n\
     Perfect match for your Klee Mug!\n\
     \n\
     Do note that the glitter inside is moveable! ",
-  }
+  },
 ];
 
 export const mousepads = [
@@ -847,9 +854,10 @@ export const mousepads = [
       "/images/Products/Accessories/MousePads/MousePad1_3.png",
       "/images/Products/Accessories/MousePads/MousePad1_4.png",
       "/images/Products/Accessories/MousePads/MousePad1_5.png",
-      "/images/Products/Accessories/MousePads/MousePad1_6.png"
+      "/images/Products/Accessories/MousePads/MousePad1_6.png",
     ],
-    description: "Size: 40cm X 70cm\n\
+    description:
+      "Size: 40cm X 70cm\n\
     Thickness: 4mm\n\
     Material: Premium Natural Rubber",
   },
@@ -858,66 +866,73 @@ export const mousepads = [
     name: "Firefly ACG Convention Series Baal Merchandise [End Dec]",
     price: "38.99",
     images: ["/images/Products/Accessories/MousePads/MousePad2_1.png"],
-    description: "Raiden Shogun Mousemat\n\
+    description:
+      "Raiden Shogun Mousemat\n\
     Material: Natural Rubber\n\
     Size: 400 X 700 mm\n\
     Thickness: 3mm\n\
     The items are estimated to be ready to ship by End December 2022.",
-  }
+  },
 ];
 
 export const sales = [
-    {
-      name: "Genshin Impact Taste Of Summer Mirror",
-      before: "30.99",
-      price: "24.99",
-      images: [
-        "/images/Products/Sales/Sale1_1.png",
-        "/images/Products/Sales/Sale1_2.png",
-        "/images/Products/Sales/Sale1_3.png",
-        "/images/Products/Sales/Sale1_4.png",
-        "/images/Products/Sales/Sale1_5.png",
-        "/images/Products/Sales/Sale1_6.png",
-        "/images/Products/Sales/Sale1_7.png"
-      ],
-      description: "Material: Acrylic, Glass \n\
+  {
+    url: "/sale/genshin_impact_taste_of_summer_mirror",
+    name: "Genshin Impact Taste Of Summer Mirror",
+    before: "30.99",
+    price: "24.99",
+    images: [
+      "/images/Products/Sales/Sale1_1.png",
+      "/images/Products/Sales/Sale1_2.png",
+      "/images/Products/Sales/Sale1_3.png",
+      "/images/Products/Sales/Sale1_4.png",
+      "/images/Products/Sales/Sale1_5.png",
+      "/images/Products/Sales/Sale1_6.png",
+      "/images/Products/Sales/Sale1_7.png",
+    ],
+    description:
+      "Material: Acrylic, Glass \n\
       \n\
       Size: 80 x 75 mm\n\
       \n\
       The item is expected to be ready by Early December 2022.\n\
        ShareShare on Facebook  TweetTweet on Twitter  Pin itPin on Pinterest",
-    },
-    {
-      name: "Genshin Impact Traveler Character Badge",
-      before: "10.00",
-      price: "6.99",
-      images: [
-        "/images/Products/Sales/Sale2_1.png",
-        "/images/Products/Sales/Sale2_2.png",
-        "/images/Products/Sales/Sale2_3.png",
-        "/images/Products/Sales/Sale2_4.png"
+  },
+  {
+    url: "/sale/genshin_impact_traveler_character_badge",
+    name: "Genshin Impact Traveler Character Badge",
+    before: "10.00",
+    price: "6.99",
+    images: [
+      "/images/Products/Sales/Sale2_1.png",
+      "/images/Products/Sales/Sale2_2.png",
+      "/images/Products/Sales/Sale2_3.png",
+      "/images/Products/Sales/Sale2_4.png",
     ],
-      description: "This is the badge listing for Paimon and [Traveler] characters. Check out our other listings for more characters!\n\
+    description:
+      'This is the badge listing for Paimon and [Traveler] characters. Check out our other listings for more characters!\n\
       Diameter: 7.5CM\n\
       Material: Tin Plate\n\
       \n\
-      Use \"Badgelover\" when you buy 4 or more badges at 12% off!\n\
+      Use "Badgelover" when you buy 4 or more badges at 12% off!\n\
       \n\
-      Paimon, Lumine, and Aether badges are estimated to be ready around End July 2022.",
-    },
-    {
-        name: "Genshin impact Concert CD 2021 Set (Melodies of an Endless Journey)",
-        before: "200.00",
-        price: "179.99",
-        images: [
-          "/images/Products/Sales/Sale3_1.png",
-          "/images/Products/Sales/Sale3_2.png",
-          "/images/Products/Sales/Sale3_3.png",
-          "/images/Products/Sales/Sale3_4.png",
-          "/images/Products/Sales/Sale3_5.png",
-          "/images/Products/Sales/Sale3_6.png"
-      ],
-        description: "The long awaited Concert CD set is finally here! \n\
+      Paimon, Lumine, and Aether badges are estimated to be ready around End July 2022.',
+  },
+  {
+    url: "/sale/genshin_impact_concert_cd_2021_set_(melodies_of_an_endless_journey)",
+    name: "Genshin impact Concert CD 2021 Set (Melodies of an Endless Journey)",
+    before: "200.00",
+    price: "179.99",
+    images: [
+      "/images/Products/Sales/Sale3_1.png",
+      "/images/Products/Sales/Sale3_2.png",
+      "/images/Products/Sales/Sale3_3.png",
+      "/images/Products/Sales/Sale3_4.png",
+      "/images/Products/Sales/Sale3_5.png",
+      "/images/Products/Sales/Sale3_6.png",
+    ],
+    description:
+      "The long awaited Concert CD set is finally here! \n\
         \n\
         Items in the set\n\
         1. Musical Score\n\
@@ -931,34 +946,36 @@ export const sales = [
         36.5*26*10 cm\n\
         \n\
         Price has been revised due to high international shipment cost (Bulky and heavy item)",
-      },
-      {
-        name: "Genshin FES 2021 Tote Bag",
-        before: "35.99",
-        price: "28.99",
-        images: [
-          "/images/Products/Sales/Sale4_1.png"
-      ],
-        description: "Genshin Impact Tote Bag\n\
+  },
+  {
+    url: "/sale/genshin_fes_2021_tote_bag",
+    name: "Genshin FES 2021 Tote Bag",
+    before: "35.99",
+    price: "28.99",
+    images: ["/images/Products/Sales/Sale4_1.png"],
+    description:
+      "Genshin Impact Tote Bag\n\
         Material: Cotton and Polyester\n\
         Size: 38x32cm\n\
         Length (including handle): 90cm",
-      },
-      {
-        name: "Genshin Impact Airpods Pro Case",
-        before:"24.99",
-        price: "22.99",
-        images: [
-          "/images/Products/Sales/Sale5_1.png",
-          "/images/Products/Sales/Sale5_2.png",
-          "/images/Products/Sales/Sale5_3.png",
-          "/images/Products/Sales/Sale5_4.png",
-          "/images/Products/Sales/Sale5_5.png"
-      ],
-        description: "Genshin Impact Airpods Pro Protective Casing\n\
+  },
+  {
+    url: "/sale/genshin_impact_airpods_pro_case",
+    name: "Genshin Impact Airpods Pro Case",
+    before: "24.99",
+    price: "22.99",
+    images: [
+      "/images/Products/Sales/Sale5_1.png",
+      "/images/Products/Sales/Sale5_2.png",
+      "/images/Products/Sales/Sale5_3.png",
+      "/images/Products/Sales/Sale5_4.png",
+      "/images/Products/Sales/Sale5_5.png",
+    ],
+    description:
+      "Genshin Impact Airpods Pro Protective Casing\n\
         Material: PVC\n\
         Dodoco: 8.2 x 7.3 x 3.8 cm\n\
         Guoba: 8.8 x 7.7 x 3.9 cm\n\
         Note: This item is strictly for the Airpods PRO model only.",
-      }
-  ];
+  },
+];

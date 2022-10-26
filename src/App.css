@@ -118,7 +118,7 @@ nav {
 
 .expends {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   width: 80%;
 }
 
@@ -129,15 +129,26 @@ nav {
 
 .expends_item a {
   padding-bottom: 1vw;
+  transition: 0.1s linear;
+  width: fit-content;
+}
+
+.expends_item a:hover {
+  opacity: 0.5;
 }
 
 .expends_item_img {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 2vw;
-  row-gap: 0.5vw;
-  width: 32vw;
+  grid-template-columns: 1fr;
+  row-gap: 0.75vw;
+  line-height: 1.5vw;
+  width: fit-content;
   color: #ffffff;
+  transition: 0.1s linear;
+}
+
+.expends_item_img:hover {
+  transform: translateY(2.5%);
 }
 
 .expends_item_img img {

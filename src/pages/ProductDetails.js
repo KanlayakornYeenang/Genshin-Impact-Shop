@@ -30,9 +30,6 @@ const Details = (props) => {
       </div>
       <div className="shape shapebottom"></div>
     </div>
-    // {/* <svg height="210" width="500">
-    //   <polygon points="200,10 250,190 160,210" style={{fill:"black"}} />
-    // </svg> */}
   );
 };
 
@@ -50,7 +47,7 @@ const ProductDetails = (props) => {
           <MyGalleryProducts images={images} />
           <Details products={props.products} />
         </div>
-        <img style={{width:"100vw", height:"2vw"}} src="/images/ShapeLine.png"/>
+        <img style={{width:"100vw", height:"2.75vw"}} src="/images/ShapeLine.png"/>
       </div>
       <div>
         <Footer />

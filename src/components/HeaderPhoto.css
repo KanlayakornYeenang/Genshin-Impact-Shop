@@ -9,8 +9,8 @@
 }
 
 .collectibles{
-    background-image: url("/public/images/HeaderPhotoCollectibles.jpg");
-    background-position: 0vw -12vw;
+    background-image: url("/public/images/HeaderPhotoCollectibles.png");
+    background-position: 0vw -9.5vw;
 }
 
 .apparel{
@@ -18,15 +18,15 @@
     background-position: 0vw 0vw;
 }
 
-/* .accessories{
+.accessories{
     background-image: url("/public/images/HeaderPhotoAccessories.png");
     background-position: 0vw 0vw;
 }
 
 .sale{
     background-image: url("/public/images/HeaderPhotoSale.png");
-    background-position: 0vw -9.5vw;
-} */
+    background-position: 0vw -12vw;
+}
 
 .header-photo h1{
     color: #fff;

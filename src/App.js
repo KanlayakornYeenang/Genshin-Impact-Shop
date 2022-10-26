@@ -69,7 +69,7 @@ const App = () => {
             />
           ))
         )}
-        // ส่วนนี้เป็นการเชื่อม Path กับ Page Sale ที่เราสร้างไว้มั้ง
+        {/* // ส่วนนี้เป็นการเชื่อม Path กับ Page Sale ที่เราสร้างไว้มั้ง */}
         <Route path="/sale" element={<Sale />} />
       </Routes>
     </BrowserRouter>

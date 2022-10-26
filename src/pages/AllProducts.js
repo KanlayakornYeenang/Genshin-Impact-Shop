@@ -8,7 +8,7 @@ const AllProducts = (props) => {
     return (
         <div>
             <Header />
-            <HeaderPhoto text={props.text}  head={props.head}/>
+            <HeaderPhoto text={props.text} head={props.head}/>
             <div className="frame-wrapper">
                 <ProductElements  product={props.product} length={props.product.length}/>
             </div>
