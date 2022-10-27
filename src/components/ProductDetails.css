@@ -15,13 +15,17 @@
 }
 
 .product-details .image-gallery {
-  width: 60vw !important;
-  /* background-color: red; */
+  width: 72vw !important;
   min-height: 83vh;
   z-index: 999;
   display: grid;
   position: sticky;
   top: 17vh;
+}
+
+.product-details .image-gallery-slides {
+  border-radius: 0.75vw;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 .product-details .image-gallery-thumbnails-container {
@@ -64,12 +68,25 @@
 }
 
 .details {
+
   display: flex;
-  justify-content: start;
-  width: fit-content;
+  justify-content: center;
+  width: 28vw;
   height: fit-content;
   min-height: 83vh;
   flex-direction: column;
+}
+
+.details-wrapper {
+  width: 22vw;
+  background-color: #252423;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2.25vw;
+  justify-content: center;
+  line-height: 2vw;
+  padding: 3vw;
 }
 
 .shape {
@@ -87,18 +104,6 @@
 .shapetop {
     background-position: right;
     background-image: url("/public/images/ShapeTop.png");
-}
-
-.details-wrapper {
-  width: fit-content;
-  background-color: #252423;
-  color: #ffffff;
-  display: flex;
-  flex-direction: column;
-  row-gap: 2.25vw;
-  justify-content: center;
-  line-height: 2vw;
-  padding: 3vw;
 }
 
 ::-webkit-scrollbar {
@@ -173,7 +178,7 @@
 }
 
 .details-name {
-    font-size: 2vw;
+    font-size: 1.6vw;
     font-weight: bold;
     width: 90%;
     line-height: 3vw;
@@ -181,7 +186,7 @@
 
 .details-price {
     font-size: 1.25vw;
-    margin-top: 0.8vw;
+    margin-top: 0.5vw;
     width: 10%;
     text-align: right;
 }

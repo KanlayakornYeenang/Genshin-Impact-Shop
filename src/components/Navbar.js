@@ -4,11 +4,12 @@ import { RiArrowDropDownFill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
 import { accessories, apparel, collectibles } from "../data/menuItems";
+import PopUpSignIn from "./PopUpSignIn";
 
 
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
 
-const Tabs = (props) => {
+export const Tabs = (props) => {
   const [isHovering, setIsHovering] = useState(false);
   const handleMouseOut = () => {
     setIsHovering(false);
@@ -101,7 +102,7 @@ const Navbar = () => {
         <a id="cart-wrapper" href="/cart">
           <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
         </a>
-        <Tabs url="/signin" title="SIGN IN" />
+        <PopUpSignIn/>
       </div>
     </nav>
   );

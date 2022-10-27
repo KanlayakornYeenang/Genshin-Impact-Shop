@@ -67,6 +67,7 @@ nav {
   align-items: center;
   height: 10vh;
   transition: 0.1s linear;
+  cursor: pointer;
 }
 
 .menu-items:hover {

@@ -1,0 +1,163 @@
+.popup-content {
+    -webkit-animation: anvil 0.3s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+.close {
+    background-color: white;
+    width: 2vw;
+    height: 2vw;
+    font-size: 1.5vw;
+    text-align: center;
+    border-radius: 100%;
+    position: absolute;
+    right: 10%;
+    top: 10%;
+    cursor: pointer;
+    transition: 0.1s linear;
+}
+
+.close:active {
+    transform: translateY(10%);
+}
+
+.close:hover {
+    opacity: 0.5;
+}
+
+.close p {
+    transform: translateY(8%);
+}
+
+.frame-circle {
+    position: relative;
+    z-index: 2;
+    width: fit-content;
+    height: fit-content;
+    background-image: url("/public/images/frame-circle.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    transform: scale(0.8);
+}
+
+.frame-circle-in {
+    width: 46vw;
+    height: 46vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform: scale(0.86);
+    background-color: rgb(255, 255, 255);
+    border: 0.5vw solid #8d7655;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    gap: 3vw;
+    justify-content: center;
+}
+
+.frame-circle h1 {
+    color: #111111;
+}
+
+.singin-input-container {
+    display: flex;
+    flex-flow: column;
+    row-gap: 1vw;
+    width: 50%;
+    align-items: center;
+}
+
+.signin-input-wrapper {
+    background-color: #e8e8e8;
+    border-radius: 3vw;
+    padding: 4% 8%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signin-input {
+    font-size: 1.15vw;
+    border: none;
+    background-color: transparent;
+    padding: 3% 0%;
+}
+
+.eye {
+    color: #111;
+    font-size: 2vw;
+    cursor: pointer;
+    transform: translateY(8%);
+    background-color: transparent;
+    border: none;
+    transition: 0.1s linear;
+}
+
+.eye:active {
+    transform: translateY(14%);
+}
+
+.username {
+    width: 100%;
+}
+
+.password {
+    width: 88%;
+}
+
+.signin-input:focus {
+    outline: none;
+}
+
+.login {
+    width: 6vw;
+    height: 6vw;
+    border-radius: 2vw;
+    background-color: #ffffff;
+    border: 0.2vw solid #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+    transform: translateY(8%);
+    color: #e8e8e8;
+}
+
+.createac {
+    font-size: 1.1vw;
+    color: #666666;
+}
+
+.fade {
+    position: fixed;
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    opacity: 0.9;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes anvil {
+    0% {
+        transform: scale(1) translateY(0px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+
+    1% {
+        transform: scale(0.96) translateY(10px);
+        opacity: 0;
+        box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+    }
+
+    100% {
+        transform: scale(1) translateY(0px);
+        opacity: 1;
+        box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+    }
+}
