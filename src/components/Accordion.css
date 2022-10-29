@@ -1,0 +1,18 @@
+.accordion {
+    display: flex;
+    border-top: 0.1vw solid #adacaa;
+    border-bottom: 0.1vw solid #adacaa;
+    width: 100%;
+    padding: 1vw 0vw;
+
+}
+
+.accordion-address {
+    width: 80%;
+}
+
+.accordion-icon {
+    width: 20%;
+    text-align: right;
+    transform: translateY(8%);
+}

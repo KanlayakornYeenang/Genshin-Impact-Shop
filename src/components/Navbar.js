@@ -6,7 +6,6 @@ import { TiShoppingCart } from "react-icons/ti";
 import { accessories, apparel, collectibles } from "../data/menuItems";
 import PopUpSignIn from "./PopUpSignIn";
 
-
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
 
 export const Tabs = (props) => {
@@ -102,7 +101,7 @@ const Navbar = () => {
         <a id="cart-wrapper" href="/cart">
           <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
         </a>
-        <PopUpSignIn/>
+        <PopUpSignIn />
       </div>
     </nav>
   );

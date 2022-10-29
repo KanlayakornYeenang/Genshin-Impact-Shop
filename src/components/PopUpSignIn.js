@@ -6,6 +6,7 @@ import { HiArrowRight } from "react-icons/hi";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
+import { useRef } from "react";
 
 export const ShowPassword = () => {
   const [passwordShown, setPasswordShown] = useState(false);
@@ -27,9 +28,12 @@ export const ShowPassword = () => {
 };
 
 const PopUpSignIn = () => {
+  const ref = useRef();
+  const closeTooltip = () => ref.current.close();
   return (
     <div className="signin">
       <Popup
+        ref={ref}
         trigger={
           <div>
             <Tabs title={"SIGN IN"} />
@@ -39,8 +43,10 @@ const PopUpSignIn = () => {
         nested
       >
         <div className="frame-circle">
-          <button className="close">
-            <p><IoMdClose /></p>
+          <button className="close" onClick={closeTooltip}>
+            <p>
+              <IoMdClose />
+            </p>
           </button>
           <div className="frame-circle-in">
             <h1>Sign In</h1>

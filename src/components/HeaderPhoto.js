@@ -7,6 +7,7 @@ const HeaderPhoto = (props) => {
     return (
         <div className={"header-photo " + props.head.slice(1, -1)}>
             <h1>{props.text}</h1>
+            <div className="shape shapeframe"></div>
         </div>
     );
 }

@@ -1,0 +1,97 @@
+.cart-frame {
+    position: static;
+    width: 100vw;
+    height: fit-content;
+    margin-top: 10vh;
+    display: flex;
+}
+
+.cart-left {
+    width: 69%;
+    height: 100%;
+    padding: 9vw 0vw 9vw 9vw;
+}
+
+.cart-left h1 {
+    font-size: 4.25vw;
+}
+
+.cart-right {
+    width: 31%;
+    height: 100%;
+    background-color: #f6f6f5;
+}
+
+.table {
+    padding: 2vw 0vw;
+}
+
+.table-header {
+    width: 95%;
+    display: flex;
+    border-bottom: 0.1vw solid #adacaa;
+    padding-bottom: 0.5vw;
+    color: #525151;
+}
+
+.table-header div {
+    font-size: 1vw;
+}
+
+.table-left {
+    width: 70%;
+}
+
+.table-right {
+    width: 30%;
+}
+
+.cart-product {
+    width: 95%;
+    padding-top: 2vw;
+    padding-bottom: 3.5vw;
+    font-size: 1.5vw;
+    border-bottom: 0.1vw solid #adacaa;
+}
+
+.cart-frame .addtocart {
+    width: 30%;
+    font-size: 1vw;
+    text-decoration: none;
+}
+
+.cart-frame .addtocart-bg {
+    transform: translateY(2.6vw) rotate(-7deg);
+}
+
+.addtocart::after{
+    content: ' ';
+    width: 0%;
+    height: 0.1vw;
+    left: 17.5%;
+    transition: 0.5s;
+    background-color: #fff;
+    position: relative;
+    z-index: 9;
+}
+
+.addtocart:hover:after{
+    width: 65%;
+}
+
+.cart-right-frame{
+    padding: 16.25vw 12vw 9vw 3vw;
+}
+
+.cart-right-frame{
+    font-size: 1vw;
+    display: flex;
+    flex-flow: column;
+    row-gap: 1vw;
+}
+
+.cart-price {
+    font-size: 1.75vw;
+    height: 6vw;
+    color: #adacaa;
+}

@@ -31,14 +31,12 @@ h2 {
   font-size: 1.2vw;
 }
 
-.shop-frame-content p,
-.footer-support-frame div p {
+.shop-frame-content p {
   font-size: 1vw;
   transition: 0.1s linear;
 }
 
-.shop-frame-content p:hover,
-.footer-support-frame div p:hover {
+.shop-frame-content p:hover {
   text-decoration: underline;
   transform: translateY(10%);
 }
@@ -55,10 +53,6 @@ h2 {
   font-weight: 100;
   color: #656462;
   cursor: context-menu;
-}
-
-.support-frame-content {
-  margin-top: 1.5vw;
 }
 
 .footer-warpper {

@@ -93,7 +93,7 @@ export const tops = [
         \n\
         Sizes are taken from Flagship Store\n\
         \n\
-        Do allow for discrepancies in measurement (up to 3cm difference).\n\
+        Do allow for discrepancies in measurement (up to 3 CM difference).\n\
         \n\
         - - - - - - - -\n\
         Product Care:\n\
@@ -173,7 +173,7 @@ export const tops = [
         \n\
         Sizes are taken from Flagship Store\n\
         \n\
-        Do allow for discrepancies in measurement (up to 3cm difference).\n\
+        Do allow for discrepancies in measurement (up to 3 CM difference).\n\
         \n\
         For the animated print design, the print will look different from different angles\n\
         - - - - - - - -\n\
@@ -218,7 +218,7 @@ export const tops = [
         Size Estimate: Refer to the chart \n\
         \n\
         Sizes are taken from The Flagship Store\n\
-        Do allow for discrepancies in measurement (up to 3cm difference).\n\
+        Do allow for discrepancies in measurement (up to 3 CM difference).\n\
         \n\
         - - - - - - - -\n\
         \n\
@@ -273,7 +273,7 @@ export const bottoms = [
         \n\
         Sizes are taken from Flagship Store\n\
         \n\
-        Do allow for discrepancies in measurement (up to 3cm difference).\n\
+        Do allow for discrepancies in measurement (up to 3 CM difference).\n\
         \n\
         - - - - - - - -\n\
         Product Care:\n\
@@ -320,7 +320,7 @@ export const bottoms = [
         \n\
         Sizes are taken from Flagship Store\n\
         \n\
-        Do allow for discrepancies in measurement (up to 3cm difference).\n\
+        Do allow for discrepancies in measurement (up to 3 CM difference).\n\
         \n\
         - - - - - - - -\n\
         Product Care:\n\
@@ -370,7 +370,7 @@ export const badges = [
     description:
       "Badge\n\
         Material: Tin Plate\n\
-        Size: 5.8 cm in diameter",
+        Size: 5.8  CM in diameter",
   },
   {
     url: "/collectibles/badges/genshin_impact_chibi_badges",
@@ -388,7 +388,7 @@ export const badges = [
     description:
       "Genshin Impact Chibi Badges\n\
         Material: Alloy\n\
-        Diameter: 5.8cm\n\
+        Diameter: 5.8 CM\n\
         \n\
         Diluc and Childe badges are expected to be ready by End October 2022.",
   },
@@ -408,7 +408,7 @@ export const badges = [
     description:
       "Genshin Impact Halloween Badges\n\
         Material: Alloy\n\
-        Diameter: 5.8cm\n\
+        Diameter: 5.8 CM\n\
         'Earlybird' code is not applicable for this item.",
   },
 ];
@@ -430,8 +430,8 @@ export const standees = [
     description:
       "Genshin Impact Halloween Standees\n\
         Material: Acrylic\n\
-        Height: 81.4mm\n\
-        Base: 80 x 40mm\n\
+        Height: 81.4 MM\n\
+        Base: 80 x 40 MM\n\
         \n\
         Xiao, Diluc, Hu Tao, and Tartaglia standees are expected to be ready by End August 2022.\n\
         \n\
@@ -454,8 +454,8 @@ export const standees = [
       "Genshin Impact Chibi Standees\n\
         Material: Acrylic\n\
         Size\n\
-        Character: 6.5 x 5cm\n\
-        Base: 5.7 x 8.2cm\n\
+        Character: 6.5 x 5 CM\n\
+        Base: 5.7 x 8.2 CM\n\
         \n\
         Gan Yu and Childe standees are estimated to be ready by End October 2022.",
   },
@@ -476,7 +476,7 @@ export const standees = [
     ],
     description:
       "Material: High Quality Acrylic\n\
-        Size: 110mm x 165mm\n\
+        Size: 110 MM x 165 MM\n\
         The Zhong Li phone stand is expected to ship out around End November 2022.\n\
         \n\
         Place your order now to secure your favorite Genshin Impact merchandise!",
@@ -498,20 +498,20 @@ export const pins = [
       "Genshin Impact Artifact Metal Pin/Brooch\n\
         Material: Alloy\n\
         Flower of Life Pin\n\
-        Feather: 30x33mm\n\
-        Oval: 12x15mm\n\
-        Length of whole pin: 250mm\n\
-        Thickness: 1.2mm\n\
+        Feather: 30x33 MM\n\
+        Oval: 12x15 MM\n\
+        Length of whole pin: 250 MM\n\
+        Thickness: 1.2 MM\n\
         Plume of Death Pin\n\
-        Feather: 25x35mm\n\
-        Oval: 12x15mm\n\
-        Length of whole pin: 250mm\n\
-        Thickness: 1.2mm\n\
+        Feather: 25x35 MM\n\
+        Oval: 12x15 MM\n\
+        Length of whole pin: 250 MM\n\
+        Thickness: 1.2 MM\n\
         Circlet of Logos Pin \n\
-        Feather: 24x32mm\n\
-        Oval: 12x15mm\n\
-        Length of whole pin: 250mm\n\
-        Thickness: 1.2mm\n\
+        Feather: 24x32 MM\n\
+        Oval: 12x15 MM\n\
+        Length of whole pin: 250 MM\n\
+        Thickness: 1.2 MM\n\
         \n\
         Flower of Life Pin will only be available around Mid June 2022.",
   },
@@ -554,12 +554,12 @@ export const pins = [
       "Wanderer's String-Kettle Necklace\n\
         Material: Plated Copper, Inlaid Zircon\n\
         Weight: Approx. 4.2g \n\
-        Length of the Necklace: 420 mm\n\
-        Length of the charm: 17.5 X 10 mm\n\
+        Length of the Necklace: 420 MM\n\
+        Length of the charm: 17.5 X 10 MM\n\
         Bard's Arrow Feather Enamel pin\n\
         Material:  Plated Copper, Inlaid Zircon\n\
         Weight: Approx. 4.1g \n\
-        Length of item: 31.5 X 16 mm\n\
+        Length of item: 31.5 X 16 MM\n\
         Concert's Final Hour Adjustable Ring\n\
         Material:  Plated Copper, Inlaid Zircon\n\
         Weight: Approx. 4.1g \n\
@@ -592,19 +592,6 @@ export const pins = [
 ];
 export const plush = [
   {
-    url: "/collectibles/plush/cryo_abyss_mage_plush_keychain",
-    name: "Cryo Abyss Mage Plush Keychain",
-    price: "28.99",
-    images: [
-      "/images/Products/Collectibles/Plush/Plush1_1.png",
-      "/images/Products/Collectibles/Plush/Plush1_2.png",
-      "/images/Products/Collectibles/Plush/Plush1_3.png",
-    ],
-    description:
-      "Material: Environmentally Friendly PP Cotton\n\
-        Size: 12 x 14cm",
-  },
-  {
     url: "/collectibles/plush/taroumaru_plushie",
     name: "Taroumaru Plushie",
     price: "69.99",
@@ -615,16 +602,18 @@ export const plush = [
       "/images/Products/Collectibles/Plush/Plush3_4.png",
     ],
     description:
-      "Place your order now to secure your favorite merchandise!\n\
-        Body: Fine velvet, stuffed with environmentally-friendly PP cotton\n\
+      "Body: Fine velvet, stuffed with environmentally-friendly PP cotton\n\
+      \n\
         Shirt: Canvas Fabric\n\
+        \n\
         Head Band: Cloth (Towel Cloth)\n\
-        Size: 15 x 23 x 20cm ",
+        \n\
+        Size: 15 x 23 x 20 CM",
   },
   {
-    url: "/accessories/mousepads/zhong_li_rex_lapis_xl-size_plushie",
-    name: "Zhong Li Rex Lapis XL-Size Plushie",
-    price: "119.99",
+    url: "/accessories/mousepads/genshin_impact_paimon_plushie",
+    name: "Genshin Impact Paimon Plushie",
+    price: "50.00",
     images: [
       "/images/Products/Collectibles/Plush/Plush2_1.png",
       "/images/Products/Collectibles/Plush/Plush2_2.png",
@@ -632,13 +621,13 @@ export const plush = [
       "/images/Products/Collectibles/Plush/Plush2_4.png",
     ],
     description:
-      "Place your order now to secure your favorite merchandise!\n\
-        Material: Polyester cover, stuffed with environmentally-friendly PP cotton\n\
-        Size: 67 x 24 x 17cm\n\
-        As this plushie is HUGE, we will be using express/expedited shipping options, hence the higher price.\n\
+      "Size: 30 CM X 20 CM\n\
+      \n\
+      Material: Premium PP Cotton\n\
+      \n\
+        Size: 67 x 24 x 17 CM\n\
         \n\
-        Item is estimated to ship out around End October 2022.\n\
-        'Earlybird' code is not applicable for this item.",
+        Comes with FREE SHIPPING!",
   },
 ];
 
@@ -656,7 +645,7 @@ export const figures = [
       "/images/Products/Collectibles/Figures/Figure1_6.png",
     ],
     description:
-      "Height: 13.5 CM (14CM with Base)\n\
+      "Height: 13.5 CM (14 CM with Base)\n\
         Base Length: 8.5 CM Diameter\n\
         Material: PVC & ABS\n\
         \n\
@@ -704,7 +693,7 @@ export const figures = [
     ],
     description:
       "Aether Nendoroid\n\
-    Size: 100mm in Height\n\
+    Size: 100 MM in Height\n\
     Material: PVC & ABS\n\
     Manufacturer: Good Smile Company\n\
     \n\
@@ -735,10 +724,10 @@ export const keychains = [
     description:
       "Material: Alloy\n\
     Dimensions\n\
-    Skyward Harp: 6.6cm x 3cm\n\
-    Wolf's Gravestone: 7.7cm x 3cm\n\
-    Vortex Vanquisher: 1.6cm x 8cm\n\
-    Song of Broken Pines: 2.2cm x 8cm\n\
+    Skyward Harp: 6.6 CM x 3 CM\n\
+    Wolf's Gravestone: 7.7 CM x 3 CM\n\
+    Vortex Vanquisher: 1.6 CM x 8 CM\n\
+    Song of Broken Pines: 2.2 CM x 8 CM\n\
     \n\
     Wolf's Gravestone and Skyward Harp keychains are estimated to be ready by Early April 2022.\n\
     \n\
@@ -760,11 +749,11 @@ export const keychains = [
       "Material: Premium Zinc Alloy\n\
     \n\
     Size: Varies according to character\n\
-    Baal: 5.6 x 6.3 cm\n\
-    Kokomi: 5.3 x 6.5 cm\n\
-    Itto: 6.5 x 6.7 cm\n\
-    Gorou: 6.1 x 6.9 cm\n\
-    Sayu: 6.1 x 6.8 cm\n\
+    Baal: 5.6 x 6.3 CM\n\
+    Kokomi: 5.3 x 6.5 CM\n\
+    Itto: 6.5 x 6.7 CM\n\
+    Gorou: 6.1 x 6.9 CM\n\
+    Sayu: 6.1 x 6.8 CM\n\
     Keychains are expected to ship out by End October 2022.",
   },
   {
@@ -785,7 +774,21 @@ export const keychains = [
     - Angry Azhdaha (smooth)\n\
     - Confused Azhdaha (furry)\n\
     Material: Environmentally Friendly PP Cotton\n\
-    Size: 10.8cm X 9.5cm",
+    Size: 10.8 CM X 9.5 CM",
+  },
+  {
+    url: "/collectibles/keychains/cryo_abyss_mage_plush_keychain",
+    name: "Cryo Abyss Mage Plush Keychain",
+    price: "28.99",
+    images: [
+      "/images/Products/Collectibles/keychains/keychain4_1.png",
+      "/images/Products/Collectibles/keychains/keychain4_2.png",
+      "/images/Products/Collectibles/keychains/keychain4_3.png",
+    ],
+    description:
+      "Material: Environmentally Friendly PP Cotton\n\
+      \n\
+      Size: 12 x 14 CM",
   },
 ];
 
@@ -835,7 +838,7 @@ export const mugs = [
     images: ["/images/Products/Accessories/Mugs/Mug3_1.png"],
     description:
       "Material: Acrylic, oil filling, glitter\n\
-    Size: 10cm diameter\n\
+    Size: 10 CM diameter\n\
     \n\
     Perfect match for your Klee Mug!\n\
     \n\
@@ -857,8 +860,8 @@ export const mousepads = [
       "/images/Products/Accessories/MousePads/MousePad1_6.png",
     ],
     description:
-      "Size: 40cm X 70cm\n\
-    Thickness: 4mm\n\
+      "Size: 40 CM X 70 CM\n\
+    Thickness: 4 MM\n\
     Material: Premium Natural Rubber",
   },
   {
@@ -869,34 +872,45 @@ export const mousepads = [
     description:
       "Raiden Shogun Mousemat\n\
     Material: Natural Rubber\n\
-    Size: 400 X 700 mm\n\
-    Thickness: 3mm\n\
+    Size: 400 X 700 MM\n\
+    Thickness: 3 MM\n\
     The items are estimated to be ready to ship by End December 2022.",
   },
 ];
 
 export const sales = [
   {
-    url: "/sale/genshin_impact_taste_of_summer_mirror",
-    name: "Genshin Impact Taste Of Summer Mirror",
+    url: "/sale/guoba_coin_pouch",
+    name: "Guoba Coin Pouch",
     before: "30.99",
-    price: "24.99",
+    price: "28.99",
     images: [
       "/images/Products/Sales/Sale1_1.png",
       "/images/Products/Sales/Sale1_2.png",
       "/images/Products/Sales/Sale1_3.png",
       "/images/Products/Sales/Sale1_4.png",
       "/images/Products/Sales/Sale1_5.png",
-      "/images/Products/Sales/Sale1_6.png",
-      "/images/Products/Sales/Sale1_7.png",
     ],
     description:
-      "Material: Acrylic, Glass \n\
+      "Size: 13 X 11.5 CM\n\
       \n\
-      Size: 80 x 75 mm\n\
-      \n\
-      The item is expected to be ready by Early December 2022.\n\
-       ShareShare on Facebook  TweetTweet on Twitter  Pin itPin on Pinterest",
+      The Guoba keychain will only be ready to ship out around Mid September 2022.",
+  },
+  {
+    url: "/sale/dendro_slime_key_holder",
+    name: "Dendro Slime Key Holder",
+    before: "28.99",
+    price: "23.99",
+    images: [
+      "/images/Products/Sales/Sale4_1.png",
+      "/images/Products/Sales/Sale4_2.png",
+      "/images/Products/Sales/Sale4_3.png",
+      "/images/Products/Sales/Sale4_4.png",
+    ],
+    description:
+      "Material: Polyester Fabric\n\
+      Size: 14 X 12 X 5 CM\n\
+      The Key Holder will only be sent out to us around Early August 2022",
   },
   {
     url: "/sale/genshin_impact_traveler_character_badge",
@@ -911,12 +925,31 @@ export const sales = [
     ],
     description:
       'This is the badge listing for Paimon and [Traveler] characters. Check out our other listings for more characters!\n\
-      Diameter: 7.5CM\n\
+      Diameter: 7.5 CM\n\
       Material: Tin Plate\n\
       \n\
       Use "Badgelover" when you buy 4 or more badges at 12% off!\n\
       \n\
       Paimon, Lumine, and Aether badges are estimated to be ready around End July 2022.',
+  },
+  {
+    url: "/sale/genshin_impact_airpods_pro_case",
+    name: "Genshin Impact Airpods Pro Case",
+    before: "24.99",
+    price: "22.99",
+    images: [
+      "/images/Products/Sales/Sale5_1.png",
+      "/images/Products/Sales/Sale5_2.png",
+      "/images/Products/Sales/Sale5_3.png",
+      "/images/Products/Sales/Sale5_4.png",
+      "/images/Products/Sales/Sale5_5.png",
+    ],
+    description:
+      "Genshin Impact Airpods Pro Protective Casing\n\
+        Material: PVC\n\
+        Dodoco: 8.2 x 7.3 x 3.8 CM\n\
+        Guoba: 8.8 x 7.7 x 3.9 CM\n\
+        Note: This item is strictly for the Airpods PRO model only.",
   },
   {
     url: "/sale/genshin_impact_concert_cd_2021_set_(melodies_of_an_endless_journey)",
@@ -942,40 +975,9 @@ export const sales = [
         5. Concert's CD\n\
         \n\
         Sizing\n\
-        365*260*100 mm\n\
-        36.5*26*10 cm\n\
+        365*260*100 MM\n\
+        36.5*26*10 CM\n\
         \n\
         Price has been revised due to high international shipment cost (Bulky and heavy item)",
-  },
-  {
-    url: "/sale/genshin_fes_2021_tote_bag",
-    name: "Genshin FES 2021 Tote Bag",
-    before: "35.99",
-    price: "28.99",
-    images: ["/images/Products/Sales/Sale4_1.png"],
-    description:
-      "Genshin Impact Tote Bag\n\
-        Material: Cotton and Polyester\n\
-        Size: 38x32cm\n\
-        Length (including handle): 90cm",
-  },
-  {
-    url: "/sale/genshin_impact_airpods_pro_case",
-    name: "Genshin Impact Airpods Pro Case",
-    before: "24.99",
-    price: "22.99",
-    images: [
-      "/images/Products/Sales/Sale5_1.png",
-      "/images/Products/Sales/Sale5_2.png",
-      "/images/Products/Sales/Sale5_3.png",
-      "/images/Products/Sales/Sale5_4.png",
-      "/images/Products/Sales/Sale5_5.png",
-    ],
-    description:
-      "Genshin Impact Airpods Pro Protective Casing\n\
-        Material: PVC\n\
-        Dodoco: 8.2 x 7.3 x 3.8 cm\n\
-        Guoba: 8.8 x 7.7 x 3.9 cm\n\
-        Note: This item is strictly for the Airpods PRO model only.",
   },
 ];

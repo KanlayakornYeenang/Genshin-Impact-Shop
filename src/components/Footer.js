@@ -27,12 +27,6 @@ const Footer = () => {
             <a href="/sale"><p>SALE</p></a>
           </div>
         </div>
-        <div className="footer-support-frame">
-          <h2 className="footer-title">Support</h2>
-          <div className="shop-frame-content">
-            <a href="/contactus"><p>CONTACT US</p></a>
-          </div>
-        </div>
       </div>
     </div>
   );

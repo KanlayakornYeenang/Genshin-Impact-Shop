@@ -4,6 +4,7 @@ import ShowPath from "../components/ShowPath";
 import { MyGalleryProducts } from "../components/Slideshow";
 import Footer from "../components/Footer";
 import "../components/ProductDetails.css";
+import Button from "../components/Button";
 
 const Details = (props) => {
   return (
@@ -14,12 +15,7 @@ const Details = (props) => {
           <div className="details-name">{props.products.name}</div>
           <div className="details-price">${props.products.price}</div>
         </div>
-        <button className="addtocart">
-          <div className="addtocart-txt">
-            ${props.products.price} - Add to Cart
-          </div>
-          <div className="addtocart-bg"></div>
-        </button>
+        <Button string={"$" + props.products.price + " - Add to Cart"} />
         <div className="line"></div>
         <div className="details-description">
           <div>DESCRIPTION</div>
@@ -47,7 +43,10 @@ const ProductDetails = (props) => {
           <MyGalleryProducts images={images} />
           <Details products={props.products} />
         </div>
-        <img style={{width:"100vw", height:"2.75vw"}} src="/images/ShapeLine.png"/>
+        <img
+          style={{ width: "100vw", height: "2.75vw" }}
+          src="/images/ShapeLine.png"
+        />
       </div>
       <div>
         <Footer />

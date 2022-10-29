@@ -10,7 +10,8 @@
 
 .collectibles{
     background-image: url("/public/images/HeaderPhotoCollectibles.png");
-    background-position: 0vw -9.5vw;
+    /* background-position: 0vw -9.5vw; */
+    background-position: 0vw 0vw;
 }
 
 .apparel{
@@ -25,15 +26,22 @@
 
 .sale{
     background-image: url("/public/images/HeaderPhotoSale.png");
-    background-position: 0vw -12vw;
+    /* background-position: 0vw -12vw; */
 }
 
 .header-photo h1{
     color: #fff;
     font-size: 5vw;
-    padding-left: 7vw;
+    padding-left: 14vw;
 }
 
 .header-photo h1:hover{
     cursor: context-menu;
+}
+
+.shapeframe {
+    background-size: contain;
+    position: absolute;
+    bottom: 0;
+    background-image: url("/public/images/ShapeFrame.png");
 }
