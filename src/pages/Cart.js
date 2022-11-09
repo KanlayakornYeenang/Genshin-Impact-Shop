@@ -4,7 +4,7 @@ import Header from "../components/Header";
 import ShowPath from "../components/ShowPath";
 import "../components/Cart.css";
 import Button from "../components/Button";
-import Accordion from "../components/Accordion";
+import TextMhuuKrob from "../components/Input";
 
 const Empty = () => {
   return <div>Cart is Empty</div>;
@@ -29,15 +29,28 @@ const Cart = () => {
               <Empty />
             </div>
           </div>
-          <Button string={"/ Start Shopping Now"} />
+          <a href="/">
+            <Button string={"/ Start Shopping Now"} />
+          </a>
         </div>
         <div className="cart-right">
-            <div className="cart-right-frame">
-                <p>Subtotal (0 items)</p>
-                <p className="cart-price">$0.00</p>
-                <Accordion />
-                <p style={{fontSize:"0.8vw"}}>*Item availability isn’t guaranteed until checkout is complete.</p>
+          <div className="cart-right-frame">
+            <p>Subtotal (0 items)</p>
+            <p className="cart-price">$0.00</p>
+            <div className="textmhuukrob-wrapper">
+              <TextMhuuKrob string="First Name" placeholder="First Name" />
+              <TextMhuuKrob string="Last Name" placeholder="Last Name" />
+              <TextMhuuKrob string="Address" placeholder="Enter address here" />
+              <TextMhuuKrob string="City" placeholder="Enter city here" />
+              <TextMhuuKrob
+                string="Zip/Postal Code"
+                placeholder="Enter ZIP here"
+              />
             </div>
+            <p style={{ fontSize: "0.8vw" }}>
+              *Item availability isn’t guaranteed until checkout is complete.
+            </p>
+          </div>
         </div>
       </div>
       <Footer />
