@@ -16,6 +16,7 @@ class MyGallery extends React.Component {
           showFullscreenButton={false}
           showBullets={true}
           slideInterval={4000}
+          slideDuration={1000}
         />
       </div>
     );

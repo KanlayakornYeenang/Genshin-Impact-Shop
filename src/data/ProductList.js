@@ -16,7 +16,6 @@ export const tops = [
         \n\
         Size Estimate: Refer to the chart \n\
         \n\
-        \n\
         - - - - - - - -\n\
         Product Care:\n\
         \n\

@@ -34,7 +34,7 @@ const TabsExpends = (props) => {
     return (
       <div className="expends">
         <div className="expends_item">
-          <a href="#">Shop All</a>
+          <a href={props.url}>Shop All</a>
         </div>
         <div className="expends_item">
           {props.menu.map((menu, index) => {
@@ -68,7 +68,7 @@ const TabsExpends = (props) => {
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
         >
-          <Expends menu={props.menu} />
+          <Expends menu={props.menu} url={props.url}/>
         </div>
       ) : null}
     </div>

@@ -1,18 +1,15 @@
-.accordion {
-    display: flex;
-    border-top: 0.1vw solid #adacaa;
-    border-bottom: 0.1vw solid #adacaa;
-    width: 100%;
-    padding: 1vw 0vw;
-
+.css-ahj2mt-MuiTypography-root {
+    font-family: 'HYWenHei' !important;
+    line-height: 2vw !important;
+    letter-spacing: 0.05vw !important;
 }
 
-.accordion-address {
-    width: 80%;
+.css-1kc9wdt-MuiPaper-root-MuiAccordion-root {
+    box-shadow: none !important;
+    border-top: 0.1vw solid rgba(255, 255, 255, 0.5);
+    border-bottom: 0.1vw solid rgba(255, 255, 255, 0.5);
 }
 
-.accordion-icon {
-    width: 20%;
-    text-align: right;
-    transform: translateY(8%);
+.css-1kc9wdt-MuiPaper-root-MuiAccordion-root {
+    border-radius: 0 !important;
 }

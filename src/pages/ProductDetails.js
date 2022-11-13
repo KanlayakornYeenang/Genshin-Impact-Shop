@@ -5,6 +5,8 @@ import { MyGalleryProducts } from "../components/Slideshow";
 import Footer from "../components/Footer";
 import "../components/ProductDetails.css";
 import Button from "../components/Button";
+import SimpleAccordion from "../components/Accordion";
+import "../components/Accordion.css"
 
 const Details = (props) => {
   return (
@@ -16,11 +18,9 @@ const Details = (props) => {
           <div className="details-price">${props.products.price}</div>
         </div>
         <Button string={"$" + props.products.price + " - Add to Cart"} />
-        <div className="line"></div>
         <div className="details-description">
-          <div>DESCRIPTION</div>
           <div style={{ whiteSpace: "pre-line" }}>
-            {props.products.description}
+            <SimpleAccordion details = {props.products.description}/>
           </div>
         </div>
       </div>
