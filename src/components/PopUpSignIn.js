@@ -91,7 +91,7 @@ export const ShowPassword = () => {
                     color: "rgb(96 96 96)"
                 },
                 '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
-                    borderRadius: '2.2vw',
+                    borderRadius: '2.2vw !important',
                     border: '0.2vw solid rgba(17, 17, 17, 0)',
                     transition: '0.2s linear',
                 },
