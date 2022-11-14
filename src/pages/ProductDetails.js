@@ -6,7 +6,6 @@ import Footer from "../components/Footer";
 import "../components/ProductDetails.css";
 import Button from "../components/Button";
 import SimpleAccordion from "../components/Accordion";
-import "../components/Accordion.css"
 
 const Details = (props) => {
   return (
