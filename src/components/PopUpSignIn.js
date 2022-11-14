@@ -8,6 +8,7 @@ import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import { useRef } from "react";
 import { TextField } from "@mui/material";
+import { red } from "@mui/material/colors";
 
 const GoToEmail = () => {
     document.getElementsByClassName("signin-h1")[0].style.display = "none";
@@ -18,6 +19,7 @@ const GoToEmail = () => {
     document.getElementsByClassName("already-ac")[0].style.display = "block";
     document.getElementsByClassName("login")[0].style.display = "none";
     document.getElementsByClassName("create-email")[0].style.display = "flex";
+    document.getElementsByClassName("frame-circle-in")[0].style.animation = "popup 0.75s";
 }
 
 const GoBackSignIn = () => {
@@ -29,6 +31,7 @@ const GoBackSignIn = () => {
     document.getElementsByClassName("already-ac")[0].style.display = "none";
     document.getElementsByClassName("login")[0].style.display = "flex";
     document.getElementsByClassName("create-email")[0].style.display = "none";
+    document.getElementsByClassName("frame-circle-in")[0].style.animation = "popup 0.75s";
 }
 
 const GoToUsername = () => {
@@ -40,6 +43,7 @@ const GoToUsername = () => {
     document.getElementsByClassName("username-detail")[0].style.display = "block";
     document.getElementsByClassName("textfield-username")[0].style.display = "block";
     document.getElementsByClassName("create-username")[0].style.display = "flex";
+    document.getElementsByClassName("frame-circle-in")[0].style.animation = "popup 0.75s";
 }
 
 const GoToPassword = () => {
@@ -51,6 +55,7 @@ const GoToPassword = () => {
     document.getElementsByClassName("password-detail")[0].style.display = "block";
     document.getElementsByClassName("textfield-password")[0].style.display = "flex";
     document.getElementsByClassName("create-password")[0].style.display = "flex";
+    document.getElementsByClassName("frame-circle-in")[0].style.animation = "popup 0.75s";
 }
 
 export const ShowPassword = () => {
@@ -60,7 +65,58 @@ export const ShowPassword = () => {
     };
     return (
         <div className="signin-input-wrapper">
-            <TextField className="signin-input" id="filled-basic" label="PASSWORD" variant="filled" type={passwordShown ? "text" : "password"} />
+            <TextField sx={{
+                width: '100%',
+                '& #filled-basic':{
+                    fontFamily: 'HYWenHei',
+                    padding: '2vw 4.5vw 0.5vw 2vw',
+                    fontSize: '120%',
+                },
+                '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                    fontFamily: 'HYWenHei',
+                    padding: '0vw 2.5vw 0vw 1vw',
+                    fontSize: '120%',
+                },
+                '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root':{
+                    fontFamily: 'HYWenHei',
+                    padding: '0vw 2.5vw 0vw 1vw',
+                    fontSize: '120%',
+                },
+                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                    fontFamily: 'HYWenHei',
+                    padding: '0vw 2.5vw 0vw 1vw',
+                    fontSize: '120%',
+                },
+                '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused':{
+                    color: "rgb(96 96 96)"
+                },
+                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                    borderRadius: '2.2vw',
+                    border: '0.2vw solid rgba(17, 17, 17, 0)',
+                    transition: '0.2s linear',
+                },
+                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root.Mui-focused':{
+                    border: '0.2vw solid #111'
+                },
+                '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                    paddingTop: '0.5vh'
+                },
+                '& #filled-basic-label':{
+                    fontFamily: 'HYWenHei',
+                    padding: '0.3vw 2.5vw 0vw 2vw',
+                    fontSize: '120%',
+                },
+                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:before':{
+                    border: 0
+                },
+                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disable):before':{
+                    border: 0
+                },
+                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after':{
+                    border: 0
+                }
+                }}
+                className="signin-input" id="filled-basic" label="PASSWORD" variant="filled" type={passwordShown ? "text" : "password"} />
             <button className="eye" onClick={togglePassword}>
                 {passwordShown ? <BsFillEyeFill /> : <BsFillEyeSlashFill />}
             </button>
@@ -99,19 +155,274 @@ const PopUpSignIn = () => {
                         <p className="password-detail">Make sure it's a good one.</p>
                         <div className="singin-input-container">
                             <div className="signin-input-wrapper">
-                                <TextField className="signin-input" id="filled-basic" label="USERNAME" variant="filled"/>
+                                <TextField sx={{
+                                    width: '100%',
+                                    '& #filled-basic':{
+                                        fontFamily: 'HYWenHei',
+                                        padding: '2vw 4.5vw 0.5vw 2vw',
+                                        fontSize: '120%',
+                                    },
+                                    '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                                        fontFamily: 'HYWenHei',
+                                        padding: '0vw 2.5vw 0vw 1vw',
+                                        fontSize: '120%',
+                                    },
+                                    '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root':{
+                                        fontFamily: 'HYWenHei',
+                                        padding: '0vw 2.5vw 0vw 1vw',
+                                        fontSize: '120%',
+                                    },
+                                    '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                                        fontFamily: 'HYWenHei',
+                                        padding: '0vw 2.5vw 0vw 1vw',
+                                        fontSize: '120%',
+                                    },
+                                    '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused':{
+                                        color: "rgb(96 96 96)"
+                                    },
+                                    '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                                        borderRadius: '2.2vw',
+                                        border: '0.2vw solid rgba(17, 17, 17, 0)',
+                                        transition: '0.2s linear',
+                                    },
+                                    '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root.Mui-focused':{
+                                        border: '0.2vw solid #111'
+                                    },
+                                    '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                                        paddingTop: '0.5vh'
+                                    },
+                                    '& #filled-basic-label':{
+                                        fontFamily: 'HYWenHei',
+                                        padding: '0.3vw 2.5vw 0vw 2vw',
+                                        fontSize: '120%',
+                                    },
+                                    '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:before':{
+                                        border: 0
+                                    },
+                                    '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disable):before':{
+                                        border: 0
+                                    },
+                                    '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after':{
+                                        border: 0
+                                    }
+                                    }}
+                                    className="signin-input" id="filled-basic" label="USERNAME" variant="filled"/>
                             </div>
                             <ShowPassword />
                         </div>
                         <div className="textfield-email">
-                            <TextField className="signin-input" id="filled-basic" label="EMAIL" variant="filled"/>
+                            <TextField sx={{
+                                width: '100%',
+                                '& #filled-basic':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '2vw 4.5vw 0.5vw 2vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused':{
+                                    color: "rgb(96 96 96)"
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                                    borderRadius: '2.2vw',
+                                    border: '0.2vw solid rgba(17, 17, 17, 0)',
+                                    transition: '0.2s linear',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root.Mui-focused':{
+                                    border: '0.2vw solid #111'
+                                },
+                                '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                                    paddingTop: '0.5vh'
+                                },
+                                '& #filled-basic-label':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0.3vw 2.5vw 0vw 2vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:before':{
+                                    border: 0
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disable):before':{
+                                    border: 0
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after':{
+                                    border: 0
+                                }
+                                }}
+                                className="signin-input" id="filled-basic" label="EMAIL" variant="filled"/>
                         </div>
                         <div className="textfield-username">
-                            <TextField className="signin-input" id="filled-basic" label="USERNAME" variant="filled"/>
+                            <TextField sx={{
+                                width: '100%',
+                                '& #filled-basic':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '2vw 4.5vw 0.5vw 2vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused':{
+                                    color: "rgb(96 96 96)"
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                                    borderRadius: '2.2vw',
+                                    border: '0.2vw solid rgba(17, 17, 17, 0)',
+                                    transition: '0.2s linear',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root.Mui-focused':{
+                                    border: '0.2vw solid #111'
+                                },
+                                '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                                    paddingTop: '0.5vh'
+                                },
+                                '& #filled-basic-label':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0.3vw 2.5vw 0vw 2vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:before':{
+                                    border: 0
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disable):before':{
+                                    border: 0
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after':{
+                                    border: 0
+                                }
+                                }}
+                                className="signin-input" id="filled-basic" label="USERNAME" variant="filled"/>
                         </div>
                         <div className="textfield-password">
-                            <TextField className="signin-input" id="filled-basic" label="PASSWORD" variant="filled"/>
-                            <TextField className="signin-input" id="filled-basic" label="CONFIRM PASSWORD" variant="filled"/>
+                            <TextField sx={{
+                                width: '100%',
+                                '& #filled-basic':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '2vw 4.5vw 0.5vw 2vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused':{
+                                    color: "rgb(96 96 96)"
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                                    borderRadius: '2.2vw',
+                                    border: '0.2vw solid rgba(17, 17, 17, 0)',
+                                    transition: '0.2s linear',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root.Mui-focused':{
+                                    border: '0.2vw solid #111'
+                                },
+                                '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                                    paddingTop: '0.5vh'
+                                },
+                                '& #filled-basic-label':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0.3vw 2.5vw 0vw 2vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:before':{
+                                    border: 0
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disable):before':{
+                                    border: 0
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after':{
+                                    border: 0
+                                }
+                                }}
+                                className="signin-input" id="filled-basic" label="PASSWORD" variant="filled"/>
+                            <TextField sx={{
+                                width: '100%',
+                                '& #filled-basic':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '2vw 4.5vw 0.5vw 2vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0vw 2.5vw 0vw 1vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused':{
+                                    color: "rgb(96 96 96)"
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root':{
+                                    borderRadius: '2.2vw',
+                                    border: '0.2vw solid rgba(17, 17, 17, 0)',
+                                    transition: '0.2s linear',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root.Mui-focused':{
+                                    border: '0.2vw solid #111'
+                                },
+                                '& .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root':{
+                                    paddingTop: '0.5vh'
+                                },
+                                '& #filled-basic-label':{
+                                    fontFamily: 'HYWenHei',
+                                    padding: '0.3vw 2.5vw 0vw 2vw',
+                                    fontSize: '120%',
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:before':{
+                                    border: 0
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disable):before':{
+                                    border: 0
+                                },
+                                '& .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after':{
+                                    border: 0
+                                }
+                                }}
+                                className="signin-input" id="filled-basic" label="CONFIRM PASSWORD" variant="filled"/>
                         </div>
                         <div className="login">
                             <HiArrowRight />

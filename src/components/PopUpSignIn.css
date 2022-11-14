@@ -80,10 +80,9 @@
     font-size: 1.15vw;
     border: none;
     background-color: transparent;
-    padding: 3% 0%;
 }
 
-.signin-input .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root,
+/* .signin-input .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root,
 .signin-input .css-o943dk-MuiFormLabel-root-MuiInputLabel-root,
 .signin-input .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root{
     font-family: 'HYWenHei';
@@ -113,7 +112,7 @@
 
 .signin-input .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root{
     padding-top: 0.5vh;
-}
+} */
 
 .eye {
     color: #111;
