@@ -39,7 +39,7 @@ const SimpleAccordion = (props) => {
           </AccordionSummary>
         </div>
         <AccordionDetails>
-          <Typography>{props.details}</Typography>
+          <Typography sx={{fontSize:"0.85vw"}}>{props.details}</Typography>
         </AccordionDetails>
       </Accordion>
     </div>

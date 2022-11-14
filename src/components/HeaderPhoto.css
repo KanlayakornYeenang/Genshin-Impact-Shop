@@ -6,27 +6,8 @@
     position: relative;
     display: flex;
     align-items: center;
-}
-
-.collectibles{
-    background-image: url("/public/images/HeaderPhotoCollectibles.png");
-    /* background-position: 0vw -9.5vw; */
-    background-position: 0vw 0vw;
-}
-
-.apparel{
-    background-image: url("/public/images/HeaderPhotoApparel.png");
-    background-position: 0vw 0vw;
-}
-
-.accessories{
-    background-image: url("/public/images/HeaderPhotoAccessories.png");
-    background-position: 0vw 0vw;
-}
-
-.sale{
-    background-image: url("/public/images/HeaderPhotoSale.png");
-    /* background-position: 0vw -12vw; */
+    overflow: hidden;
+    background-color: #282622;
 }
 
 .header-photo h1{
@@ -44,4 +25,15 @@
     position: absolute;
     bottom: 0;
     background-image: url("/public/images/ShapeFrame.png");
+}
+
+@keyframes showup {
+    from {
+        top: -30%;
+        opacity: 0;
+    }
+    to {
+        top: 0%;
+        opacity: 1;
+    }
 }
