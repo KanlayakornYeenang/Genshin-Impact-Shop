@@ -224,21 +224,8 @@ nav {
   background-color: transparent;
 }
 
-.css-ahj2mt-MuiTypography-root {
-  font-size: 1vw !important;
-}
-
 .textmhuukrob-wrapper {
   display: flex;
   flex-flow: column;
   row-gap: 1.75vw;
-}
-
-.css-16d1ntn-MuiButtonBase-root-MuiToggleButton-root.Mui-selected {
-  background-color: white !important;
-  color: #111111 !important;
-}
-
-.css-16d1ntn-MuiButtonBase-root-MuiToggleButton-root {
-  border-radius: 0.25vw !important;
 }

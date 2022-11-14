@@ -6,9 +6,11 @@ import Footer from "../components/Footer";
 import "../components/ProductDetails.css";
 import Button from "../components/Button";
 import SimpleAccordion from "../components/Accordion";
-import SizeChart from "../components/SizeChart";
+import SizeChart, { SizeChartHeader } from "../components/SizeChart";
+import { useLocation } from "react-router-dom";
 
 const Details = (props) => {
+  let isApparel = useLocation().pathname.split("/").slice(1)[0] == "apparel";
   return (
     <div className="details">
       <div className="shape shapetop"></div>
@@ -17,7 +19,12 @@ const Details = (props) => {
           <div className="details-name">{props.products.name}</div>
           <div className="details-price">${props.products.price}</div>
         </div>
-        <SizeChart />
+        {isApparel ? (
+          <div style={{ display: "flex", flexFlow: "column", rowGap: "1vw" }}>
+            <SizeChartHeader />
+            <SizeChart />
+          </div>
+        ) : null}
         <Button string={"$" + props.products.price + " - Add to Cart"} />
         <div className="details-description">
           <div style={{ whiteSpace: "pre-line" }}>
@@ -35,6 +42,7 @@ const ProductDetails = (props) => {
   props.products.images.map((img) =>
     images.push({ original: img, thumbnail: img })
   );
+
   return (
     <div>
       <Header />
