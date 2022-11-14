@@ -6,6 +6,7 @@ import Footer from "../components/Footer";
 import "../components/ProductDetails.css";
 import Button from "../components/Button";
 import SimpleAccordion from "../components/Accordion";
+import SizeChart from "../components/SizeChart";
 
 const Details = (props) => {
   return (
@@ -16,10 +17,11 @@ const Details = (props) => {
           <div className="details-name">{props.products.name}</div>
           <div className="details-price">${props.products.price}</div>
         </div>
+        <SizeChart />
         <Button string={"$" + props.products.price + " - Add to Cart"} />
         <div className="details-description">
           <div style={{ whiteSpace: "pre-line" }}>
-            <SimpleAccordion details = {props.products.description}/>
+            <SimpleAccordion details={props.products.description} />
           </div>
         </div>
       </div>
