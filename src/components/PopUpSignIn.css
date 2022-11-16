@@ -68,12 +68,7 @@
 }
 
 .signin-input-wrapper {
-    border-radius: 3vw;
-    padding: 4% 8%;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
 }
 
 .signin-input {
