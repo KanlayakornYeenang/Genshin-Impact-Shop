@@ -4,10 +4,24 @@ import { TiShoppingCart } from "react-icons/ti";
 import { accessories, apparel, collectibles } from "../data/menuItems";
 import PopUp from "./PopUp";
 import SearchProduct from "./SearchProduct";
+import {
+  tops,
+  bottoms,
+  sales,
+  badges,
+  pins,
+  standees,
+  plush,
+  mugs,
+  figures,
+  keychains,
+  mousepads,
+} from "../data/ProductList";
+import Product from "./Product";
+import Search from "../pages/Search";
+import { Link } from "react-router-dom";
 
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
-
-
 
 export const Tabs = (props) => {
   const [isHovering, setIsHovering] = React.useState(false);
@@ -69,19 +83,40 @@ const TabsExpends = (props) => {
           onMouseOver={handleMouseOver}
           onMouseOut={handleMouseOut}
         >
-          <Expends menu={props.menu} url={props.url}/>
+          <Expends menu={props.menu} url={props.url} />
         </div>
       ) : null}
     </div>
   );
 };
 
-
-
 const Navbar = () => {
-  const [searchProduct, setSearchProduct] = React.useState('');
-
-  return (
+  var Products = tops.concat(
+    bottoms,
+    sales,
+    badges,
+    pins,
+    standees,
+    plush,
+    mugs,
+    figures,
+    keychains,
+    mousepads
+  );
+  const [searchProduct, setSearchProduct] = React.useState("");
+  const filteredProduct = Products.filter((product) => {
+    return product.name.toLowerCase().includes(searchProduct.toLowerCase());
+  });
+  const productElementsSearch = filteredProduct
+    .slice(0, 4)
+    .map((list, index) => {
+      return (
+        <div>
+          <Product key={index} list={list} />
+        </div>
+      );
+    });
+    return (
     <nav>
       <div className="tab-wrapper">
         <TabsExpends url="/apparel" title="APPAREL" menu={apparel} />
@@ -99,7 +134,21 @@ const Navbar = () => {
       </div>
 
       <div className="action-wrapper">
-        <SearchProduct value={searchProduct} onValueChange={setSearchProduct}/>
+        <SearchProduct value={searchProduct} onValueChange={setSearchProduct} />
+        {filteredProduct.length == 0 ? (
+          <div
+            className="search-content-wrapper"
+            style={{ color: "white", height: "20vh", zIndex: "2" }}
+          >
+            No Result
+          </div>
+        ) : null}
+        {searchProduct == "" ? null : (
+          <div className="search-content-wrapper" style={{ zIndex: "1" }}>
+            <div className="search-content">{productElementsSearch}</div>
+            <div style={{width:"20%"}}><a href='/search' className="var">View All Results ({filteredProduct.length})</a></div>
+          </div>
+        )}
         <a id="cart-wrapper" href="/cart">
           <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
         </a>
@@ -108,6 +157,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
 
 export default Navbar;

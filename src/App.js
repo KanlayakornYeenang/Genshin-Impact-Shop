@@ -123,6 +123,7 @@ const App = () => {
         )}
         {/* // ส่วนนี้เป็นการเชื่อม Path กับ Page Sale ที่เราสร้างไว้มั้ง */}
         <Route path="/sale" element={<Sale />} />
+        <Route path="/search:keyword" element={<Search />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/search" element={<Search />}/>
       </Routes>
