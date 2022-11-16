@@ -20,6 +20,13 @@
     font-weight: 100;
     color: white;
     text-align: right;
+    z-index: 1;
+    position: relative;
+}
+
+.NotFound {
+    width: 100%;
+    transform: scale(1.25) translateY(5%);
 }
 
 .shapeframe {
