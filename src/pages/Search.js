@@ -1,22 +1,21 @@
 import React from "react";
-import { useState} from "react";
+import { useParams } from "react-router-dom";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
-import HeaderPhotoSearch from "../components/HeaderPhotoSearch";
+import HeaderPhoto from "../components/HeaderPhoto";
 import Product from "../components/Product";
 import ShowPath from "../components/ShowPath";
 import "../components/ProductWrapper.css";
-import SearchProduct from "../components/SearchProduct";
 import {tops, bottoms, sales, badges, pins, standees, plush, mugs, figures, keychains, mousepads} from "../data/ProductList";
 
-function Search(props) {
-  const {searchKeyword} = props;
+function Search() {
+  const { keyword } = useParams();
+  console.log(keyword);
   var Products = tops.concat(bottoms, sales, badges, pins, standees, plush, mugs, figures, keychains, mousepads);
 
-  const [searchProduct, setSearchProduct] = useState('');
   
   const filteredProduct = Products.filter((product) => {
-    return product.name.includes(searchProduct);
+    return product.name.toLowerCase().includes(keyword.toLowerCase());
   });
 
   const productElementsSearch = filteredProduct.map((list, index) => {
@@ -27,10 +26,9 @@ function Search(props) {
         <div>
           <Header />
           <ShowPath />
-          <HeaderPhotoSearch text={'Search '+ '"' + searchKeyword + '"'} head={"/search/"}/>
-          <SearchProduct value={searchProduct} onValueChange={setSearchProduct}/>
+          <HeaderPhoto text={'Search '+ '"' + keyword + '"'} head={"/search/"}/>
           <div className="frame-wrapper">
-            {productElementsSearch}
+          {productElementsSearch}
           </div>
           <Footer />
         </div>

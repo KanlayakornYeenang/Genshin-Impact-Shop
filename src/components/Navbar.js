@@ -146,7 +146,7 @@ const Navbar = () => {
         {searchProduct == "" ? null : (
           <div className="search-content-wrapper" style={{ zIndex: "1" }}>
             <div className="search-content">{productElementsSearch}</div>
-            <div style={{width:"20%"}}><a href='/search' className="var">View All Results ({filteredProduct.length})</a></div>
+            <div style={{width:"20%"}}><a href={"/search/"+searchProduct} className="var">View All Results ({filteredProduct.length})</a></div>
           </div>
         )}
         <a id="cart-wrapper" href="/cart">

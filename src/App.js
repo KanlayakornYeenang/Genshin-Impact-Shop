@@ -8,9 +8,9 @@ import ProductDetails from "./pages/ProductDetails";
 import Sale from "./pages/Sale";
 import AllProductsParent from "./pages/AllProductsParent";
 import Cart from "./pages/Cart";
-import Search from "./pages/Search";
-
-//Import Data JSON
+import Search from "./pages/Search";//Import Data JSON
+import SearchNull from "./pages/SearchNull";
+import NotFound from "./pages/NotFound";
 import AllProducts from "./pages/AllProducts";
 import {
   badges,
@@ -37,16 +37,16 @@ const App = () => {
   ];
 
   const allproductsPath = [
-    "/apparel/",
-    "/apparel/",
-    "/collectibles/",
-    "/collectibles/",
-    "/collectibles/",
-    "/collectibles/",
-    "/collectibles/",
-    "/collectibles/",
-    "/accessories/",
-    "/accessories/",
+    "apparel",
+    "apparel",
+    "collectibles",
+    "collectibles",
+    "collectibles",
+    "collectibles",
+    "collectibles",
+    "collectibles",
+    "accessories",
+    "accessories",
   ];
   const allproductsString = [
     "Tops",
@@ -75,7 +75,7 @@ const App = () => {
   ];
 
   const allproductsParentString = ["Apparel", "Collectibles", "Accessories"];
-  const allproductsParentPath = ["/apparel", "/collectibles", "/accessories"];
+  const allproductsParentPath = ["apparel", "collectibles", "accessories", ];
   const allproductsParent = [
     [tops, bottoms],
     [badges, figures, keychains, pins, plush, standees],
@@ -89,24 +89,24 @@ const App = () => {
         <Route path="/" element={<Home />} />
         {allproducts.map((allproduct, index) => (
           <Route
-            path={allproductsPath[index] + allproductsString[index]}
+            path={"/" + allproductsPath[index] + "/" + allproductsString[index]}
             element={
               <AllProducts
                 product={allproduct}
                 text={allproductsString[index]}
-                head={allproductsPath[index]}
+                img={allproductsPath[index]}
               />
             }
           />
         ))}
         {allproductsParent.map((allproductParent, index) => (
           <Route
-            path={allproductsParentPath[index]}
+            path={"/" + allproductsParentPath[index]}
             element={
               <AllProductsParent
                 product={allproductParent}
                 text={allproductsParentString[index]}
-                head={allproductsParentPath[index] + "/"}
+                img={allproductsParentPath[index]}
               />
             }
           />
@@ -123,12 +123,19 @@ const App = () => {
         )}
         {/* // ส่วนนี้เป็นการเชื่อม Path กับ Page Sale ที่เราสร้างไว้มั้ง */}
         <Route path="/sale" element={<Sale />} />
-        <Route path="/search:keyword" element={<Search />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="/search" element={<Search />}/>
-      </Routes>
-    </BrowserRouter>
-  );
-};
+        <Route path="/search" element={<SearchNull />} />
+        <Route path="/search/:keyword" element={<Search />} />
 
+        {/*
+        <Route path="/search" element={<Search/>} > ------> ข้างในมี <Outlet /> เพื่อแสดงในกรณี /search/keyword
+          <Route path=":keyword" element={<SearchContext />} />
+        </Route>
+        */}
+
+        <Route path="*" element={<NotFound />} />
+        </Routes>   
+        </BrowserRouter>
+  );
+  };
 export default App;

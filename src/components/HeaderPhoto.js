@@ -5,9 +5,9 @@ import "./HeaderPhoto.css";
 
 const HeaderPhoto = (props) => {
   return (
-    <div className={"header-photo " + props.head.slice(1, -1)}>
+    <div className={"header-photo"}>
       <h1>{props.text}</h1>
-      <img style={{width:"55%", position:"absolute", left:"45%", top:"0%", animation:"showup 1s"}} src={"/images/" + props.text + ".png"} />
+      <img style={{width:"55%", position:"absolute", left:"45%", top:"0%", animation:"showup 1s"}} src={"/images/" + props.img + ".png"} />
       <div className="shape shapeframe"></div>
     </div>
   );

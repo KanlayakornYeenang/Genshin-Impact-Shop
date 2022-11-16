@@ -15,7 +15,7 @@ function Sale() {
         <div>
           <Header />
           <ShowPath />
-          <HeaderPhoto text={"Sale"} head={"/sale/"}/>
+          <HeaderPhoto text={"Sale"} img={"sale"}/>
           <div className="frame-wrapper">
             {productElementsSales}
           </div>

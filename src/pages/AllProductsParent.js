@@ -10,7 +10,7 @@ const AllProductsParent = (props) => {
         <div>
             <Header />
             <ShowPath />
-            <HeaderPhoto text={props.text} head={props.head} />
+            <HeaderPhoto text={props.text} img={props.img} />
             <div className="frame-wrapper">
                 {props.product.map((allproduct) => {
                     return <ProductElements  product={allproduct} length={allproduct.length}/>
