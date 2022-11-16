@@ -8,6 +8,7 @@ import ProductDetails from "./pages/ProductDetails";
 import Sale from "./pages/Sale";
 import AllProductsParent from "./pages/AllProductsParent";
 import Cart from "./pages/Cart";
+import Search from "./pages/Search";
 
 //Import Data JSON
 import AllProducts from "./pages/AllProducts";
@@ -123,6 +124,7 @@ const App = () => {
         {/* // ส่วนนี้เป็นการเชื่อม Path กับ Page Sale ที่เราสร้างไว้มั้ง */}
         <Route path="/sale" element={<Sale />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/search" element={<Search />}/>
       </Routes>
     </BrowserRouter>
   );

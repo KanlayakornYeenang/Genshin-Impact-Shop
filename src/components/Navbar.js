@@ -1,12 +1,15 @@
 import React from "react";
 import { useState } from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
-import { FaSearch } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
 import { accessories, apparel, collectibles } from "../data/menuItems";
 import PopUpSignIn from "./PopUpSignIn";
+import {tops, bottoms, sales, badges, pins, standees, plush, mugs, figures, keychains, mousepads} from "../data/ProductList";
+import SearchProduct from "./SearchProduct";
 
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
+
+
 
 export const Tabs = (props) => {
   const [isHovering, setIsHovering] = useState(false);
@@ -75,7 +78,11 @@ const TabsExpends = (props) => {
   );
 };
 
+
+
 const Navbar = () => {
+  const [searchProduct, setSearchProduct] = useState('');
+
   return (
     <nav>
       <div className="tab-wrapper">
@@ -94,10 +101,7 @@ const Navbar = () => {
       </div>
 
       <div className="action-wrapper">
-        <div id="search-wrapper">
-          <input id="search" type="text" placeholder="SEARCH" />
-          <FaSearch style={{ color: "#ffffff", fontSize: "0.85vw" }} />
-        </div>
+        <SearchProduct value={searchProduct} onValueChange={setSearchProduct}/>
         <a id="cart-wrapper" href="/cart">
           <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
         </a>
@@ -106,5 +110,6 @@ const Navbar = () => {
     </nav>
   );
 };
+
 
 export default Navbar;

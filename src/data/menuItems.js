@@ -98,7 +98,7 @@ export const accessories = [
   },
   {
     url: "/accessories/mousepads/firefly_acg_convention_series_baal_merchandise_[end_dec]",
-    pictitle: "Genshin Impact Themed Mouse Mat",
+    pictitle: "Genshin Impact Themed Mouse Pad",
     pic:"/images/products/accessories/mousepads/MousePad2_1.png",
   },
 ];
