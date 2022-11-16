@@ -1,14 +1,7 @@
 import * as React from "react";
 import MuiToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
-import { styled, createTheme, ThemeProvider } from "@mui/material/styles";
-
-const ToggleButton = styled(MuiToggleButton)(({ selectedColor }) => ({
-  "&.Mui-selected, &.Mui-selected:hover": {
-    color: "black",
-    backgroundColor: selectedColor,
-  },
-}));
+import { styled } from "@mui/material/styles";
 
 export const SizeChartHeader = () => {
   return (
@@ -26,6 +19,13 @@ export const SizeChartHeader = () => {
     </div>
   );
 };
+
+const ToggleButton = styled(MuiToggleButton)(({ selectedColor }) => ({
+  "&.Mui-selected, &.Mui-selected:hover": {
+    color: "black",
+    backgroundColor: selectedColor,
+  },
+}));
 
 const SizeChart = () => {
   const [size, setSize] = React.useState(null);
