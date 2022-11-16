@@ -52,13 +52,6 @@
     justify-content: center;
 }
 
-.signin-h1 {
-    display: flex;
-    color: #111111;
-    justify-content: center;
-    text-align: center;
-}
-
 .singin-input-container {
     display: flex;
     flex-flow: column;
@@ -69,6 +62,8 @@
 
 .signin-input-wrapper {
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .signin-input {
@@ -76,38 +71,6 @@
     border: none;
     background-color: transparent;
 }
-
-/* .signin-input .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root,
-.signin-input .css-o943dk-MuiFormLabel-root-MuiInputLabel-root,
-.signin-input .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root{
-    font-family: 'HYWenHei';
-    padding: 0vw 2.5vw 0vw 1vw;
-    font-size: 120%;
-}
-
-.signin-input .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:before,
-.signin-input .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disable):before,
-.signin-input .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root:after{
-    border: 0px;
-}
-
-.signin-input .css-o943dk-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
-    color: rgb(96 96 96);
-}
-
-.signin-input .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root{
-    border-radius: 2.2vw;
-    border: 0.2vw solid rgba(17, 17, 17, 0);
-    transition: 0.2s linear;
-}
-
-.signin-input .css-19mk8g1-MuiInputBase-root-MuiFilledInput-root.Mui-focused{
-    border: 0.2vw solid #111;
-}
-
-.signin-input .css-e4w4as-MuiFormLabel-root-MuiInputLabel-root{
-    padding-top: 0.5vh;
-} */
 
 .eye {
     color: #111;
@@ -118,7 +81,7 @@
     border: none;
     transition: 0.1s linear;
     position: absolute;
-    right: 27%;
+    right: 28%;
 }
 
 .eye:active {
@@ -133,7 +96,7 @@
     outline: none;
 }
 
-.login {
+.arrow {
     width: 6vw;
     height: 6vw;
     border-radius: 2vw;
@@ -147,13 +110,13 @@
     color: #e8e8e8;
 }
 
-.createac {
+.popup-footer {
     font-size: 1.1vw;
     color: #666666;
     transition: 0.2s linear;
 }
 
-.createac:hover{
+.popup-footer:hover {
     cursor: pointer;
     user-select: none;
     color: #111;
@@ -188,72 +151,5 @@
         transform: scale(1) translateY(0px);
         opacity: 1;
         box-shadow: 0 0 500px rgba(241, 241, 241, 0);
-    }
-}
-
-.create-email-h1, .create-username-h1, .create-password-h1{
-    display: none;
-    color: #111111;
-    justify-content: center;
-    text-align: center;
-    flex-flow: column;
-    align-items: center;
-}
-
-.textfield-email, .textfield-username, .textfield-password{
-    display: none;
-    flex-flow: column;
-    width: 50%;
-    align-items: center;
-}
-
-.signin-createac{
-    transform: scale(0.9);
-}
-
-.already-ac{
-    display: none;
-    font-size: 1.1vw;
-    color: #666666;
-    transition: 0.2s linear;
-    margin-top: 1.5vw;
-}
-
-.already-ac:hover{
-    cursor: pointer;
-    user-select: none;
-    color: #111;
-}
-
-.create-email, .create-username, .create-password{
-    display: none;
-    width: 6vw;
-    height: 6vw;
-    border-radius: 2vw;
-    background-color: #ffffff;
-    border: 0.2vw solid #e8e8e8;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vw;
-    transform: translateY(8%);
-    color: #e8e8e8;
-}
-
-.username-detail, .password-detail{
-    display: none;
-    color: #7a7a7a;
-    font-size: 1.5vw;
-}
-
-.textfield-password{
-    row-gap: 1vw;
-}
-
-@keyframes popup {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
     }
 }

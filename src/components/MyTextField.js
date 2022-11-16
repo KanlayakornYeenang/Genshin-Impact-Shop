@@ -1,34 +1,5 @@
 import React from "react";
-import { HiArrowRight } from "react-icons/hi";
-import MyTextFieldString, { MyTextFieldPassword } from "./MyTextField";
-
-const SignIn = () => {
-  return (
-    <div className="frame-circle-in">
-      <h1>Sign In</h1>
-      <div className="singin-input-container">
-        <div className="signin-input-wrapper">
-          <MyTextFieldString label="USERNAME" />
-        </div>
-        <MyTextFieldPassword />
-      </div>
-      <div className="login">
-        <HiArrowRight />
-      </div>
-      <div className="createaccount">CREATE ACCOUNT</div>
-    </div>
-  );
-};
-
-
-import Popup from "reactjs-popup";
-import { Tabs } from "./Navbar";
-import "./PopUp.css";
-import { HiArrowRight } from "react-icons/hi";
 import { BsFillEyeFill, BsFillEyeSlashFill } from "react-icons/bs";
-import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
-import { useRef } from "react";
 import { TextField } from "@mui/material";
 import styled from "@emotion/styled";
 
@@ -85,7 +56,7 @@ const CSSTextField = styled(TextField)({
   },
 });
 
-const TextFieldString = (props) => {
+const MyTextFieldString = (props) => {
   return (
     <CSSTextField
       className="signin-input"
@@ -96,8 +67,8 @@ const TextFieldString = (props) => {
   );
 };
 
-const TextFieldPassword = () => {
-  const [passwordShown, setPasswordShown] = useState(false);
+export const MyTextFieldPassword = () => {
+  const [passwordShown, setPasswordShown] = React.useState(false);
   const togglePassword = () => {
     setPasswordShown(!passwordShown);
   };
@@ -117,45 +88,4 @@ const TextFieldPassword = () => {
   );
 };
 
-const PopUp = () => {
-  const ref = useRef();
-  const closeTooltip = () => ref.current.close();
-  return (
-    <div className="signin">
-      <Popup
-        ref={ref}
-        trigger={
-          <div>
-            <Tabs title={"SIGN IN"} />
-          </div>
-        }
-        modal
-        nested
-      >
-        <div className="frame-circle">
-          <button className="close" onClick={closeTooltip}>
-            <p>
-              <IoMdClose />
-            </p>
-          </button>
-          <div className="frame-circle-in">
-            <h1>Sign In</h1>
-            <div className="singin-input-container">
-              <div className="signin-input-wrapper">
-                <TextFieldString label="USERNAME" />
-              </div>
-              <TextFieldPassword />
-            </div>
-            <div className="login">
-              <HiArrowRight />
-            </div>
-            <div className="createac">CREATE ACCOUNT</div>
-          </div>
-        </div>
-        <div className="fade"></div>
-      </Popup>
-    </div>
-  );
-};
-
-export default PopUp;
+export default MyTextFieldString

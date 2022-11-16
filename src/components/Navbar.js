@@ -1,15 +1,14 @@
 import React from "react";
-import { useState } from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import { FaSearch } from "react-icons/fa";
 import { TiShoppingCart } from "react-icons/ti";
 import { accessories, apparel, collectibles } from "../data/menuItems";
-import PopUpSignIn from "./PopUpSignIn";
+import PopUp from "./PopUp";
 
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
 
 export const Tabs = (props) => {
-  const [isHovering, setIsHovering] = useState(false);
+  const [isHovering, setIsHovering] = React.useState(false);
   const handleMouseOut = () => {
     setIsHovering(false);
   };
@@ -23,7 +22,7 @@ export const Tabs = (props) => {
 };
 
 const TabsExpends = (props) => {
-  const [isHovering, setIsHovering] = useState(false);
+  const [isHovering, setIsHovering] = React.useState(false);
   const handleMouseOver = () => {
     setIsHovering(true);
   };
@@ -101,7 +100,7 @@ const Navbar = () => {
         <a id="cart-wrapper" href="/cart">
           <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
         </a>
-        <PopUpSignIn />
+        <PopUp />
       </div>
     </nav>
   );
