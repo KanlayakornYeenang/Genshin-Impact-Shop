@@ -10,14 +10,16 @@
     background-color: #282622;
 }
 
-.header-photo h1{
-    color: #fff;
-    font-size: 5vw;
-    padding-left: 14vw;
+.header-photo .text {
+    width: 47%;
+    word-wrap: break-word;
 }
 
-.header-photo h1:hover{
-    cursor: context-menu;
+.header-photo .text h2 {
+    font-size: 5vw;
+    font-weight: 100;
+    color: white;
+    text-align: right;
 }
 
 .shapeframe {

@@ -26,7 +26,7 @@ function Search() {
         <div>
           <Header />
           <ShowPath />
-          <HeaderPhoto text={'Search '+ '"' + keyword + '"'} head={"/search/"}/>
+          <HeaderPhoto text={'Search '+ '"' + keyword + '"'} img="search"/>
           <div className="frame-wrapper">
           {productElementsSearch}
           </div>
