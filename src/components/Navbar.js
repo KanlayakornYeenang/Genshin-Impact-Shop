@@ -2,13 +2,8 @@ import React from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import { TiShoppingCart } from "react-icons/ti";
 import { accessories, apparel, collectibles } from "../data/menuItems";
-<<<<<<< HEAD
 import PopUp from "./PopUp";
-=======
-import PopUpSignIn from "./PopUpSignIn";
-import {tops, bottoms, sales, badges, pins, standees, plush, mugs, figures, keychains, mousepads} from "../data/ProductList";
 import SearchProduct from "./SearchProduct";
->>>>>>> b19a353a19a4ec7a317e41e01a82bb4589488ace
 
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
 
@@ -84,7 +79,7 @@ const TabsExpends = (props) => {
 
 
 const Navbar = () => {
-  const [searchProduct, setSearchProduct] = useState('');
+  const [searchProduct, setSearchProduct] = React.useState('');
 
   return (
     <nav>
