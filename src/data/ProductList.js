@@ -847,8 +847,8 @@ export const mugs = [
 
 export const mousepads = [
   {
-    url: "/accessories/mousepads/genshin_impact_themed_mouse_mat",
-    name: "Genshin Impact Themed Mouse Mat",
+    url: "/accessories/mousepads/genshin_impact_themed_mouse_pad",
+    name: "Genshin Impact Themed Mouse Pad",
     price: "38.99",
     images: [
       "/images/Products/Accessories/MousePads/MousePad1_1.png",
