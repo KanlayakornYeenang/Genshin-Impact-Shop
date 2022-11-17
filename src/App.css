@@ -172,34 +172,6 @@ nav {
   margin-top: 10vh;
 }
 
-.path-wrapper {
-  position: relative;
-  width: 100vw;
-  height: 7vh;
-  background-color: #292929;
-  top: 10vh;
-  color: #adacaa;
-  display: flex;
-  align-items: center;
-}
-
-.path {
-  display: flex;
-  padding: 0vw 0.5vw;
-}
-
-.path-wrapper a {
-  transition: 0.1s linear;
-}
-
-.path-section {
-  padding: 0vw 0.25vw;
-}
-
-.path-wrapper a:hover {
-  transform: translateY(15%);
-}
-
 .input-address {
   display: flex;
   flex-flow: column;
@@ -263,6 +235,7 @@ nav {
   bottom: 5vw;
   text-decoration: underline;
   transition: 0.1s linear;
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 .notfound {

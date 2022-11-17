@@ -7,13 +7,29 @@ const ShowPath = () => {
   let paths = useLocation().pathname.split("/").slice(1);
   return (
     <div className="path-wrapper">
-      <a href="/" className="path">Home</a>
+      <div className="path-content" style={{paddingLeft:"5vw"}}>
+        <a href="/" className="path">
+          Home
+        </a>
+      </div>
       {paths.map((path, index) => (
-        <div className="d-flex">
-          <p className="cursor-context-menu">/</p>
-          <a href={"/" + paths.slice(0, index + 1).slice(0).join("/")} className="path color-a" >
+        <div className="path-content">
+          <p className="path">/</p>
+          <a
+            href={
+              "/" +
+              paths
+                .slice(0, index + 1)
+                .slice(0)
+                .join("/")
+            }
+            className="path"
+          >
             {path.split("_").map((path) => (
-              <p className="path-section">{path[0].toUpperCase()}{path.slice(1)}</p>
+              <p className="path">
+                {path[0].toUpperCase()}
+                {path.slice(1)}
+              </p>
             ))}
           </a>
         </div>

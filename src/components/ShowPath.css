@@ -1,22 +1,12 @@
-.path{
-    margin-right: 0.5vw;
+/* .path{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     color: #adacaa; 
-    display: flex;
-    padding: 0vw 0.5vw;
 }
 .path-wrapper {
-    padding-left: 5vw;
-    position: relative;
-    width: 100vw;
-    height: 7vh;
-    background-color: #292929;
-    top: 10vh;
-    color: #adacaa;
-    display: flex;
-    align-items: center;
+
 }
 .path-section {
-    padding: 0vw 0.25vw;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   }
 .d-flex{
     display:flex;
@@ -27,4 +17,32 @@
 
 .color-a{
     color: #adacaa;
+} */
+
+.path-wrapper {
+    position: relative;
+    width: 100vw;
+    height: 7vh;
+    background-color: #292929;
+    top: 10vh;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.path-content {
+    display: flex;
+    gap: 1vw;
+}
+
+.path {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #adacaa;
+    font-size: 0.9vw;
+    transition: 0.1s linear;
+}
+
+.path:hover {
+    opacity: 0.8;
+    transform: translateY(10%);
 }
