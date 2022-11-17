@@ -21,6 +21,42 @@ import Product from "./Product";
 
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
 
+const UserTabs = (props) => {
+  const [isUserTabsHovering, setIsUserTabsHovering] = React.useState(false);
+  const handleMouseOver = () => {
+    setIsUserTabsHovering(true);
+  };
+  const handleMouseOut = () => {
+    setIsUserTabsHovering(false);
+  };
+  const logout = () => {
+    localStorage.removeItem("User");
+    window.location.reload(false);
+  };
+  return (
+    <div className="tabs">
+      <a href={props.url} onMouseOver={handleMouseOver}>
+        <div className="menu-items">
+          {props.title}{" "}
+          <RiArrowDropDownFill style={{ color: "#444444", fontSize: "2vw" }} />
+        </div>
+      </a>
+      {isUserTabsHovering ? (
+        <div
+          className="usertab-dropdown"
+          onMouseOver={handleMouseOver}
+          onMouseOut={handleMouseOut}
+          onClick={logout}
+        >
+          <div className="logout" onMouseOver={handleMouseOver}>
+            <p>LOG OUT</p>
+          </div>
+        </div>
+      ) : null}
+    </div>
+  );
+};
+
 export const Tabs = (props) => {
   const [isHovering, setIsHovering] = React.useState(false);
   const handleMouseOut = () => {
@@ -51,11 +87,15 @@ const TabsExpends = (props) => {
         </div>
         <div className="expends_item">
           {props.menu.map((menu, index) => {
-            return <a href={menu.url}>{menu.title}</a>;
+            return (
+              <a key={index} href={menu.url}>
+                {menu.title}
+              </a>
+            );
           })}
         </div>
-        {props.menu.slice(props.menu.length - 2).map((data) => (
-          <a href={data.url} className="expends_item_img">
+        {props.menu.slice(props.menu.length - 2).map((data, index) => (
+          <a key={index} href={data.url} className="expends_item_img">
             <img src={data.pic} />
             <p>{data.pictitle}</p>
           </a>
@@ -154,7 +194,16 @@ const Navbar = () => {
         <a id="cart-wrapper" href="/cart">
           <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
         </a>
-        <AccountModal />
+        {/* <AccountModal /> */}
+        {localStorage.getItem("User") == null ? (
+          <AccountModal />
+        ) : (
+          <UserTabs
+            title={localStorage
+              .getItem("User")
+              .slice(1, localStorage.getItem("User").length - 1)}
+          />
+        )}
       </div>
     </nav>
   );

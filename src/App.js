@@ -89,6 +89,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         {allproducts.map((allproduct, index) => (
           <Route
+            key={index}
             path={"/" + allproductsPath[index] + "/" + allproductsString[index]}
             element={
               <AllProducts
@@ -101,6 +102,7 @@ const App = () => {
         ))}
         {allproductsParent.map((allproductParent, index) => (
           <Route
+            key={index}
             path={"/" + allproductsParentPath[index]}
             element={
               <AllProductsParent
@@ -114,8 +116,9 @@ const App = () => {
         {/* ทำไมถึงมีสอง Map ซึ่งทำความเข้าใจก่อนว่าข้อมูลตอน Import มาจะมีหลายส่วน เราจะเก็บทุกๆส่วนเป็น Array เดียวคือตัวแปรใน Map แรก แล้วดึงแต่ส่วนย่อยออกมา
         เป็นตัวแปรใน Map ด้านใน แล้วในข้อมูลแต่ละส่วนก็จะมีข้อมูลของสินค้าแต่ละชิ้นอยู่ เราเลยเรียกข้อมูลสินค้าแต่ละชิ้น ไป Link เป็นหน้า Page นึงไปเลยใน <Route> */}
         {allproducts.map((allproducts, index) =>
-          allproducts.map((allproduct) => (
+          allproducts.map((allproduct, index) => (
             <Route
+              key={index}
               path={allproduct.url}
               element={<ProductDetails products={allproduct} />}
             />

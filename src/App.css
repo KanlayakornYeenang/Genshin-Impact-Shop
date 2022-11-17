@@ -93,6 +93,30 @@ nav {
   z-index: 10;
 }
 
+.usertab-dropdown {
+  width: 13vw;
+  height: fit-content;
+  background-color: #111111;
+  position: absolute;
+  top: 10vh;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.usertab-dropdown:hover {
+  background-color: #333333;
+}
+
+.logout {
+  color: white;
+  padding: 1vw 0vw;
+}
+
 #search-wrapper {
   background-color: #2b2a29;
   height: 2vw;
@@ -170,6 +194,30 @@ nav {
 .home .image-gallery-left-nav,
 .home .image-gallery-right-nav {
   margin-top: 10vh;
+}
+
+.ads-wrapper {
+  background-color: #e7e6e3;
+  padding: 6vw 0vw;
+}
+
+.ads {
+  width: 70% !important;
+  margin: auto;
+}
+
+.ads .image-gallery-slide .image-gallery-image {
+  position: relative;
+  margin-top: 0vh;
+  object-fit: cover !important;
+  max-width: 100% !important;
+  max-height: 90vh !important;
+  object-position: top;
+}
+
+.ads .image-gallery-left-nav,
+.ads .image-gallery-right-nav {
+  margin-top: 0vh;
 }
 
 .input-address {

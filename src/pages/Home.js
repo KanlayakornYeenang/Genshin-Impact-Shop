@@ -1,7 +1,9 @@
 import React from "react";
 import Header from "../components/Header";
-import MyGallery from "../components/Slideshow";
-import ProductWrapper from "../components/ProductWrapper";
+import MyGallery, { MyGalleryAds } from "../components/Slideshow";
+import ProductWrapper, {
+  ProductWrapperSale,
+} from "../components/ProductWrapper";
 import Footer from "../components/Footer";
 
 const Home = () => {
@@ -22,6 +24,24 @@ const Home = () => {
         ]}
       />
       <ProductWrapper />
+      <div className="ads-wrapper">
+        <div className="ads">
+          <MyGalleryAds
+            images={[
+              {
+                original: "/images/Slideshow/ads1.png",
+              },
+              {
+                original: "/images/Slideshow/ads2.png",
+              },
+              {
+                original: "/images/Slideshow/ads3.png",
+              },
+            ]}
+          />
+        </div>
+      </div>
+      <ProductWrapperSale />
       <Footer />
     </div>
   );

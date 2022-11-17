@@ -879,6 +879,27 @@ export const mousepads = [
 
 export const sales = [
   {
+    url: "/sale/statue_of_her_excellency,_the_almighty_narukami_ogosho,_god_of_thunder",
+    name: "Statue of Her Excellency, the Almighty Narukami Ogosho, God of Thunder",
+    before: "79.99",
+    price: "75.99",
+    images: [
+      "/images/Products/Sales/Sale6_1.png",
+      "/images/Products/Sales/Sale6_2.png",
+      "/images/Products/Sales/Sale6_3.png",
+      "/images/Products/Sales/Sale6_4.png",
+    ],
+    description:
+      "Dimensions: 10.5 X 7.5 X 11 cm\n\
+      \n\
+      Material: PVC & ABS\n\
+      \n\
+      Product Overview:\n\
+      1x Mat\n\
+      1x Shoes\n\
+      1x Replaceable hands without sword",
+  },
+  {
     url: "/sale/guoba_coin_pouch",
     name: "Guoba Coin Pouch",
     before: "30.99",

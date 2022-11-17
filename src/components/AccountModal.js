@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Tabs } from "./Navbar";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -12,10 +12,11 @@ const StyledBox = {
   transform: "translate(-50%, -50%)",
   width: "38vw",
   height: "38vw",
+  outline: "none",
 };
 
 const AccountModal = () => {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => {
     setOpen(false);
@@ -27,30 +28,38 @@ const AccountModal = () => {
   const [password, setPassword] = useState("");
   const [account, setAccount] = useState([]);
 
+  const didMount = useRef(false);
 
-  // อย่าลบนะ/อย่า uncomment ;w; !!
-  // account.map((data)=>{
-  //   localStorage.removeItem(data)
-  // })
+  useEffect(() => {
+    if (didMount.current) {
+      // ตอนที่ไม่ได้โหลดหน้าครั้งแรก (ตอนอัพเดต) เพิ่ม account เข้า localStorage
+      // console.log(account)
+      localStorage.setItem("account", JSON.stringify(account));
+    } else {
+      // ตอนที่โหลดหน้าครั้งแรกให้ดึงข้อมูลจาก localStorage แล้วทำการ setAccount ก็จะกลับไป update ที่เงื่อนไข if ข้างบนอีกที
+      didMount.current = true;
+      const saveAccount = localStorage.getItem("account");
+      // console.log(JSON.parse(saveAccount))
+      setAccount(JSON.parse(saveAccount));
+    }
+  }, [account]);
 
   const [popup, setPopup] = React.useState("SignIn");
   const handleClick = (popupState, submit) => {
     setPopup(popupState);
     if (popupState == "Done") {
-
-      localStorage.setItem('account', JSON.stringify([
+      // ถ้ากดไปต่อตรงหน้าสร้าง Password ให้ทำการเพิ่ม email, username, password ลง account โดยเก็บเป็น list
+      setAccount([
         ...account,
         {
           email: email,
           username: username,
           password: password,
-        }
-      ]))
-
+        },
+      ]);
     }
-    
-    console.log(submit);
-    console.log(popupState);
+    // console.log(submit);
+    // console.log(popupState);
   };
 
   return (
@@ -70,7 +79,9 @@ const AccountModal = () => {
               {(() => {
                 switch (popup) {
                   case "SignIn":
-                    return <SignIn handleClick={handleClick} />;
+                    return (
+                      <SignIn handleClick={handleClick} account={account} />
+                    );
                   case "Email":
                     return (
                       <Email
@@ -98,7 +109,7 @@ const AccountModal = () => {
                   case "Done":
                     return <SignIn handleClick={handleClick} />;
                   default:
-                    return null;
+                    return handleClose();
                 }
               })()}
             </div>

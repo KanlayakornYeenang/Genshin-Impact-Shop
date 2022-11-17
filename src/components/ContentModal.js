@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FormControl, InputLabel, OutlinedInput } from "@mui/material";
 import styled from "@emotion/styled";
 import { HiArrowRight } from "react-icons/hi";
-import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
+import { AiFillEye, AiFillEyeInvisible, AiFillWarning } from "react-icons/ai";
 
 const StyledOutlineInput = styled(OutlinedInput)({
   "& .MuiOutlinedInput-input": {
@@ -20,8 +20,6 @@ export const Password = ({ handleClick, setPassword, password }) => {
       <h2 style={{ fontWeight: "100", color: "#7a7a7a", fontSize: "1.25vw" }}>
         Make sure it's a good one.
       </h2>
-      <PasswordField label="PASSWORD" />
-      {/* <PasswordField label="CONFIRM PASSWORD" /> */}
       <FormControl>
         <InputLabel variant="filled" className="inputlabel">
           CONFIRM PASSWORD
@@ -90,18 +88,74 @@ export const Email = ({ handleClick, setEmail, email }) => {
   );
 };
 
-const SignIn = ({ handleClick }) => {
+const SignIn = ({ handleClick, account }) => {
+  const [username, setUsername] = useState("");
+  const [password, setPassword] = useState("");
+  const [passwordShown, setPasswordShown] = useState(false);
+  const [isWarning, setWarning] = useState(false);
+
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
+
+  const checkAccount = () => {
+    account.map((data, index) => {
+      if (
+        username == data.username &&
+        password == data.password &&
+        localStorage.getItem("User") == null
+      ) {
+        // เช็คว่า Sign in valid มั้ย
+        // ถ้า Valid -> Store user's detail ลง local storage
+        localStorage.setItem("User", JSON.stringify(data.username));
+        handleClick("Successfully");
+        setWarning(false)
+        window.location.reload(false);
+      } else {
+        setUsername("")
+        setPassword("")
+        setWarning(true)
+      }
+    });
+  };
+
   return (
     <div className="modal-content">
       <h1>Sign In</h1>
+      {isWarning ? (
+        <p style={{ fontSize: "1vw", textAlign: "center", color:"#be29cc", animation:"showup 0.5s" }}>
+          <AiFillWarning />
+          &nbsp;Your username or password
+          <br />
+          may be incorrect, or you might need to
+          <br />
+          sign up to a website if you haven't an account.
+        </p>
+      ) : null}
       <FormControl>
         <InputLabel variant="filled" className="inputlabel">
           USERNAME
         </InputLabel>
-        <OutlinedInput />
+        <OutlinedInput
+          value={username}
+          onChange={(e) => setUsername(e.target.value)}
+        />
       </FormControl>
-      <PasswordField label="PASSWORD" />
-      <div className="arrowicon">
+      <FormControl className="password-wrapper">
+        <InputLabel variant="filled" className="inputlabel">
+          PASSWORD
+        </InputLabel>
+        <StyledOutlineInput
+          type={passwordShown ? "text" : "password"}
+          className="password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <button onClick={togglePassword}>
+          {passwordShown ? <AiFillEye /> : <AiFillEyeInvisible />}
+        </button>
+      </FormControl>
+      <div className="arrowicon" onClick={checkAccount}>
         <p>
           <HiArrowRight />
         </p>
@@ -113,27 +167,6 @@ const SignIn = ({ handleClick }) => {
         CREATE ACCOUNT
       </p>
     </div>
-  );
-};
-
-const PasswordField = (props) => {
-  const [passwordShown, setPasswordShown] = useState(false);
-  const togglePassword = () => {
-    setPasswordShown(!passwordShown);
-  };
-  return (
-    <FormControl className="password-wrapper">
-      <InputLabel variant="filled" className="inputlabel">
-        {props.label}
-      </InputLabel>
-      <StyledOutlineInput
-        type={passwordShown ? "text" : "password"}
-        className="password"
-      />
-      <button onClick={togglePassword}>
-        {passwordShown ? <AiFillEye /> : <AiFillEyeInvisible />}
-      </button>
-    </FormControl>
   );
 };
 

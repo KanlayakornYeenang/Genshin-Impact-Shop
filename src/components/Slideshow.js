@@ -43,4 +43,25 @@ export class MyGalleryProducts extends React.Component {
   }
 }
 
+export class MyGalleryAds extends React.Component {
+  render() {
+    return (
+      <div class="image-gallery-wrapper">
+        <img style={{width:"76.4%", position:"absolute", zIndex:"2", transform:"scale(0.89, 1.1) translate(-4.5%, 1.5%)"}} src="./images/frameads.png"/>
+        <ImageGallery
+          items={this.props.images}
+          showThumbnails={false}
+          showPlayButton={false}
+          autoPlay={true}
+          showFullscreenButton={false}
+          showBullets={true}
+          slideInterval={4000}
+          slideDuration={1000}
+          showNav={false}
+        />
+      </div>
+    );
+  }
+}
+
 export default MyGallery;

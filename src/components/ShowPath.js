@@ -25,8 +25,8 @@ const ShowPath = () => {
             }
             className="path"
           >
-            {path.split("_").map((path) => (
-              <p className="path">
+            {path.split("_").map((path, index) => (
+              <p key={index} className="path">
                 {path[0].toUpperCase()}
                 {path.slice(1)}
               </p>
