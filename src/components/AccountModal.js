@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Tabs } from "./Navbar";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
@@ -25,20 +25,32 @@ const AccountModal = () => {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
+  const [account, setAccount] = useState([]);
+
+
+  // อย่าลบนะ/อย่า uncomment ;w; !!
+  // account.map((data)=>{
+  //   localStorage.removeItem(data)
+  // })
 
   const [popup, setPopup] = React.useState("SignIn");
   const handleClick = (popupState, submit) => {
     setPopup(popupState);
-    if (submit != "Nothing") {
-      if (popupState == "Username") {
-        localStorage.setItem("Email", submit);
-      } else if (popupState == "Password") {
-        localStorage.setItem("Username", submit);
-      } else if (popupState == "Done") {
-        localStorage.setItem("Password", submit);
-      }
+    if (popupState == "Done") {
+
+      localStorage.setItem('account', JSON.stringify([
+        ...account,
+        {
+          email: email,
+          username: username,
+          password: password,
+        }
+      ]))
+
     }
+    
     console.log(submit);
+    console.log(popupState);
   };
 
   return (

@@ -26,8 +26,8 @@ function Search() {
         <div>
           <Header />
           <ShowPath />
-          {/* <HeaderPhoto text={'Search '+ '"' + keyword + '"'} img="search"/> */}
-          <h1 className="header-search">{filteredProduct.length} Results for "{keyword}"</h1>
+          <HeaderPhoto text={filteredProduct.length+' Results for'} texts={'"'+keyword+'"'} img="search"/>
+          {/* <h1 className="header-search">{filteredProduct.length} Results for "{keyword}"</h1> */}
           <div className="frame-wrapper">
           {productElementsSearch}
           </div>

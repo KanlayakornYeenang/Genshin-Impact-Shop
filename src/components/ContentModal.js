@@ -21,10 +21,19 @@ export const Password = ({ handleClick, setPassword, password }) => {
         Make sure it's a good one.
       </h2>
       <PasswordField label="PASSWORD" />
-      <PasswordField label="CONFIRM PASSWORD" />
-      <div className="arrowicon">
+      {/* <PasswordField label="CONFIRM PASSWORD" /> */}
+      <FormControl>
+        <InputLabel variant="filled" className="inputlabel">
+          CONFIRM PASSWORD
+        </InputLabel>
+        <OutlinedInput
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+      </FormControl>
+      <div className="arrowicon" onClick={() => handleClick("Done", password)}>
         <p>
-          <HiArrowRight onClick={() => handleClick("Done", password)} />
+          <HiArrowRight />
         </p>
       </div>
     </div>
