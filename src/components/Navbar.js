@@ -21,27 +21,27 @@ import Product from "./Product";
 
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
 
-const UserTabs = (props) => {
-  const [isUserTabsHovering, setIsUserTabsHovering] = React.useState(false);
+const UserTab = (props) => {
+  const [isUserTabHovering, setIsUserTabHovering] = React.useState(false);
   const handleMouseOver = () => {
-    setIsUserTabsHovering(true);
+    setIsUserTabHovering(true);
   };
   const handleMouseOut = () => {
-    setIsUserTabsHovering(false);
+    setIsUserTabHovering(false);
   };
   const logout = () => {
     localStorage.removeItem("User");
     window.location.reload(false);
   };
   return (
-    <div className="tabs">
+    <div className="usertab">
       <a href={props.url} onMouseOver={handleMouseOver}>
         <div className="menu-items">
-          {props.title}{" "}
+          {props.title}
           <RiArrowDropDownFill style={{ color: "#444444", fontSize: "2vw" }} />
         </div>
       </a>
-      {isUserTabsHovering ? (
+      {isUserTabHovering ? (
         <div
           className="usertab-dropdown"
           onMouseOver={handleMouseOver}
@@ -198,7 +198,7 @@ const Navbar = () => {
         {localStorage.getItem("User") == null ? (
           <AccountModal />
         ) : (
-          <UserTabs
+          <UserTab
             title={localStorage
               .getItem("User")
               .slice(1, localStorage.getItem("User").length - 1)}

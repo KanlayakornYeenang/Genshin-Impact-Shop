@@ -1,0 +1,19 @@
+#create-account{
+    transition: 0.2s linear;
+}
+
+#create-account:hover{
+    color: #111;
+    cursor: pointer;
+    transform: translate(0vw, 0.2vw);
+}
+
+#already-account{
+    transition: 0.2s linear;
+}
+
+#already-account:hover{
+    color: #111;
+    cursor: pointer;
+    transform: translate(0vw, 0.2vw);
+}

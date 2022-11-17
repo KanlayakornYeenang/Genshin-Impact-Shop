@@ -34,7 +34,7 @@ const AccountModal = () => {
     if (didMount.current) {
       // ตอนที่ไม่ได้โหลดหน้าครั้งแรก (ตอนอัพเดต) เพิ่ม account เข้า localStorage
       // console.log(account)
-      localStorage.setItem("account", JSON.stringify(account));
+      localStorage.setItem("Account", JSON.stringify(account));
     } else {
       // ตอนที่โหลดหน้าครั้งแรกให้ดึงข้อมูลจาก localStorage แล้วทำการ setAccount ก็จะกลับไป update ที่เงื่อนไข if ข้างบนอีกที
       didMount.current = true;

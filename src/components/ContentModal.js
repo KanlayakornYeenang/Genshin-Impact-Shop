@@ -3,6 +3,7 @@ import { FormControl, InputLabel, OutlinedInput } from "@mui/material";
 import styled from "@emotion/styled";
 import { HiArrowRight } from "react-icons/hi";
 import { AiFillEye, AiFillEyeInvisible, AiFillWarning } from "react-icons/ai";
+import "./ContentModal.css";
 
 const StyledOutlineInput = styled(OutlinedInput)({
   "& .MuiOutlinedInput-input": {
@@ -10,7 +11,14 @@ const StyledOutlineInput = styled(OutlinedInput)({
   },
 });
 
+const redbutton = { background: "#d13639", cursor: "pointer" }
+
 export const Password = ({ handleClick, setPassword, password }) => {
+  const [confirmPassword, setConfirmPassword] = useState("");
+  const [passwordShown, setPasswordShown] = useState(false);
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
   return (
     <div className="modal-content">
       <h1 style={{ textAlign: "center" }}>
@@ -20,16 +28,43 @@ export const Password = ({ handleClick, setPassword, password }) => {
       <h2 style={{ fontWeight: "100", color: "#7a7a7a", fontSize: "1.25vw" }}>
         Make sure it's a good one.
       </h2>
-      <FormControl>
+      <FormControl className="password-wrapper">
+        <InputLabel variant="filled" className="inputlabel">
+          PASSWORD
+        </InputLabel>
+        <StyledOutlineInput
+          type={passwordShown ? "text" : "password"}
+          className="password"
+          value={confirmPassword}
+          onChange={(e) => setConfirmPassword(e.target.value)}
+        />
+        <button onClick={togglePassword}>
+          {passwordShown ? <AiFillEye /> : <AiFillEyeInvisible />}
+        </button>
+      </FormControl>
+      <FormControl className="password-wrapper">
         <InputLabel variant="filled" className="inputlabel">
           CONFIRM PASSWORD
         </InputLabel>
-        <OutlinedInput
+        <StyledOutlineInput
+          type={passwordShown ? "text" : "password"}
+          className="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
+        <button onClick={togglePassword}>
+          {passwordShown ? <AiFillEye /> : <AiFillEyeInvisible />}
+        </button>
       </FormControl>
-      <div className="arrowicon" onClick={() => handleClick("Done", password)}>
+      <div
+        className="arrowicon"
+        style={
+          (password != "" && confirmPassword != "" && password == confirmPassword && password.length >= 6)
+            ? redbutton
+            : null
+        }
+        onClick={(password != "" && confirmPassword != "" && password == confirmPassword && password.length >= 6) ? () => handleClick("Done", password) : null}
+      >
         <p>
           <HiArrowRight />
         </p>
@@ -54,9 +89,15 @@ export const Username = ({ handleClick, setUsername, username }) => {
           onChange={(e) => setUsername(e.target.value)}
         />
       </FormControl>
-      <div className="arrowicon">
+      <div
+        className="arrowicon"
+        style={
+          username.length >= 4 ? redbutton : null
+        }
+        onClick={(username.length >= 4) ? () => handleClick("Password", username) : null}
+      >
         <p>
-          <HiArrowRight onClick={() => handleClick("Password", username)} />
+          <HiArrowRight />
         </p>
       </div>
     </div>
@@ -76,12 +117,18 @@ export const Email = ({ handleClick, setEmail, email }) => {
           onChange={(e) => setEmail(e.target.value)}
         />
       </FormControl>
-      <div className="arrowicon">
+      <div
+        className="arrowicon"
+        style={
+          (email != "" && email.includes("@") && email.includes(".")) ? redbutton : null
+        }
+        onClick={(email != "" && email.includes("@") && email.includes(".")) ? () => handleClick("Username", email) : null}
+      >
         <p>
-          <HiArrowRight onClick={() => handleClick("Username", email)} />
+          <HiArrowRight />
         </p>
       </div>
-      <p className="modal-footer" onClick={() => handleClick("SignIn")}>
+      <p id="already-account" className="modal-footer" onClick={() => handleClick("SignIn")}>
         ALREADY HAVE AN ACCOUNT?
       </p>
     </div>
@@ -109,12 +156,14 @@ const SignIn = ({ handleClick, account }) => {
         // ถ้า Valid -> Store user's detail ลง local storage
         localStorage.setItem("User", JSON.stringify(data.username));
         handleClick("Successfully");
-        setWarning(false)
+        setWarning(false);
         window.location.reload(false);
+      } else if (username == "" || password == "") {
+        console.log("");
       } else {
-        setUsername("")
-        setPassword("")
-        setWarning(true)
+        setUsername("");
+        setPassword("");
+        setWarning(true);
       }
     });
   };
@@ -123,7 +172,14 @@ const SignIn = ({ handleClick, account }) => {
     <div className="modal-content">
       <h1>Sign In</h1>
       {isWarning ? (
-        <p style={{ fontSize: "1vw", textAlign: "center", color:"#be29cc", animation:"showup 0.5s" }}>
+        <p
+          style={{
+            fontSize: "1vw",
+            textAlign: "center",
+            color: "#be29cc",
+            animation: "showup 0.5s",
+          }}
+        >
           <AiFillWarning />
           &nbsp;Your username or password
           <br />
@@ -155,12 +211,21 @@ const SignIn = ({ handleClick, account }) => {
           {passwordShown ? <AiFillEye /> : <AiFillEyeInvisible />}
         </button>
       </FormControl>
-      <div className="arrowicon" onClick={checkAccount}>
+      <div
+        className="arrowicon"
+        style={
+          username != "" && password != ""
+            ? redbutton
+            : null
+        }
+        onClick={(username != "" && password != "") ? checkAccount : null}
+      >
         <p>
           <HiArrowRight />
         </p>
       </div>
       <p
+        id="create-account"
         className="modal-footer"
         onClick={() => handleClick("Email", "Nothing")}
       >
