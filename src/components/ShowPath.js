@@ -14,7 +14,7 @@ const ShowPath = () => {
       </div>
       {paths.map((path, index) => (
         <div className="path-content">
-          <p className="path">/</p>
+          <p className="path-sep">/</p>
           <a
             href={
               "/" +

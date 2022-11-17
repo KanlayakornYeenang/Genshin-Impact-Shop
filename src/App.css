@@ -297,3 +297,14 @@ nav {
     opacity: 1;
   }
 }
+
+@keyframes showup {
+  from {
+      top: -30%;
+      opacity: 0;
+  }
+  to {
+      top: 0%;
+      opacity: 1;
+  }
+}
