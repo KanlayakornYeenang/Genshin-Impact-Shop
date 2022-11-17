@@ -40,9 +40,9 @@ const SignIn = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <p onClick={togglePassword}>
+        <button onClick={togglePassword}>
           {passwordShown ? <AiFillEye /> : <AiFillEyeInvisible />}
-        </p>
+        </button>
       </FormControl>
       <div className="arrowicon">
         <p>
