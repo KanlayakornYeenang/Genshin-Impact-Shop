@@ -6,16 +6,21 @@ import ShowPath from "../components/ShowPath";
 
 function NotFound() {
   return (
-        <div>
-          <Header />
-          <ShowPath />
-          <HeaderPhoto text={'404 Not Found'} img="NotFound"/>
-          <div style={{display:"flex", alignItems:"center", flexFlow:"column"}} className="frame-wrapper">
-            <h1>Page not found.</h1>
-          </div>
-          <Footer />
-        </div>
-      );
-};
+    <div className="notfound">
+      <img style={{width:"25%"}} src="./images/404.png" />
+      <p id="error-title">This page cannot be found</p>
+      <p id="error-content">
+        Perhaps it flew away with Venti.
+        <br />
+        Perhaps it rose up to Celestia...
+        <br />
+        Perhaps it went somewhere far away...
+      </p>
+      <img style={{width:"2%"}} src="./images/star.png" />
+      <a href="/" id="error-back">Back to HOME »</a>
+      <img style={{width:"25%"}} src="./images/fox.png" />
+    </div>
+  );
+}
 
 export default NotFound;
