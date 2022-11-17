@@ -7,6 +7,7 @@ import ShowPath from "../components/ShowPath";
 function NotFound() {
   return (
     <div className="notfound">
+      <div className="notfound-wrapper">
       <img style={{width:"25%"}} src="./images/404.png" />
       <p id="error-title">This page cannot be found</p>
       <p id="error-content">
@@ -19,6 +20,7 @@ function NotFound() {
       <img style={{width:"2%"}} src="./images/star.png" />
       <a href="/" id="error-back">Back to HOME »</a>
       <img style={{width:"25%"}} src="./images/fox.png" />
+      </div>
     </div>
   );
 }
