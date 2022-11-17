@@ -3,7 +3,7 @@ import { Tabs } from "./Navbar";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import "./AccountModal.css"
-import SignIn from "./SignIn";
+import SignIn from "./ContentModal";
 
 const style = {
   position: "absolute",
