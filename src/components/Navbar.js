@@ -2,7 +2,7 @@ import React from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import { TiShoppingCart } from "react-icons/ti";
 import { accessories, apparel, collectibles } from "../data/menuItems";
-import PopUp from "./PopUp";
+import AccountModal from "./AccountModal";
 import SearchProduct from "./SearchProduct";
 import {
   tops,
@@ -18,8 +18,6 @@ import {
   mousepads,
 } from "../data/ProductList";
 import Product from "./Product";
-import Search from "../pages/Search";
-import { Link } from "react-router-dom";
 
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
 
@@ -116,7 +114,7 @@ const Navbar = () => {
         </div>
       );
     });
-    return (
+  return (
     <nav>
       <div className="tab-wrapper">
         <TabsExpends url="/apparel" title="APPAREL" menu={apparel} />
@@ -130,7 +128,7 @@ const Navbar = () => {
           title="ACCESSORIES"
           menu={accessories}
         />
-        <Tabs url="/sale" title="SALE" link="/Sale" />
+        <Tabs url="/sale" title="SALE" />
       </div>
 
       <div className="action-wrapper">
@@ -146,13 +144,17 @@ const Navbar = () => {
         {searchProduct == "" ? null : (
           <div className="search-content-wrapper" style={{ zIndex: "1" }}>
             <div className="search-content">{productElementsSearch}</div>
-            <div style={{width:"20%"}}><a href={"/search/"+searchProduct} className="var">View All Results ({filteredProduct.length})</a></div>
+            <div style={{ width: "20%" }}>
+              <a href={"/search/" + searchProduct} className="var">
+                View All Results ({filteredProduct.length})
+              </a>
+            </div>
           </div>
         )}
         <a id="cart-wrapper" href="/cart">
           <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
         </a>
-        <PopUp />
+        <AccountModal />
       </div>
     </nav>
   );
