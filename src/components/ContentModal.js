@@ -94,7 +94,7 @@ export const Username = ({ handleClick, setUsername, username }) => {
         style={
           username.length >= 4 ? redbutton : null
         }
-        onClick={(username.length >= 4) ? () => handleClick("Password", username) : null}
+        onClick={username.length >= 4 ? () => handleClick("Password", username) : null}
       >
         <p>
           <HiArrowRight />
@@ -218,7 +218,7 @@ const SignIn = ({ handleClick, account }) => {
             ? redbutton
             : null
         }
-        onClick={(username != "" && password != "") ? checkAccount : null}
+        onClick={checkAccount}
       >
         <p>
           <HiArrowRight />
