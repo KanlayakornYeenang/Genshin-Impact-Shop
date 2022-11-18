@@ -14,8 +14,15 @@ const Empty = () => {
   return <div>Cart is Empty</div>;
 };
 
-const removeFromCart = () => {
-  console.log()
+const removeFromCart = (cart) => {
+  JSON.parse(localStorage.getItem("cart")).map((carts, index) => {
+    if (cart.name == carts.name && cart.amount == carts.amount && cart.size == carts.size) {
+      const arr = JSON.parse(localStorage.getItem("cart"))
+      arr.splice(index, 1)
+      localStorage.setItem("cart", JSON.stringify(arr))
+      window.location.reload(false);
+    }
+  })
 }
 
 const Cart = () => {
@@ -60,7 +67,7 @@ const Cart = () => {
                 </div>
                 <div className="cart-price">
                   <p>${(cart.price*cart.amount).toFixed(2)}</p>
-                  <p style={{ textDecoration: "underline", cursor:"pointer" }} onClick={removeFromCart}>Remove</p>
+                  <p style={{ textDecoration: "underline", cursor:"pointer" }} onClick={() => removeFromCart(cart)}>Remove</p>
                 </div>
               </div>
             );
