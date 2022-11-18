@@ -13,6 +13,28 @@ const StyledOutlineInput = styled(OutlinedInput)({
 
 const redbutton = { background: "#d13639", cursor: "pointer" }
 
+export const Done = ({handleClick}) => {
+  return (
+    <div className="modal-content">
+      <h1 style={{ textAlign: "center" }}>
+        Successful!
+      </h1>
+      <h2 style={{ fontWeight: "100", color: "#7a7a7a", fontSize: "1.25vw" , textAlign:"center"}}>
+        Your account has been successfully registered.
+      </h2>
+      <div
+      className="arrowicon"
+      style={redbutton}
+      onClick={() => handleClick("Refresh")}
+      >
+      <p>
+        <HiArrowRight />
+      </p>
+      </div>
+    </div>
+  );
+}
+
 export const Password = ({ handleClick, setPassword, password }) => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [passwordShown, setPasswordShown] = useState(false);

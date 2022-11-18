@@ -96,3 +96,7 @@
     font-family: "HYWenHei" !important;
     font-size: 1vw !important;
 }
+
+.close:hover {
+    opacity: 0.7;
+}

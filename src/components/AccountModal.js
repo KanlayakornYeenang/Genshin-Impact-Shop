@@ -3,7 +3,8 @@ import { Tabs } from "./Navbar";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import "./AccountModal.css";
-import SignIn, { Email, Username, Password } from "./ContentModal";
+import SignIn, { Email, Username, Password, Done } from "./ContentModal";
+import { AiFillCloseCircle } from "react-icons/ai"
 
 const StyledBox = {
   position: "absolute",
@@ -36,7 +37,7 @@ const AccountModal = () => {
     }
     if(didMount.current){
       // ตอนที่ไม่ได้โหลดหน้าครั้งแรก (ตอนอัพเดต) เพิ่ม account เข้า localStorage
-      console.log(account)
+      // console.log(account)
       localStorage.setItem('account', JSON.stringify(account))
     }else{
       // ตอนที่โหลดหน้าครั้งแรกให้ดึงข้อมูลจาก localStorage แล้วทำการ setAccount ก็จะกลับไป update ที่เงื่อนไข if ข้างบนอีกที
@@ -51,10 +52,12 @@ const AccountModal = () => {
 
   const [popup, setPopup] = React.useState("SignIn");
   const handleClick = (popupState, submit) => {
+    // console.log(popupState)
     setPopup(popupState);
-    if (popupState == "Done") {
+    if (popupState == "Refresh") {
       // ถ้ากดไปต่อตรงหน้าสร้าง Password ให้ทำการเพิ่ม email, username, password ลง account โดยเก็บเป็น list
-      console.log(email, username, password)
+      // console.log(email, username, password)
+      document.location.reload(true);
       setAccount([
         ...account,
         {
@@ -80,6 +83,7 @@ const AccountModal = () => {
         aria-describedby="modal-modal-description"
       >
         <Box sx={StyledBox}>
+          <AiFillCloseCircle className="close" style={{position:"absolute", color:"white", fontSize:"1.5vw", right:"10%", top:"7%", cursor:"pointer", transition:"0.1s linear"}} onClick={handleClose} />
           <div className="modal-container">
             <div className="modal-wrapper">
               {(() => {
@@ -111,7 +115,7 @@ const AccountModal = () => {
                       />
                     );
                   case "Done":
-                    return <SignIn handleClick={handleClick} />;
+                    return <Done handleClick={handleClick} />;
                   default:
                     return handleClose();
                 }

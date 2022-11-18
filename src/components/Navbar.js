@@ -1,5 +1,6 @@
 import React from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
+import { BiUser } from "react-icons/bi"
 import { TiShoppingCart } from "react-icons/ti";
 import { accessories, apparel, collectibles } from "../data/menuItems";
 import AccountModal from "./AccountModal";
@@ -35,8 +36,9 @@ const UserTab = (props) => {
   };
   return (
     <div className="usertab">
-      <a href={props.url} onMouseOver={handleMouseOver}>
+      <a href={props.url} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
         <div className="menu-items">
+          <BiUser style={{fontSize:"1.4vw", transform:"translateY(-5%)"}} /> &nbsp;
           {props.title}
           <RiArrowDropDownFill style={{ color: "#444444", fontSize: "2vw" }} />
         </div>

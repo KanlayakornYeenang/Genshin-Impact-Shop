@@ -5,55 +5,50 @@ import ShowPath from "../components/ShowPath";
 import "../components/Cart.css";
 import Button from "../components/Button";
 import TextMhuuKrob from "../components/Input";
+import { useSlotProps } from "@mui/base";
 
 const Empty = () => {
   return <div>Cart is Empty</div>;
 };
+
+const ProductInCart = (props) => {
+  return <a href="#"><img src={props.images}/></a>
+}
 
 const Cart = () => {
   return (
     <div>
       <Header />
       <ShowPath />
-      <div className="cart-frame">
-        <div className="cart-left">
-          <div className="cart-left-wrapper">
-            <h1>Cart (0)</h1>
-          </div>
-          <div className="table">
-            <div className="table-header">
-              <div className="table-left">Product</div>
-              <div className="table-right">Price</div>
-            </div>
-            <div className="cart-product">
-              <Empty />
-            </div>
-          </div>
-          <a href="/">
-            <Button string={"/ Start Shopping Now"} />
-          </a>
+      <div className="cart">
+        <div className="cart-header">
+          <h1>Cart</h1>
         </div>
-        <div className="cart-right">
-          <div className="cart-right-frame">
-            <p>Subtotal (0 items)</p>
-            <p className="cart-price">$0.00</p>
-            <div className="textmhuukrob-wrapper">
-              <TextMhuuKrob string="First Name" placeholder="First Name" />
-              <TextMhuuKrob string="Last Name" placeholder="Last Name" />
-              <TextMhuuKrob string="Address" placeholder="Enter address here" />
-              <TextMhuuKrob string="City" placeholder="Enter city here" />
-              <TextMhuuKrob
-                string="Zip/Postal Code"
-                placeholder="Enter ZIP here"
-              />
-            </div>
-            <p style={{ fontSize: "0.8vw" }}>
-              *Item availability isn’t guaranteed until checkout is complete.
-            </p>
+        <div className="cart-content">
+          <div className="cart-l">
+            <div className="product">Product</div>
+            {JSON.parse(localStorage.getItem("cart")).map((cart) => {
+              return (
+                <div className="products">
+                  <div className="products-img"><img src={cart.img} /></div>
+                  <div className="products-name"><p>{cart.name}</p></div>
+                </div>
+              );
+            })}
+          </div>
+          <div className="cart-r">
+            <div className="product">Price</div>
+            {JSON.parse(localStorage.getItem("cart")).map((cart) => {
+              return (
+                <div className="price-wrapper">
+                  <div className="price">${cart.price}</div>
+                  <div className="remove">Remove</div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>
-      <Footer />
     </div>
   );
 };
