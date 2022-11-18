@@ -13,15 +13,28 @@ const Details = (props) => {
   let isApparel = useLocation().pathname.split("/").slice(1)[0] == "apparel";
   const [cart, setCart] = useState([]);
   const didMount = useRef(false);
-  let isProductsIn = false
+  let isProductsIn = false;
 
   const addToCart = (name, price, img, size, url) => {
     if (JSON.parse(localStorage.getItem("cart")).length > 0) {
       JSON.parse(localStorage.getItem("cart")).map((products, index) => {
+        let amounts = products.amount + 1;
+        if (amounts > 5) {
+          amounts = 5;
+        }
         if (isApparel && name == products.name && size == products.size) {
-          cart.splice(index, 1);
-          let amounts = products.amount + 1
-          if (amounts > 5) {amounts = 5}
+          let items = [...cart];
+          let item = { ...cart[index] };
+          item.amount = amounts;
+          items[index] = item;
+          setCart(items)
+          isProductsIn = true;
+        } else if (
+          isApparel &&
+          name == products.name &&
+          size != products.size &&
+          !isProductsIn
+        ) {
           setCart([
             ...cart,
             {
@@ -30,39 +43,15 @@ const Details = (props) => {
               img: img,
               size: size,
               url: url,
-              amount: amounts,
-            },
-          ]);
-          isProductsIn = true;
-        }
-        else if (isApparel && name == products.name && size != products.size && !isProductsIn) {
-          setCart([
-            ...cart,
-            {
-              name: name,
-              price: parseFloat(price),
-              img: img,
-              size: size,
-              url, url,
               amount: 1,
             },
           ]);
-        }
-       else if (!isApparel && name == products.name) {
-          cart.splice(index, 1);
-          let amounts = products.amount + 1
-          if (amounts > 5) {amounts = 5}
-          setCart([
-            ...cart,
-            {
-              name: name,
-              price: parseFloat(price),
-              img: img,
-              size: size,
-              url: url,
-              amount: amounts,
-            },
-          ]);
+        } else if (!isApparel && name == products.name) {
+          let items = [...cart];
+          let item = { ...cart[index] };
+          item.amount = amounts;
+          items[index] = item;
+          setCart(items)
           isProductsIn = true;
         } else if (!isApparel && !isProductsIn) {
           setCart([
@@ -72,7 +61,7 @@ const Details = (props) => {
               price: parseFloat(price),
               img: img,
               size: size,
-              url, url,
+              url: url,
               amount: 1,
             },
           ]);
@@ -87,7 +76,7 @@ const Details = (props) => {
           price: parseFloat(price),
           img: img,
           size: size,
-          url, url,
+          url: url,
           amount: 1,
         },
       ]);
@@ -100,19 +89,18 @@ const Details = (props) => {
     }
     if (didMount.current) {
       localStorage.setItem("cart", JSON.stringify(cart));
-    }
-    else {
+    } else {
       didMount.current = true;
       const saveCart = localStorage.getItem("cart");
       setCart(JSON.parse(saveCart));
     }
   }, [cart]);
 
-  const [size, setSize] = useState('xs');
+  const [size, setSize] = useState("xs");
 
   const handleCurrentSize = (size) => {
-    setSize(size)
-  }
+    setSize(size);
+  };
 
   return (
     <div className="details">
@@ -125,11 +113,19 @@ const Details = (props) => {
         {isApparel ? (
           <div style={{ display: "flex", flexFlow: "column", rowGap: "1vw" }}>
             <SizeChartHeader />
-            <SizeChart handleCurrentSize={handleCurrentSize}/>
+            <SizeChart handleCurrentSize={handleCurrentSize} />
           </div>
         ) : null}
         <div
-          onClick={() => addToCart(props.products.name, props.products.price, props.products.images[0], isApparel ? size : null, props.products.url)}
+          onClick={() =>
+            addToCart(
+              props.products.name,
+              props.products.price,
+              props.products.images[0],
+              isApparel ? size : null,
+              props.products.url
+            )
+          }
         >
           <Button string={"$" + props.products.price + " - Add to Cart"} />
         </div>

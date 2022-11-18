@@ -15,7 +15,7 @@ const Empty = () => {
 };
 
 const removeFromCart = () => {
-
+  console.log()
 }
 
 const Cart = () => {
