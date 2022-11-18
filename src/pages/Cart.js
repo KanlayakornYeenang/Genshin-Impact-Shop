@@ -6,13 +6,16 @@ import "../components/Cart.css";
 import Button from "../components/Button";
 import TextMhuuKrob from "../components/Input";
 import { useSlotProps } from "@mui/base";
+import InputLabel from '@mui/material/InputLabel';
+import FormControl from '@mui/material/FormControl';
+import NativeSelect from '@mui/material/NativeSelect';
 
 const Empty = () => {
   return <div>Cart is Empty</div>;
 };
 
-const ProductInCart = (props) => {
-  return <a href="#"><img src={props.images}/></a>
+const removeFromCart = () => {
+
 }
 
 const Cart = () => {
@@ -22,32 +25,46 @@ const Cart = () => {
       <ShowPath />
       <div className="cart">
         <div className="cart-header">
-          <h1>Cart</h1>
+          <h1>Cart ({JSON.parse(localStorage.getItem("cart")).length})</h1>
         </div>
-        <div className="cart-content">
-          <div className="cart-l">
-            <div className="product">Product</div>
-            {JSON.parse(localStorage.getItem("cart")).map((cart) => {
-              return (
-                <div className="products">
-                  <div className="products-img"><img src={cart.img} /></div>
-                  <div className="products-name"><p>{cart.name}</p></div>
-                </div>
-              );
-            })}
-          </div>
-          <div className="cart-r">
-            <div className="product">Price</div>
-            {JSON.parse(localStorage.getItem("cart")).map((cart) => {
-              return (
-                <div className="price-wrapper">
-                  <div className="price">${cart.price}</div>
-                  <div className="remove">Remove</div>
-                </div>
-              );
-            })}
-          </div>
+        <div className="cart-table-header">
+          <p>Product</p>
+          <p>Price</p>
         </div>
+          {JSON.parse(localStorage.getItem("cart")).map((cart) => {
+            return (
+              <div className="products-wrapper">
+                <a href={cart.url} className="cart-img">
+                  <img src={cart.img} />
+                </a>
+                <div className="cart-name">
+                  <p>{cart.name}</p>
+                  <FormControl fullWidth>
+                    <InputLabel
+                      variant="standard"
+                      htmlFor="uncontrolled-native"
+                    >
+                      Qty
+                    </InputLabel>
+                    <NativeSelect
+                      defaultValue={cart.amount}
+                      sx={{width:"15%"}}
+                    >
+                      <option value={1}>1</option>
+                      <option value={2}>2</option>
+                      <option value={3}>3</option>
+                      <option value={4}>4</option>
+                      <option value={5}>5</option>
+                    </NativeSelect>
+                  </FormControl>
+                </div>
+                <div className="cart-price">
+                  <p>${(cart.price*cart.amount).toFixed(2)}</p>
+                  <p style={{ textDecoration: "underline", cursor:"pointer" }} onClick={removeFromCart}>Remove</p>
+                </div>
+              </div>
+            );
+          })}
       </div>
     </div>
   );

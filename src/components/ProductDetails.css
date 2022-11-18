@@ -144,9 +144,22 @@
 }
 
 .addtocart-txt {
-    position: relative;
-    z-index: 9;
-    margin: auto;
+  position: relative;
+  z-index: 9;
+  margin: auto;
+}
+
+.addtocart-txt::after{
+  content: ' ';
+  width: 0%;
+  background: #fff;
+  display: static;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.addtocart-txt:hover:after{
+  width: 100%;
 }
 
 .addtocart-bg {

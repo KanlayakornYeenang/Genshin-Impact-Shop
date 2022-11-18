@@ -2,6 +2,7 @@ import React from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import { BiUser } from "react-icons/bi"
 import { TiShoppingCart } from "react-icons/ti";
+import { BsCircleFill } from "react-icons/bs"
 import { accessories, apparel, collectibles } from "../data/menuItems";
 import AccountModal from "./AccountModal";
 import SearchProduct from "./SearchProduct";
@@ -195,6 +196,7 @@ const Navbar = () => {
         )}
         <a id="cart-wrapper" href="/cart">
           <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
+          <BsCircleFill style={{color: "#d13639", fontSize:"0.5vw", position:"absolute", transform:"translate(-0.45vw, 0.1vw)", boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px"}} />
         </a>
         {/* <AccountModal /> */}
         {localStorage.getItem("User") == null ? (

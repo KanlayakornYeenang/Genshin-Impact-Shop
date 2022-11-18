@@ -96,12 +96,39 @@ export const Password = ({ handleClick, setPassword, password }) => {
 };
 
 export const Username = ({ handleClick, setUsername, username }) => {
+  const [alreadyUsername, setAlreadyUsername] = useState(false);
+  const checkUsername = () =>{
+    let cango = true;
+    JSON.parse(localStorage.getItem("account")).map((useracct)=>{
+      if(useracct.username == username){
+        setUsername("");
+        setAlreadyUsername(true);
+        cango = false;
+      }
+    })
+    if(cango && username.length >= 4){
+      handleClick("Password", username)
+    }
+  }
   return (
     <div className="modal-content">
       <h1>Choose a Username</h1>
       <h2 style={{ fontWeight: "100", color: "#7a7a7a", fontSize: "1.25vw" }}>
         Used for sign in to game.
       </h2>
+      {alreadyUsername ? (
+        <p
+          style={{
+            fontSize: "1vw",
+            textAlign: "center",
+            color: "#be29cc",
+            animation: "showup 0.5s",
+          }}
+        >
+          <AiFillWarning />
+          &nbsp;This username is already registered.
+        </p>
+      ) : null}
       <FormControl>
         <InputLabel variant="filled" className="inputlabel">
           USERNAME
@@ -116,7 +143,8 @@ export const Username = ({ handleClick, setUsername, username }) => {
         style={
           username.length >= 4 ? redbutton : null
         }
-        onClick={username.length >= 4 ? () => handleClick("Password", username) : null}
+        onClick={checkUsername}
+        // onClick={username.length >= 4 ? () => handleClick("Password", username) : null}
       >
         <p>
           <HiArrowRight />

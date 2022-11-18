@@ -27,13 +27,13 @@ const AccountModal = () => {
   const [email, setEmail] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
-  const [account, setAccount] = useState([]);
+  const [account, setAccount] = useState([{email: "admin@123.com", username: "admin", password: "123456"}]);
 
   const didMount = useRef(false);
 
   useEffect(() => {
     if(account == null){
-      setAccount([])
+      setAccount([{email: "admin@123.com", username: "admin", password: "123456"}])
     }
     if(didMount.current){
       // ตอนที่ไม่ได้โหลดหน้าครั้งแรก (ตอนอัพเดต) เพิ่ม account เข้า localStorage

@@ -1,54 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
 .cart {
     margin-top: 10vh;
     width: 55%;
-    background-color: red;
     padding: 10%;
     padding-right: 5%;
 }
 
-.cart-content {
-    display: flex;
-    width: 100%;
-    background-color: green;
+.cart-header h1 {
+    font-size: 4vw;
 }
 
-.cart-l {
-    width: 60%;
-    background-color: aquamarine;
+.cart-header {
+    padding-bottom: 5%;
 }
 
-.cart-r {
-    width: 40%;
-    background-color: bisque;
-}
-
-.product {
-    padding-bottom: 1vw;
+.cart-table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-bottom: 1%;
     border-bottom: 0.1vw solid #2b2a29;
 }
 
-.products {
-    padding: 1.5vw 0vw;
-    background-color: pink;
+.cart-table-header p {
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.products-wrapper {
+    padding: 4% 0%;
+    display: grid;
+    grid-template-columns: 0.55fr 1.45fr 1fr;
     border-bottom: 0.1vw solid #2b2a29;
-    display: flex;
 }
 
-.products-img {
+.cart-img img {
     display: flex;
-    background-color: yellowgreen;
-    width: 25%;
-}
-
-.products-img img {
     width: 100%;
 }
 
-.products-name {
-    background-color: orange;
-    width: 75%;
-}
-
-.products-name p {
+.cart-name {
     padding-left: 7%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.cart-name p {
+    font-family: "Roboto", sans-serif;
+    width: 80%;
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.cart-price {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+}
+
+.cart-price p {
+    font-family: "Roboto", sans-serif;
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.MuiNativeSelect-select {
+    font-weight: 500 !important;
+    font-size: 1vw !important;
+}
+
+option {
+    font-family: "Roboto", sans-serif;
 }

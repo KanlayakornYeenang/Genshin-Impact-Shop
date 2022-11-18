@@ -12,136 +12,86 @@ import { useLocation } from "react-router-dom";
 const Details = (props) => {
   let isApparel = useLocation().pathname.split("/").slice(1)[0] == "apparel";
   const [cart, setCart] = useState([]);
-  const [item, setItem] = useState([]);
   const didMount = useRef(false);
+  let isProductsIn = false
 
-    //   JSON.parse(localStorage.getItem("cart")).map((products, index) => {
-    //     if (name == products.name) {
-    //       cart.splice(index, 1)
-    //       setCart([
-    //         ...cart,
-
-    //         {
-    //           name: name,
-    //           price: parseFloat(price),
-    //           images: images,
-    //           amount: products.amount+1,
-    //         },
-    //       ]);
-    //     } 
-    //   });
-    // } else {
-    //   setCart([
-    //     ...cart,
-    //     {
-    //       name: name,
-    //       price: parseFloat(price),
-    //       images: images,
-    //       amount: 1,
-    //     },
-    //   ]);
-    // }
-
-  // const addToCart = (name, price, images) => {
-  //   if (JSON.parse(localStorage.getItem("cart")).length > 0) {
-  //     let i=0;
-  //     while(true){
-  //       // JSON.parse(localStorage.getItem("cart"))[i]
-  //       if(name == JSON.parse(localStorage.getItem("cart"))[i].name){
-  //         setCart([
-  //           ...cart,
-  //           {
-  //             name: name,
-  //             price: parseFloat(price),
-  //             images: images,
-  //             amount: JSON.parse(localStorage.getItem("cart"))[i].amount+1,
-  //           }
-  //           ])
-  //           (JSON.parse(localStorage.getItem("cart"))).splice(i, 1)
-  //           break;
-  //         }
-  //         else{
-  //           setCart([
-  //             ...cart,
-  //             {
-  //               name: name,
-  //               price: parseFloat(price),
-  //               images: images,
-  //               amount: 1,
-  //             },
-  //           ]);
-  //         }
-  //       }
-  //     // JSON.parse(localStorage.getItem("cart")).map((products, index) => {
-  //     //   if (name == products.name) {
-  //     //     cart.splice(index, 1)
-  //     //     setCart([
-  //     //       ...cart,
-  //     //       {
-  //     //         name: name,
-  //     //         price: parseFloat(price),
-  //     //         images: images,
-  //     //         amount: products.amount+1,
-  //     //       },
-  //     //     ]);
-  //     //     //break ตรงนี้
-  //     //   }
-  //     //   else {
-  //     //     setCart([
-  //     //       ...cart,
-  //     //       {
-  //     //         name: name,
-  //     //         price: parseFloat(price),
-  //     //         images: images,
-  //     //         amount: 1,
-  //     //       },
-  //     //     ]);
-  //     //   }
-  //     // });
-  //     } else {
-  //     setCart([
-  //       ...cart,
-  //       {
-  //         name: name,
-  //         price: parseFloat(price),
-  //         images: images,
-  //         amount: 1,
-  //       },
-  //     ]);
-  //   }
-  // };
-
-  // const addToCart = (name, price) => {
-  //   setCart({
-  //     name: name,
-  //     price: parseFloat(price),
-  //   });
-  //   setItem((pre_item) => {
-  //     console.log(pre_item)
-  //     if (pre_item.find((item) => item.name === cart.name) == null) {
-  //       return [...pre_item, cart];
-  //     } else {
-  //       return pre_item.map((item) => {
-  //         if (item.name == cart.name) {
-  //           return { ...item, price: item.price + cart.price };
-  //         } else {
-  //           return item;
-  //         }
-  //       });
-  //     }
-  //   });
-  //   console.log(item)
-  // };
-
-  const addToCart = (name, price, img) => {
-    setCart([
-      ...cart,
-      {
-        name: name,
-        price: parseFloat(price),
-        img: img
-      },
-    ]);
+  const addToCart = (name, price, img, size, url) => {
+    if (JSON.parse(localStorage.getItem("cart")).length > 0) {
+      JSON.parse(localStorage.getItem("cart")).map((products, index) => {
+        if (isApparel && name == products.name && size == products.size) {
+          cart.splice(index, 1);
+          let amounts = products.amount + 1
+          if (amounts > 5) {amounts = 5}
+          setCart([
+            ...cart,
+            {
+              name: name,
+              price: parseFloat(price),
+              img: img,
+              size: size,
+              url: url,
+              amount: amounts,
+            },
+          ]);
+          isProductsIn = true;
+        }
+        else if (isApparel && name == products.name && size != products.size && !isProductsIn) {
+          setCart([
+            ...cart,
+            {
+              name: name,
+              price: parseFloat(price),
+              img: img,
+              size: size,
+              url, url,
+              amount: 1,
+            },
+          ]);
+        }
+       else if (!isApparel && name == products.name) {
+          cart.splice(index, 1);
+          let amounts = products.amount + 1
+          if (amounts > 5) {amounts = 5}
+          setCart([
+            ...cart,
+            {
+              name: name,
+              price: parseFloat(price),
+              img: img,
+              size: size,
+              url: url,
+              amount: amounts,
+            },
+          ]);
+          isProductsIn = true;
+        } else if (!isApparel && !isProductsIn) {
+          setCart([
+            ...cart,
+            {
+              name: name,
+              price: parseFloat(price),
+              img: img,
+              size: size,
+              url, url,
+              amount: 1,
+            },
+          ]);
+        }
+      });
+      isProductsIn = true;
+    } else {
+      setCart([
+        ...cart,
+        {
+          name: name,
+          price: parseFloat(price),
+          img: img,
+          size: size,
+          url, url,
+          amount: 1,
+        },
+      ]);
+    }
   };
 
   useEffect(() => {
@@ -158,6 +108,12 @@ const Details = (props) => {
     }
   }, [cart]);
 
+  const [size, setSize] = useState('xs');
+
+  const handleCurrentSize = (size) => {
+    setSize(size)
+  }
+
   return (
     <div className="details">
       <div className="shape shapetop"></div>
@@ -169,11 +125,11 @@ const Details = (props) => {
         {isApparel ? (
           <div style={{ display: "flex", flexFlow: "column", rowGap: "1vw" }}>
             <SizeChartHeader />
-            <SizeChart />
+            <SizeChart handleCurrentSize={handleCurrentSize}/>
           </div>
         ) : null}
         <div
-          onClick={() => addToCart(props.products.name, props.products.price, props.products.images[0])}
+          onClick={() => addToCart(props.products.name, props.products.price, props.products.images[0], isApparel ? size : null, props.products.url)}
         >
           <Button string={"$" + props.products.price + " - Add to Cart"} />
         </div>
