@@ -8,60 +8,100 @@ import Button from "../components/Button";
 import SimpleAccordion from "../components/Accordion";
 import SizeChart, { SizeChartHeader } from "../components/SizeChart";
 import { useLocation } from "react-router-dom";
+import { MdVerified, MdOutlineClose } from "react-icons/md";
+import Snackbar from "@mui/material/Snackbar";
+
+const style = {
+  position: "absolute",
+  width: "20vw",
+  bgcolor: "background.paper",
+  border: "2px solid #000",
+  boxShadow: 24,
+  p: "2%",
+  border: "none",
+};
 
 const Details = (props) => {
   let isApparel = useLocation().pathname.split("/").slice(1)[0] == "apparel";
   const [cart, setCart] = useState([]);
   const didMount = useRef(false);
   let isProductsIn = false;
+  // const [cartModal, setCartModal] = useState(null);
+  const [open, setOpen] = React.useState(false);
+  const handleOpen = () => {
+    setOpen(true);
+  };
+  const handleClose = () => setOpen(false);
 
-  const addToCart = (name, price, img, size, url) => {
+  const addToCart = (size) => {
+    handleOpen();
     if (JSON.parse(localStorage.getItem("cart")).length > 0) {
-      JSON.parse(localStorage.getItem("cart")).map((products, index) => {
-        let amounts = products.amount + 1;
+      JSON.parse(localStorage.getItem("cart")).map((inLocalStorage, index) => {
+        let amounts = inLocalStorage.amount + 1;
         if (amounts > 5) {
           amounts = 5;
         }
-        if (isApparel && name == products.name && size == products.size) {
+        if (
+          isApparel &&
+          props.products.name == inLocalStorage.name &&
+          size == inLocalStorage.size
+        ) {
           let items = [...cart];
           let item = { ...cart[index] };
           item.amount = amounts;
           items[index] = item;
-          setCart(items)
+          setCart(items);
           isProductsIn = true;
         } else if (
           isApparel &&
-          name == products.name &&
-          size != products.size &&
+          props.products.name == inLocalStorage.name &&
+          size != inLocalStorage.size &&
           !isProductsIn
         ) {
           setCart([
             ...cart,
             {
-              name: name,
-              price: parseFloat(price),
-              img: img,
+              name: props.products.name,
+              price: parseFloat(props.products.price),
+              img: props.products.images[0],
               size: size,
-              url: url,
+              url: props.products.url,
               amount: 1,
             },
           ]);
-        } else if (!isApparel && name == products.name) {
+        } else if (
+          isApparel &&
+          props.products.name != inLocalStorage.name &&
+          size != inLocalStorage.size &&
+          !isProductsIn
+        ) {
+          setCart([
+            ...cart,
+            {
+              name: props.products.name,
+              price: parseFloat(props.products.price),
+              img: props.products.images[0],
+              size: size,
+              url: props.products.url,
+              amount: 1,
+            },
+          ]);
+        } else if (!isApparel && props.products.name == inLocalStorage.name) {
           let items = [...cart];
           let item = { ...cart[index] };
           item.amount = amounts;
           items[index] = item;
-          setCart(items)
+          setCart(items);
           isProductsIn = true;
         } else if (!isApparel && !isProductsIn) {
           setCart([
             ...cart,
             {
-              name: name,
-              price: parseFloat(price),
-              img: img,
+              name: props.products.name,
+              price: parseFloat(props.products.price),
+              img: props.products.images[0],
               size: size,
-              url: url,
+              url: props.products.url,
               amount: 1,
             },
           ]);
@@ -72,15 +112,20 @@ const Details = (props) => {
       setCart([
         ...cart,
         {
-          name: name,
-          price: parseFloat(price),
-          img: img,
+          name: props.products.name,
+          price: parseFloat(props.products.price),
+          img: props.products.images[0],
           size: size,
-          url: url,
+          url: props.products.url,
           amount: 1,
         },
       ]);
     }
+    // setCartModal(props.products);
+  };
+  const [size, setSize] = useState("xs");
+  const handleCurrentSize = (size) => {
+    setSize(size);
   };
 
   useEffect(() => {
@@ -96,14 +141,34 @@ const Details = (props) => {
     }
   }, [cart]);
 
-  const [size, setSize] = useState("xs");
-
-  const handleCurrentSize = (size) => {
-    setSize(size);
-  };
-
   return (
     <div className="details">
+      <Snackbar
+        open={open}
+        anchorOrigin={{ vertical: "top", horizontal: "right" }}
+      >
+        <div className="snackbar">
+          <div className="snackbar-header">
+            <div>
+              <MdVerified style={{color:"#cc3a36", transform:"translateY(15%)"}} /> Added to Cart
+            </div>
+            <div>
+              <MdOutlineClose style={{transform:"translateY(15%)", cursor:"pointer"}} onClick={handleClose} />
+            </div>
+          </div>
+          <div className="snackbar-content">
+            <img src={props.products.images[0]}/>
+            <div style={{display:"flex", flexFlow:"column", justifyContent:"center", padding:"5%", rowGap:"10%"}}>
+              <p>{props.products.name}</p>
+              <p style={{fontWeight:"700"}}>${props.products.price}</p>
+            </div>
+          </div>
+          <div>
+            <Button string="Checkout"/>
+            <Button string="View Cart" />
+          </div>
+        </div>
+      </Snackbar>
       <div className="shape shapetop"></div>
       <div className="details-wrapper">
         <div className="details-header">
@@ -116,17 +181,7 @@ const Details = (props) => {
             <SizeChart handleCurrentSize={handleCurrentSize} />
           </div>
         ) : null}
-        <div
-          onClick={() =>
-            addToCart(
-              props.products.name,
-              props.products.price,
-              props.products.images[0],
-              isApparel ? size : null,
-              props.products.url
-            )
-          }
-        >
+        <div onClick={() => addToCart(isApparel ? size : null)}>
           <Button string={"$" + props.products.price + " - Add to Cart"} />
         </div>
         <div className="details-description">

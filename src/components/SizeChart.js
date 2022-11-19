@@ -29,7 +29,6 @@ const ToggleButton = styled(MuiToggleButton)(({ selectedColor }) => ({
 
 const SizeChart = ({handleCurrentSize}) => {
   const [size, setSize] = React.useState('xs');
-
   const handleSize = (e, newSize) => {
     setSize(newSize);
     handleCurrentSize(newSize)

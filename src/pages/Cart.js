@@ -5,7 +5,6 @@ import ShowPath from "../components/ShowPath";
 import "../components/Cart.css";
 import Button from "../components/Button";
 import TextMhuuKrob from "../components/Input";
-import { useSlotProps } from "@mui/base";
 import InputLabel from '@mui/material/InputLabel';
 import FormControl from '@mui/material/FormControl';
 import NativeSelect from '@mui/material/NativeSelect';

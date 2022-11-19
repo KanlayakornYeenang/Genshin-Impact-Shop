@@ -1,8 +1,8 @@
-import React from "react";
+import React,{useState, useEffect} from 'react';
 import { RiArrowDropDownFill } from "react-icons/ri";
-import { BiUser } from "react-icons/bi"
+import { BiUser } from "react-icons/bi";
 import { TiShoppingCart } from "react-icons/ti";
-import { BsCircleFill } from "react-icons/bs"
+import { BsCircleFill } from "react-icons/bs";
 import { accessories, apparel, collectibles } from "../data/menuItems";
 import AccountModal from "./AccountModal";
 import SearchProduct from "./SearchProduct";
@@ -24,7 +24,7 @@ import Product from "./Product";
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
 
 const UserTab = (props) => {
-  const [isUserTabHovering, setIsUserTabHovering] = React.useState(false);
+  const [isUserTabHovering, setIsUserTabHovering] = useState(false);
   const handleMouseOver = () => {
     setIsUserTabHovering(true);
   };
@@ -37,9 +37,14 @@ const UserTab = (props) => {
   };
   return (
     <div className="usertab">
-      <a href={props.url} onMouseOver={handleMouseOver} onMouseOut={handleMouseOut}>
+      <a
+        href={props.url}
+        onMouseOver={handleMouseOver}
+        onMouseOut={handleMouseOut}
+      >
         <div className="menu-items">
-          <BiUser style={{fontSize:"1.4vw", transform:"translateY(-5%)"}} /> &nbsp;
+          <BiUser style={{ fontSize: "1.4vw", transform: "translateY(-5%)" }} />{" "}
+          &nbsp;
           {props.title}
           <RiArrowDropDownFill style={{ color: "#444444", fontSize: "2vw" }} />
         </div>
@@ -61,7 +66,7 @@ const UserTab = (props) => {
 };
 
 export const Tabs = (props) => {
-  const [isHovering, setIsHovering] = React.useState(false);
+  const [isHovering, setIsHovering] = useState(false);
   const handleMouseOut = () => {
     setIsHovering(false);
   };
@@ -75,7 +80,7 @@ export const Tabs = (props) => {
 };
 
 const TabsExpends = (props) => {
-  const [isHovering, setIsHovering] = React.useState(false);
+  const [isHovering, setIsHovering] = useState(false);
   const handleMouseOver = () => {
     setIsHovering(true);
   };
@@ -144,7 +149,7 @@ const Navbar = () => {
     keychains,
     mousepads
   );
-  const [searchProduct, setSearchProduct] = React.useState("");
+  const [searchProduct, setSearchProduct] = useState("");
   const filteredProduct = Products.filter((product) => {
     return product.name.toLowerCase().includes(searchProduct.toLowerCase());
   });
@@ -157,6 +162,7 @@ const Navbar = () => {
         </div>
       );
     });
+
   return (
     <nav>
       <div className="tab-wrapper">
@@ -196,7 +202,15 @@ const Navbar = () => {
         )}
         <a id="cart-wrapper" href="/cart">
           <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
-          <BsCircleFill style={{color: "#d13639", fontSize:"0.5vw", position:"absolute", transform:"translate(-0.45vw, 0.1vw)", boxShadow:"rgba(0, 0, 0, 0.35) 0px 5px 15px"}} />
+          {/* <BsCircleFill
+            style={{
+              color: "#d13639",
+              fontSize: "0.5vw",
+              position: "absolute",
+              transform: "translate(-0.45vw, 0.1vw)",
+              boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+            }}
+          /> */}
         </a>
         {/* <AccountModal /> */}
         {localStorage.getItem("User") == null ? (
