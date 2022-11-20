@@ -10,6 +10,7 @@ import SizeChart, { SizeChartHeader } from "../components/SizeChart";
 import { useLocation } from "react-router-dom";
 import { MdVerified, MdOutlineClose } from "react-icons/md";
 import Snackbar from "@mui/material/Snackbar";
+import { BsCircleFill } from "react-icons/bs";
 
 const style = {
   position: "absolute",
@@ -21,18 +22,16 @@ const style = {
   border: "none",
 };
 
-const Details = (props) => {
+const Details = ( {products, handleClick}) => {
   let isApparel = useLocation().pathname.split("/").slice(1)[0] == "apparel";
   const [cart, setCart] = useState([]);
   const didMount = useRef(false);
   let isProductsIn = false;
-  // const [cartModal, setCartModal] = useState(null);
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => {
     setOpen(true);
   };
   const handleClose = () => setOpen(false);
-
   const addToCart = (size) => {
     handleOpen();
     if (JSON.parse(localStorage.getItem("cart")).length > 0) {
@@ -43,7 +42,7 @@ const Details = (props) => {
         }
         if (
           isApparel &&
-          props.products.name == inLocalStorage.name &&
+          products.name == inLocalStorage.name &&
           size == inLocalStorage.size
         ) {
           let items = [...cart];
@@ -54,39 +53,39 @@ const Details = (props) => {
           isProductsIn = true;
         } else if (
           isApparel &&
-          props.products.name == inLocalStorage.name &&
+          products.name == inLocalStorage.name &&
           size != inLocalStorage.size &&
           !isProductsIn
         ) {
           setCart([
             ...cart,
             {
-              name: props.products.name,
-              price: parseFloat(props.products.price),
-              img: props.products.images[0],
+              name: products.name,
+              price: parseFloat(products.price),
+              img: products.images[0],
               size: size,
-              url: props.products.url,
+              url: products.url,
               amount: 1,
             },
           ]);
         } else if (
           isApparel &&
-          props.products.name != inLocalStorage.name &&
+          products.name != inLocalStorage.name &&
           size != inLocalStorage.size &&
           !isProductsIn
         ) {
           setCart([
             ...cart,
             {
-              name: props.products.name,
-              price: parseFloat(props.products.price),
-              img: props.products.images[0],
+              name: products.name,
+              price: parseFloat(products.price),
+              img: products.images[0],
               size: size,
-              url: props.products.url,
+              url: products.url,
               amount: 1,
             },
           ]);
-        } else if (!isApparel && props.products.name == inLocalStorage.name) {
+        } else if (!isApparel && products.name == inLocalStorage.name) {
           let items = [...cart];
           let item = { ...cart[index] };
           item.amount = amounts;
@@ -97,11 +96,11 @@ const Details = (props) => {
           setCart([
             ...cart,
             {
-              name: props.products.name,
-              price: parseFloat(props.products.price),
-              img: props.products.images[0],
+              name: products.name,
+              price: parseFloat(products.price),
+              img: products.images[0],
               size: size,
-              url: props.products.url,
+              url: products.url,
               amount: 1,
             },
           ]);
@@ -112,16 +111,15 @@ const Details = (props) => {
       setCart([
         ...cart,
         {
-          name: props.products.name,
-          price: parseFloat(props.products.price),
-          img: props.products.images[0],
+          name: products.name,
+          price: parseFloat(products.price),
+          img: products.images[0],
           size: size,
-          url: props.products.url,
+          url: products.url,
           amount: 1,
         },
       ]);
     }
-    // setCartModal(props.products);
   };
   const [size, setSize] = useState("xs");
   const handleCurrentSize = (size) => {
@@ -134,6 +132,7 @@ const Details = (props) => {
     }
     if (didMount.current) {
       localStorage.setItem("cart", JSON.stringify(cart));
+      handleClick(cart.length)
     } else {
       didMount.current = true;
       const saveCart = localStorage.getItem("cart");
@@ -143,37 +142,63 @@ const Details = (props) => {
 
   return (
     <div className="details">
+      {/* {cart.length > 0 ? <BsCircleFill style={{position:"fixed", zIndex:"10", color:"#cc3a36", fontSize:"0.6vw", top:"5%", right:"14.75%"}} /> : null} */}
       <Snackbar
+      sx={{transform:"translate(-25%, 25%)"}}
         open={open}
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
       >
         <div className="snackbar">
           <div className="snackbar-header">
             <div>
-              <MdVerified style={{color:"#cc3a36", transform:"translateY(15%)"}} /> Added to Cart
+              <MdVerified
+                style={{fontSize:"1vw", color: "#cc3a36", transform: "translateY(15%)" }}
+              />
+              &nbsp;
+              Added to Cart
             </div>
             <div>
-              <MdOutlineClose style={{transform:"translateY(15%)", cursor:"pointer"}} onClick={handleClose} />
+              <MdOutlineClose
+                style={{fontSize:"1vw", transform: "translateY(15%)", cursor: "pointer" }}
+                onClick={handleClose}
+              />
             </div>
           </div>
           <div className="snackbar-content">
-            <img src={props.products.images[0]}/>
-            <div style={{display:"flex", flexFlow:"column", justifyContent:"center", padding:"5%", rowGap:"10%"}}>
-              <p>{props.products.name}</p>
-              <p style={{fontWeight:"700"}}>${props.products.price}</p>
+            <img src={products.images[0]} />
+            <div
+              style={{
+                display: "flex",
+                flexFlow: "column",
+                justifyContent: "center",
+                padding: "5%",
+                rowGap: "10%",
+              }}
+            >
+              <p>{products.name}</p>
+              <p style={{ fontWeight: "700" }}>${products.price}</p>
             </div>
           </div>
-          <div>
-            <Button string="Checkout"/>
-            <Button string="View Cart" />
+          <div className="snackbar-button">
+            <Button string="Checkout" />
+            <Button
+            url="/cart"
+              string="View Cart"
+              style1={{
+                backgroundColor: "white",
+                color: "#cc3a36",
+                outline: "0.1vw solid #656462",
+              }}
+              style2={{backgroundColor:"#656462", color:"#656462"}}
+            />
           </div>
         </div>
       </Snackbar>
       <div className="shape shapetop"></div>
       <div className="details-wrapper">
         <div className="details-header">
-          <div className="details-name">{props.products.name}</div>
-          <div className="details-price">${props.products.price}</div>
+          <div className="details-name">{products.name}</div>
+          <div className="details-price">${products.price}</div>
         </div>
         {isApparel ? (
           <div style={{ display: "flex", flexFlow: "column", rowGap: "1vw" }}>
@@ -182,11 +207,11 @@ const Details = (props) => {
           </div>
         ) : null}
         <div onClick={() => addToCart(isApparel ? size : null)}>
-          <Button string={"$" + props.products.price + " - Add to Cart"} />
+          <Button string={"$" + products.price + " - Add to Cart"} />
         </div>
         <div className="details-description">
           <div style={{ whiteSpace: "pre-line" }}>
-            <SimpleAccordion details={props.products.description} />
+            <SimpleAccordion details={products.description} />
           </div>
         </div>
       </div>
@@ -201,6 +226,13 @@ const ProductDetails = (props) => {
     images.push({ original: img, thumbnail: img })
   );
 
+  const [cartLength, setCartLength] = useState(JSON.parse(localStorage.getItem("cart")).length)
+
+  const handleClick = (newCartLength) => {
+    setCartLength(newCartLength)
+    localStorage.setItem("cartlength", newCartLength)
+  }
+
   return (
     <div>
       <Header />
@@ -208,7 +240,7 @@ const ProductDetails = (props) => {
       <div className="product-frame">
         <div className="product-details">
           <MyGalleryProducts images={images} />
-          <Details products={props.products} />
+          <Details products={props.products} handleClick={handleClick} />
         </div>
         <img
           style={{ width: "100vw", height: "2.75vw" }}

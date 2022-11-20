@@ -223,38 +223,6 @@ nav {
   margin-top: 0vh;
 }
 
-.input-address {
-  display: flex;
-  flex-flow: column;
-  row-gap: 1vw;
-  border-bottom: 0.1vw solid rgba(0, 0, 0, 0.1);
-  padding-bottom: 1vw;
-}
-
-.address::placeholder {
-  opacity: 0.5;
-}
-
-.input-address p {
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  font-size: 1vw;
-}
-
-.address {
-  border: none;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-  width: 100%;
-  font-size: 1.25vw;
-  padding: 2% 0%;
-  background-color: transparent;
-}
-
-.textmhuukrob-wrapper {
-  display: flex;
-  flex-flow: column;
-  row-gap: 1.75vw;
-}
-
 .search-content-wrapper {
   position: absolute;
   display: flex;

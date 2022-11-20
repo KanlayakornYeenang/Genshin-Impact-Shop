@@ -2,10 +2,10 @@ import React from "react";
 
 const Button = (props) => {
   return (
-    <button className="addtocart">
+    <a href={props.url} className="addtocart" style={props.style1}>
         <div className="addtocart-txt">{props.string}</div>
-        <div className="addtocart-bg">.</div>
-    </button>
+        <div className="addtocart-bg" style={props.style2}>.</div>
+    </a>
   );
 };
 

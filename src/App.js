@@ -25,6 +25,7 @@ import {
   standees,
   tops,
 } from "./data/ProductList";
+import Checkout from "./pages/Checkout";
 
 const App = () => {
   const menu = [
@@ -129,15 +130,9 @@ const App = () => {
         <Route path="/cart" element={<Cart />} />
         <Route path="/search" element={<SearchNull />} />
         <Route path="/search/:keyword" element={<Search />} />
-
-        {/*
-        <Route path="/search" element={<Search/>} > ------> ข้างในมี <Outlet /> เพื่อแสดงในกรณี /search/keyword
-          <Route path=":keyword" element={<SearchContext />} />
-        </Route>
-        */}
-
+        <Route path="/checkout" element={<Checkout />} />
         <Route path="*" element={<NotFound />} />
-        </Routes>   
+        </Routes>
         </BrowserRouter>
   );
   };

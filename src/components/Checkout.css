@@ -1,0 +1,75 @@
+.checkout-main * {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: normal;
+    font-weight: 400;
+}
+
+.checkout-main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.checkout-l {
+    width: 55%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+
+.checkout-r {
+    width: 45%;
+    height: 100%;
+    background-color: #2b2a29;
+}
+
+.checkout-l-wrapper {
+    padding: 5%;
+    height: 100%;
+}
+
+.checkout-l-content {
+    width: 65%;
+    height: 100%;
+    /* background-color: pink; */
+    float: right;
+    display: flex;
+    flex-flow: column;
+    gap: 3.5%;
+}
+
+.checkout-l-content div p {
+    text-align: center;
+}
+
+.checkout-l-content img {
+    width: 23%;
+}
+
+.checkout-main .MuiToggleButtonGroup-grouped {
+    border-radius: 0.3vw !important;
+}
+
+.shoppay:hover {
+    background-color: #3c0def !important;
+}
+
+.paypal:hover {
+    background-color: #f2ba36 !important;
+}
+
+.gpay:hover {
+    background-color: #000000 !important;
+}
+
+.expresscheckout {
+    display: flex;
+    justify-content: center;
+}
+
+.line {
+    width: 100%;
+    height: 0.05vw;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 2% 0%;
+}

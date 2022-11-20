@@ -73,24 +73,24 @@
     padding: 0% 2.5%;
 }
 
-.MuiOutlinedInput-root {
+.modal-content .MuiOutlinedInput-root {
     width: 20vw !important;
     background: #ececec !important;
 }
 
-.MuiOutlinedInput-root.Mui-focused {
+.modal-content .MuiOutlinedInput-root.Mui-focused {
     background-color: white !important;
 }
 
-.MuiOutlinedInput-notchedOutline {
+.modal-content .MuiOutlinedInput-notchedOutline {
     border: 0 !important;
 }
 
-.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+.modal-content .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
     border: 0.12vw solid black !important;
 }
 
-.MuiOutlinedInput-input {
+.modal-content .MuiOutlinedInput-input {
     padding-bottom: 0.25rem !important;
     padding-top: 1.5rem !important;
     font-family: "HYWenHei" !important;
