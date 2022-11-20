@@ -74,6 +74,7 @@
     height: 0.05vw;
     background-color: rgba(0, 0, 0, 0.2);
     margin: 2% 0%;
+    position: relative;
 }
 
 .checkout-r-content {
@@ -84,6 +85,7 @@
     display: flex;
     flex-flow: column;
     row-gap: 2vh;
+    overflow: auto;
 }
 
 .checkout-r-product {

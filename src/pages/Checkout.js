@@ -325,7 +325,21 @@ const Checkout = () => {
               </div>
             );
           })}
-          <div className="line" style={{ backgroundColor: "#aaaaa9" }}></div>
+          <div className="line" style={{ backgroundColor: "#aaaaa9" }}>
+            <p
+              style={{
+                zIndex:"-10",
+                position: "relative",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                background: "white",
+                width: "fit-content",
+                padding: "0% 2%",
+              }}
+            >
+              OR
+            </p>
+          </div>
           <div
             style={{
               fontSize: "0.75vw",
@@ -351,7 +365,21 @@ const Checkout = () => {
             </div>
             <div style={{ color: "white", fontWeight: "700" }}>$7</div>
           </div>
-          <div className="line" style={{ backgroundColor: "#aaaaa9" }}></div>
+          <div className="line" style={{ backgroundColor: "#aaaaa9" }}>
+            <p
+              style={{
+                zIndex:"-10",
+                position: "relative",
+                left: "50%",
+                transform: "translate(-50%, -50%)",
+                background: "white",
+                width: "fit-content",
+                padding: "0% 2%",
+              }}
+            >
+              OR
+            </p>
+          </div>
           <div style={{ display: "flex", justifyContent: "space-between" }}>
             <p style={{ fontSize: "1vw", color: "white" }}>Total</p>
             <div style={{ display: "flex" }}>
@@ -370,7 +398,7 @@ const Checkout = () => {
                 borderRadius: "0.5vw",
                 width: "70%",
                 fontSize: "1vw",
-                transform: "translateY(15.25vh)",
+                transform: "translateY(2vh)",
               }}
             />
           </div>
