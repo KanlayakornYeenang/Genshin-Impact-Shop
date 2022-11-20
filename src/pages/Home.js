@@ -12,11 +12,9 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 });
 
 const Home = () => {
-  // const [open, setOpen] = React.useState(
-  //   JSON.parse(localStorage.getItem("cart")).length == 0 &&
-  //     JSON.parse(localStorage.getItem("cartlength")) != 0
-  // );
-  const [open, setOpen] = React.useState(true
+  const [open, setOpen] = React.useState(
+    JSON.parse(localStorage.getItem("cart")).length == 0 &&
+      JSON.parse(localStorage.getItem("cartlength")) != 0
   );
   if (open) {
     localStorage.setItem("cartlength", "0");
