@@ -12,6 +12,7 @@ const Alert = React.forwardRef(function Alert(props, ref) {
 });
 
 const Home = () => {
+  console.log(localStorage.getItem("account"))
   const [open, setOpen] = React.useState(
     JSON.parse(localStorage.getItem("cart")).length == 0 &&
       JSON.parse(localStorage.getItem("cartlength")) != 0
