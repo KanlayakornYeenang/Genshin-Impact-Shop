@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from 'react';
+import React, { useState, useEffect } from "react";
 import { RiArrowDropDownFill } from "react-icons/ri";
 import { BiUser } from "react-icons/bi";
 import { TiShoppingCart } from "react-icons/ti";
@@ -19,6 +19,7 @@ import {
   mousepads,
 } from "../data/ProductList";
 import Product from "./Product";
+import { BsCircleFill } from "react-icons/bs";
 
 // แถบ Navigator ด้านบนที่จะอยู่ในทุกๆหน้าและจะแสดง Catagories ทุกๆชนิด
 
@@ -139,21 +140,22 @@ const CartTab = () => {
   return (
     <a id="cart-wrapper" href="/cart">
       <TiShoppingCart style={{ color: "#ffffff", fontSize: "1.5vw" }} />
-      {/* <BsCircleFill
-    style={{
-      color: "#d13639",
-      fontSize: "0.5vw",
-      position: "absolute",
-      transform: "translate(-0.45vw, 0.1vw)",
-      boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
-    }}
-  /> */}
+      {localStorage.getItem("cartlength") > 0 ? (
+        <BsCircleFill
+          style={{
+            color: "#d13639",
+            fontSize: "0.5vw",
+            position: "absolute",
+            transform: "translate(-0.45vw, 0.1vw)",
+            boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+          }}
+        />
+      ) : null}
     </a>
   );
 };
 
 const Navbar = () => {
-  console.log(localStorage.getItem("cartlength"))
   var Products = tops.concat(
     bottoms,
     sales,

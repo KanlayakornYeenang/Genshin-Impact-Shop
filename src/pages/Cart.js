@@ -18,6 +18,7 @@ const removeFromCart = (cart) => {
       const arr = JSON.parse(localStorage.getItem("cart"));
       arr.splice(index, 1);
       localStorage.setItem("cart", JSON.stringify(arr));
+      localStorage.setItem("cartlength", localStorage.getItem("cartlength")-1);
       window.location.reload(false);
     }
   });
@@ -136,9 +137,9 @@ const Cart = () => {
         </div>
         <div className="checkout">
           <div className="checkout-content">
-            <p>Subtotal (1 item)</p>
-            <p style={{fontSize:"1.25vw"}}>$85.00</p>
-            {JSON.parse(localStorage.getItem("cart")).length == 0 ? null : <Button string="Checkout" />}
+            <p>Subtotal ({JSON.parse(localStorage.getItem("cart")).length} {JSON.parse(localStorage.getItem("cart")).length > 1 ? "items" : "item"})</p>
+            <TotalPrice style={{fontSize:"1.25vw"}} />
+            {JSON.parse(localStorage.getItem("cart")).length == 0 ? null : <Button string="Checkout" url="/checkout" />}
             <p style={{fontSize:"0.85vw"}}>Taxes and shipping are<br />calculated at checkout.</p>
             <p style={{fontSize:"0.85vw"}}>*Item availability isn’t guaranteed<br />until checkout is complete.</p>
           </div>
@@ -146,6 +147,18 @@ const Cart = () => {
       </div>
     </div>
   );
+};
+
+export const TotalPrice = (props) => {
+  let shipping = props.shipping
+  if (shipping == undefined) {shipping = 0}
+  let totalPrice = 0;
+  {
+    JSON.parse(localStorage.getItem("cart")).map((cart, index) => {
+      totalPrice += cart.price*cart.amount;
+    });
+  }
+  return <p style={props.style}>${(totalPrice+shipping).toFixed(2)}</p>;
 };
 
 export default Cart;

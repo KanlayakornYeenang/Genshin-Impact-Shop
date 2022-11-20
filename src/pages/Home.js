@@ -5,11 +5,37 @@ import ProductWrapper, {
   ProductWrapperSale,
 } from "../components/ProductWrapper";
 import Footer from "../components/Footer";
+import Snackbar from "@mui/material/Snackbar";
+import MuiAlert from "@mui/material/Alert";
+const Alert = React.forwardRef(function Alert(props, ref) {
+  return <MuiAlert elevation={6} ref={ref} variant="filled" {...props} />;
+});
 
 const Home = () => {
+  // const [open, setOpen] = React.useState(
+  //   JSON.parse(localStorage.getItem("cart")).length == 0 &&
+  //     JSON.parse(localStorage.getItem("cartlength")) != 0
+  // );
+  const [open, setOpen] = React.useState(true
+  );
+  if (open) {
+    localStorage.setItem("cartlength", "0");
+  }
+  const handleClose = (event, reason) => {
+    if (reason === "clickaway") {
+      return;
+    }
+    setOpen(false);
+  };
+
   return (
     <div className="home">
       <Header />
+      <Snackbar open={open} autoHideDuration={5000} onClose={handleClose}>
+        <Alert onClose={handleClose} severity="success" sx={{ width: "100%" }}>
+            <p style={{fontSize:"1vw"}}>Your order has been confirmed.</p>
+        </Alert>
+      </Snackbar>
       <MyGallery
         images={[
           {

@@ -12,10 +12,15 @@ import {
   Select,
   MenuItem,
   FormControl,
-  Button,
 } from "@mui/material";
+import { TotalPrice } from "./Cart";
+import { FaShippingFast } from "react-icons/fa";
+import Button from "../components/Button";
 
 const Checkout = () => {
+  const confirmOrder = () => {
+    localStorage.setItem('cart', JSON.stringify([]))
+  }
   return (
     <div className="checkout-main">
       <div className="checkout-l">
@@ -39,6 +44,7 @@ const Checkout = () => {
                 exclusive
                 sx={{
                   width: "93.5%",
+                  height: "fit-content",
                   gap: "3%",
                   background: "white",
                   padding: "3%",
@@ -50,6 +56,7 @@ const Checkout = () => {
                   sx={{
                     background: "#5a31f4",
                     width: "100%",
+                    height: "50%",
                   }}
                 >
                   <img style={{ width: "40%" }} src="./images/shoppay.png" />
@@ -59,6 +66,7 @@ const Checkout = () => {
                   sx={{
                     background: "#ffc439",
                     width: "100%",
+                    height: "50%",
                   }}
                 >
                   <img style={{ width: "40%" }} src="./images/paypal.png" />
@@ -68,6 +76,7 @@ const Checkout = () => {
                   sx={{
                     background: "#000000",
                     width: "100%",
+                    height: "50%",
                   }}
                 >
                   <img style={{ width: "22.5%" }} src="./images/gpay.png" />
@@ -276,7 +285,98 @@ const Checkout = () => {
           </div>
         </div>
       </div>
-      <div className="checkout-r"></div>
+      <div className="checkout-r">
+        <div className="checkout-r-content">
+          {JSON.parse(localStorage.getItem("cart")).map((cart) => {
+            return (
+              <div className="checkout-r-product">
+                <div>
+                  <img src={cart.img} />
+                </div>
+                <div>
+                  <p
+                    style={{
+                      fontSize: "0.75vw",
+                      fontWeight: "700",
+                      color: "white",
+                    }}
+                  >
+                    {cart.name}
+                  </p>
+                  {cart.size == null ? null : (
+                    <p style={{ fontSize: "0.75vw", color: "#aaaaa9" }}>
+                      {cart.size.toUpperCase()}
+                    </p>
+                  )}
+                </div>
+                <div
+                  style={{
+                    fontSize: "0.75vw",
+                    color: "white",
+                    fontWeight: "700",
+                    textAlign: "right",
+                  }}
+                >
+                  ${(cart.price * cart.amount).toFixed(2)}
+                  {cart.size == null ? null : (
+                    <p style={{ color: "#2b2a29" }}>.</p>
+                  )}
+                </div>
+              </div>
+            );
+          })}
+          <div className="line" style={{ backgroundColor: "#aaaaa9" }}></div>
+          <div
+            style={{
+              fontSize: "0.75vw",
+              color: "#aaaaa9",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <p>Subtotal</p>
+            <TotalPrice style={{ color: "white", fontWeight: "700" }} />
+          </div>
+          <div
+            style={{
+              fontSize: "0.75vw",
+              color: "#aaaaa9",
+              display: "flex",
+              justifyContent: "space-between",
+            }}
+          >
+            <div>
+              Shipping&nbsp;
+              <FaShippingFast style={{ transform: "translateY(20%)" }} />
+            </div>
+            <div style={{ color: "white", fontWeight: "700" }}>$7</div>
+          </div>
+          <div className="line" style={{ backgroundColor: "#aaaaa9" }}></div>
+          <div style={{ display: "flex", justifyContent: "space-between" }}>
+            <p style={{ fontSize: "1vw", color: "white" }}>Total</p>
+            <div style={{ display: "flex" }}>
+              <p style={{ fontSize: "1vw", color: "#aaaaa9" }}>USD</p>&nbsp;
+              <TotalPrice
+                style={{ fontSize: "1vw", color: "white", fontWeight: "700" }}
+                shipping={7}
+              />
+            </div>
+          </div>
+          <div onClick={confirmOrder}>
+            <Button
+              url="/"
+              string="Continue to confirm the order"
+              style1={{
+                borderRadius: "0.5vw",
+                width: "70%",
+                fontSize: "1vw",
+                transform: "translateY(15.25vh)",
+              }}
+            />
+          </div>
+          <div />
+        </div>
+      </div>
     </div>
   );
 };

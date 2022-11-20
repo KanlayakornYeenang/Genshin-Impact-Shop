@@ -10,7 +10,6 @@ import SizeChart, { SizeChartHeader } from "../components/SizeChart";
 import { useLocation } from "react-router-dom";
 import { MdVerified, MdOutlineClose } from "react-icons/md";
 import Snackbar from "@mui/material/Snackbar";
-import { BsCircleFill } from "react-icons/bs";
 
 const style = {
   position: "absolute",
@@ -22,7 +21,7 @@ const style = {
   border: "none",
 };
 
-const Details = ( {products, handleClick}) => {
+const Details = ({ products, handleClick }) => {
   let isApparel = useLocation().pathname.split("/").slice(1)[0] == "apparel";
   const [cart, setCart] = useState([]);
   const didMount = useRef(false);
@@ -132,7 +131,7 @@ const Details = ( {products, handleClick}) => {
     }
     if (didMount.current) {
       localStorage.setItem("cart", JSON.stringify(cart));
-      handleClick(cart.length)
+      handleClick(cart.length);
     } else {
       didMount.current = true;
       const saveCart = localStorage.getItem("cart");
@@ -144,7 +143,7 @@ const Details = ( {products, handleClick}) => {
     <div className="details">
       {/* {cart.length > 0 ? <BsCircleFill style={{position:"fixed", zIndex:"10", color:"#cc3a36", fontSize:"0.6vw", top:"5%", right:"14.75%"}} /> : null} */}
       <Snackbar
-      sx={{transform:"translate(-25%, 25%)"}}
+        sx={{ transform: "translate(-25%, 25%)" }}
         open={open}
         anchorOrigin={{ vertical: "top", horizontal: "right" }}
       >
@@ -152,14 +151,21 @@ const Details = ( {products, handleClick}) => {
           <div className="snackbar-header">
             <div>
               <MdVerified
-                style={{fontSize:"1vw", color: "#cc3a36", transform: "translateY(15%)" }}
+                style={{
+                  fontSize: "1vw",
+                  color: "#cc3a36",
+                  transform: "translateY(15%)",
+                }}
               />
-              &nbsp;
-              Added to Cart
+              &nbsp; Added to Cart
             </div>
             <div>
               <MdOutlineClose
-                style={{fontSize:"1vw", transform: "translateY(15%)", cursor: "pointer" }}
+                style={{
+                  fontSize: "1vw",
+                  transform: "translateY(15%)",
+                  cursor: "pointer",
+                }}
                 onClick={handleClose}
               />
             </div>
@@ -180,16 +186,16 @@ const Details = ( {products, handleClick}) => {
             </div>
           </div>
           <div className="snackbar-button">
-            <Button string="Checkout" />
+            <Button url="/checkout" string="Checkout" />
             <Button
-            url="/cart"
+              url="/cart"
               string="View Cart"
               style1={{
                 backgroundColor: "white",
                 color: "#cc3a36",
                 outline: "0.1vw solid #656462",
               }}
-              style2={{backgroundColor:"#656462", color:"#656462"}}
+              style2={{ backgroundColor: "#656462", color: "#656462" }}
             />
           </div>
         </div>
@@ -226,12 +232,13 @@ const ProductDetails = (props) => {
     images.push({ original: img, thumbnail: img })
   );
 
-  const [cartLength, setCartLength] = useState(JSON.parse(localStorage.getItem("cart")).length)
-
+  const [cartLength, setCartLength] = useState(
+    JSON.parse(localStorage.getItem("cart")).length
+  );
   const handleClick = (newCartLength) => {
-    setCartLength(newCartLength)
-    localStorage.setItem("cartlength", newCartLength)
-  }
+    setCartLength(newCartLength);
+    localStorage.setItem("cartlength", newCartLength);
+  };
 
   return (
     <div>
