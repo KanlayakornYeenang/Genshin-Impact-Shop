@@ -83,6 +83,13 @@ const App = () => {
     [mugs, mousepads],
   ];
 
+  if (JSON.parse(localStorage.getItem("account")) == null) {
+    localStorage.setItem("account", "[]");
+  }
+  if (JSON.parse(localStorage.getItem("cart")) == null) {
+    localStorage.setItem("cart", "[]");
+  }
+
   return (
     // การ Routes คือการเชื่อมต่อ Path ด้านหลัง Domain เข้ากับหน้า Page HTML นั้นๆ เช่น เชื่อม /home กับ Page Home.js
     <BrowserRouter>

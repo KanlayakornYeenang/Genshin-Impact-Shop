@@ -32,13 +32,7 @@ const AccountModal = () => {
   const didMount = useRef(false);
 
   useEffect(() => {
-    if(JSON.parse(localStorage.getItem("cartlength")) == null) {
-      localStorage.setItem("cartlength", 0)
-    }
-    if(JSON.parse(localStorage.getItem("cart")) == null) {
-      localStorage.setItem("cart", "[]")
-    }
-    if(account == null){
+    if(account == null || account.length == 0){
       setAccount([{email: "admin@123.com", username: "admin", password: "123456"}])
     }
     if(didMount.current){
